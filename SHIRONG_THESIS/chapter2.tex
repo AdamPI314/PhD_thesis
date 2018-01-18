@@ -18,9 +18,9 @@ reactions in a homogeneous well-stirred reactor
 \end{equation}
 involving $N$ distinct chemical species $S_i$ which have concentration $X_i$. The molecularities,
 $v_{i,j}$ and ${\bar{v}}_{i,j}$, enforce the elemental mass conservation for each reaction indexed by
-j. The rate of each reaction is given by a well-defined rate law, $R_j(\mathbf{X})$. [Nothing
+j. The rate of each reaction is given by a well-defined rate law, $R_j(\mathbf{X})$. (Nothing
 prevents the SOHR method from being applied to problems with time-dependent rate
-coefficients although we do not explicitly include a t-dependence in the formulae.] The
+coefficients although we do not explicitly include a t-dependence in the formulae.) The
 continuous concentrations of the distinct species $S_i$, $X_i(t) \geq 0$, can be expressed as solutions
 of the differential rate eqn. \ref{ch2:eqn1}. The rate equations are given by
 \begin{equation}
@@ -50,7 +50,7 @@ distribution function $P\left( \mathbf{x},t\vert {\mathbf{x}}_0,t_0 \right)$. Th
 number of species molecules in a given volume and $P\left( \mathbf{x},t\vert {\mathbf{x}}_0,t_0 \right)$ is the probability that
 the species are populated by x at time t given that they were populated as ${\mathbf{x}}_0$ at time $t_0$.
 Obviously, the solution to the CME contains vastly more information than does the
-mean field ean. \ref{ch2:eqn2}. It is also much more difficult to solve the CME than the
+mean field eqn. \ref{ch2:eqn2}. It is also much more difficult to solve the CME than the
 concentration based kinetics equations. The most effective numerical techniques for
 solving the CME involve averaging many stochastic trajectories which simulate the
 time evolution of a large ensemble of molecules.
@@ -70,11 +70,11 @@ it is necessary to specify both the reactions and the species along the reaction
 pathway in order to achieve uniqueness. Indeed, the same reagents may yield different
 products or the same products may result from different reagents, depending on which
 reaction occurs. For example, if we imagine the gas-phase combustion of the methanol
-molecule, CH3OH, a hypothetical three-step chemical pathway is $\textcolor{red}{\textbf{C}}\text{H}_3\text{OH}(+\text{OH}) \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3\text{O} (+\text{O})  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{HO} (+\text{OH}) \xrightarrow[\text{R}_{3}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{O}$ which yields the CO product. Obviously the reagents in first step of this path, ${\textbf{C}}\text{H}_3\text{OH}+\text{OH} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} {\textbf{C}}\text{H}_3\text{O} + \text{H}_2\text{O}$, could have equally well yielded the chemically distinct products ${\textbf{C}}\text{H}_2\text{OH} + \text{H}_2\text{O}$, which must be described by a separate
+molecule, CH$_3$OH, a hypothetical three-step chemical pathway is $\textcolor{red}{\textbf{C}}\text{H}_3\text{OH}(+\text{OH}) \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3\text{O} (+\text{O})  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{HO} (+\text{OH}) \xrightarrow[\text{R}_{3}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{O}$ which yields the CO product. Obviously the reagents in first step of this path, ${\textbf{C}}\text{H}_3\text{OH}+\text{OH} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} {\textbf{C}}\text{H}_3\text{O} + \text{H}_2\text{O}$, could have equally well yielded the chemically distinct products ${\textbf{C}}\text{H}_2\text{OH} + \text{H}_2\text{O}$, which must be described by a separate
 reaction $R_1^{\prime}$. Likewise, the distinct reaction ${\textbf{C}}\text{H}_3\text{OH}+\text{H} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} {\textbf{C}}\text{H}_3\text{O} + \text{H}_2$ is a different reaction route that connects the followed species CH$_3$OH and CH$_3$O.
 \newline
 \paragraph{}
-In most numerical applications of the SOHR methodology, we adopt a followedatom
+In most numerical applications of the SOHR methodology, we adopt a followed-atom
 approach for the definition of the chemical pathways. Thus, an atom in a reagent
 species is ‘tagged’ at the beginning of the simulation, $t_0$, and it is followed as it hops
 between species due to reaction until the final time $t_f$. For example, the carbon atom in
@@ -115,13 +115,22 @@ a Markov chain of random reactions.}
 The essential step that enables the SOHR to be used as a quantitative model of the
 reaction kinetics is the assignment of a numerical probability for a given chemical pathway.
 We consider a general pathway consisting of n-reactions and n + 1-species, 
-i.e. ${\textbf{S}}_{0} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{$t_1$}} {\textbf{S}}_{1}  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{$t_2$}} {\textbf{S}}_{2} \cdots {\textbf{S}}_{n-1} \xrightarrow[\text{R}_{n}]{\makebox[0.6cm]{$t_{n}$}} {\textbf{S}}_{n}$ where the followed-atom hops from S$_i$ to S$_{i+1}$ at time t$_{i+1}$ due to elementary reaction R$_{i+1}$. We define $\rho(t_0, t_1, \cdots, t_n, t_f)$ as the probability density that, starting at time $t_0$, $S_0$ undergoes reaction $R_1$ to form $S_1$ at time $t_1$, then undergoes
-reaction $R_2$ at $t_2$ to form $S_2$, and so forth. The final species Sn that created at tn must
-then survive until the final observation time $t_f$. The probability density has units of
+i.e. ${\textbf{S}}_{0} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{$t_1$}} {\textbf{S}}_{1}  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{$t_2$}} {\textbf{S}}_{2} \cdots {\textbf{S}}_{n-1} \xrightarrow[\text{R}_{n}]{\makebox[0.6cm]{$t_{n}$}} {\textbf{S}}_{n}$ where the followed-atom hops from S$_i$ to S$_{i+1}$ at time t$_{i+1}$ due to elementary reaction R$_{i+1}$.
+We define a $pathway ~probability ~density ~function$, pPDF for short,
+\begin{flalign}
+\label{ch2:eqn3.5}
+\begin{split}
+\rho(t_0, t_1, \cdots, t_n, t_f) \equiv & ~the ~probability~density,~starting~at~time~t_0,  ~S_0~undergoes \\
+  & ~reaction ~R_1~to~form~S_1~at~time~t_1,  ~then~undergoes~ reaction \\
+  & ~R_2~at~t_2~to~form~S_2, ~and~so~forth. ~The~final~species~Sn~that\\ 
+  &~created~at~t_n~ must~survive~until~the~final~observation~time~t_f.
+\end{split}
+\end{flalign}
+The probability density has units of
 1/time$^{n}$. Since the occurrence of reactions $R_1, \cdots , R_n$, constitute a sequence of independent
 random events, i.e. a Markov chain, then $\rho(t_0, t_1, \cdots, t_n, t_f)$ is a product of the
 appropriate decay probability densities for each step along the chain. The total pathway
-probability, P$_{path}$, is obtained by integrating the probability density over all times
+probability, P$_{path}\left(t_0, t_f \right)$, is obtained by integrating the probability density over all times
 $(t_1, \cdots, t_n)$ consistent with the time-ordering, i.e.
 \begin{equation}
 \label{ch2:eqn4}
@@ -215,13 +224,18 @@ divided by the total reactive flux of species $S_i$, i.e.
 \end{equation}
 In this notation we drop the explicit J-index on $\Gamma$. The stoichiometric factors are not
 included in the numerator of eqn. \ref{ch2:eqn12} since we are following a single tagged
-atom. Using these expressions, we have shown that the pathway probability can be
+atom. Using these expressions in eqn. \ref{ch2:eqn11} and \ref{ch2:eqn13}, pPDF defined in eqn. \ref{ch2:eqn3.5} can be written as 
+\begin{equation}
+\label{ch2:eqn12.5}
+\rho(t_0, t_1, \cdots, t_n, t_f) = (-1)^n \prod_{i=1}^{n}{\left( \frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i} \Gamma_{i-1}(t_i) \right) \mathcal{P}_{n}(t_n,t_f)}
+\end{equation}
+In eqn. \ref{ch2:eqn12.5}, $(-1)\frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i}$ term represents, given species $S_{i-1}$ formed at time $t_{i-1}$, the $probability$ $density$ that $S_{i-1}$ will react at time $t_i$; $\Gamma_{i-1}(t_i)$ is attributed to the instantaneous branching ratio that $S_{i-1}$ reacts by $R_J$ and forms $S_i$; $\mathcal{P}_{n}(t_n,t_f)$ guarantees terminating species $S_n$ survives from time $t_n$ till $t_f$. Conclusively, plug eqn. \ref{ch2:eqn12.5} into eqn. \ref{ch2:eqn5}, it shows that the pathway probability can be
 written as an integral of a time-ordered product.\cite{ch1_IRPC_16_bai2014sum,ch1_IRPC_17_bai2015sum}
 \begin{equation}
 \label{ch2:eqn13}
 \begin{split}
 P_{path}(t_0,t_f)&= (-1)^n \int_{t_0}^{t_f}{dt_n \int_{t_0}^{t_n}{dt_{n-1} \cdots }} \int_{t_0}^{t_2}{dt_1} \\
-&  \prod_{i=1}^{n}{\left( \frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i} \Gamma_{i-1}(t_i) \right) \mathcal{P}_{n}(t_n,t)}
+&  \prod_{i=1}^{n}{\left( \frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i} \Gamma_{i-1}(t_i) \right) \mathcal{P}_{n}(t_n,t_f)}
 \end{split}
 \end{equation}
 This expression is similar to Dyson’s formula for the amplitude in quantum mechanics.\cite{ch1_IRPC_38_schulmann1996techniques,ch1_IRPC_39_mjolsness2013time} Unlike the quantum expression, however, the integrand of eqn. \ref{ch2:eqn13} is positive definite and thus phase cancellation is not an issue.

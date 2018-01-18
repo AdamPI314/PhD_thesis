@@ -141,32 +141,8 @@ We begin with a brief review of the concepts of sensitivity
 analysis and of the sum over histories representation that will
 also serve to define the required mathematical notation. We
 shall explicitly consider the case of spatially homogeneous
-kinetics described by the continuous concentrations (number of molecules per unit volume) of the N distinct species $S_i$, $X_i(t) \geq 0$. The concentrations solve the N-rate equations
-\begin{equation}
-\label{ch3:eqn2}
-\frac{dX_i}{dt}=F_i(t)
-\end{equation}
-Additional differential equations may be required to
-represent the thermodynamics although we omit those for
-the present. The rate expression for species $i$, $F_i$, is composed of
-the source and sink terms from each elementary reaction in the
-mechanism, i.e.
-\begin{equation}
-\label{ch3:eqn3}
-\begin{split}
-F_i(\textbf{X})&= F_i^{source}(\textbf{X})-F_i^{sink} \\
-& =\sum_j^{sources}{v_{i,j}R_j(\textbf{X})} -\sum_j^{sinks}{\overline{v}_{i,j}R_j(\textbf{X})}
-\end{split}
-\end{equation}
-where the elementary rate law for reaction $j$ is $R_j(\textbf{X})$. The
-coefficients, $v_{i,j}$ and $\overline{v}_{i,j}$, enforce elemental mass conservation for the
-balanced chemical equation associated with each reaction, i.e.
-\begin{equation}
-\label{ch3:eqn4}
-\sum{\overline{v}_{i,j}S_i} \rightleftharpoons \sum{v_{i,j}S_i} ~~~ reaction~j
-\end{equation}
-The total reaction mechanism is described by L elementary
-reaction steps, of the form (\ref{ch3:eqn4}), where the rate laws $R_j(\textbf{X})$ are
+kinetics described by the continuous concentrations (number of molecules per unit volume) of the N distinct species $S_i$, $X_i(t) \geq 0$. The total reaction mechanism is described by L elementary
+reaction steps, of the form (\ref{ch2:eqn1}), where the rate laws $R_j(\textbf{X})$ are
 parametrized by the rate coefficients $k_i$, $i$ = 1, ..., L. In a typical
 application of sensitivity analysis, one imagines that these rate
 coefficients are variable over a range $\Delta k_i$. This range of variation
@@ -175,7 +151,7 @@ may simply be introduced as a formal tool in the analysis of the
 chemical network.
 
 \subsection{Sum over Histories Representation}
-In the sum over histories representation, the solution to the kinetics problem is
+In the sum over histories representation introduced in Chapter \ref{mathchapter}, the solution to the kinetics problem is
 expressed in terms of a sum over chemical pathways that relate
 an initial condition at $t=0$ to some final target observable at
 time t. A pathway is specified through a sequence of chemical
@@ -222,70 +198,11 @@ the weighted graph.
 The next task is to compute the probability for a general
 pathway consisting of n-reactions and n + 1 species, i.e., $S_{0} \xrightarrow[R_1]{t_1} S_1\xrightarrow[R_2]{t_2} S_2 \cdots  S_{n-1} \xrightarrow[R_n]{t_n} S_n$, where the reactions obey the time ordering $t_f > t_n > \cdots t_1 > t_0$. Because the occurrence of each reaction constitutes a random event, we must integrate the probability
 density over all allowed times consistent with the time ordering.
-To find the probability for a given pathway, it is convenient to
-define the species survival probability, $\mathcal{P}_{S_i}(t_a,t_b)$, which is the
-probability that species $S_i$ undergoes no reaction in the general
-time interval ($t_a$, $t_b$) where $\mathcal{P}_{S_i}(t,t) = 1$. Using the rate equations,
-the survival probability for any species $S_i$ is obtained by
-integrating the species decay probability computed from the
-totality of sink reactions, defined in eqn. \ref{ch3:eqn4}
-\begin{equation}
-\label{ch3:eqn5}
-\begin{split}
-\mathcal{P}_{i}(t_a,t_b)&= exp\left( -\int_{t_a}^{t_b}{\sum_{j}^{sinks}{A_{i,j}(t)dt}} \right) \\
-& \equiv exp\left( -\int_{t_a}^{t_b}{A_i(t)dt} \right)
-\end{split}
-\end{equation}
-where we abbreviate the subscript of P as “i” instead of “$S_i$” for
-brevity. The quantities $A_{i,j}(t)$ are similar to a pseudo-first-order
-rate coefficients (with dimension 1/time) and are defined by
-the time-dependent expression
-\begin{equation}
-\label{ch3:eqn6}
-A_{i,j}(t) \equiv \frac{\overline{v}_{i,j}R_j(\textbf{X})}{X_i(t)}
-\end{equation}
-where i labels the species and j labels the reaction. The
-concentrations $\mathbf{X}(t)$ are evaluated along the solution to eqn. \ref{ch3:eqn2}.
-A second useful quantity is the time-dependent branching ratio,
-$\Gamma_i(t)$, which measures the fraction of the reactive flux that
-follows the correct pathway branch when species Si reacts to
-form products. The branching ratio is simply the reactive flux
-along the correct Jth branch divided by the total reactive flux of
-species $S_i$, i.e.
-\begin{equation}
-\label{ch3:eqn7}
-\Gamma_i(t) \equiv \frac{A_{i,J}(t)}{A_i{(t)}}
-\end{equation}
-In this notation we drop the explicit J-index on $\Gamma$. Given these
-expressions, we have shown that the pathway probability can be
-written as an integral of a time ordered product\cite{ch3_6_bai2014sum,ch3_25_mjolsness2013time}
-\begin{equation}
-\label{ch3:eqn8}
-\begin{split}
-P_{path}(t_0,t)&= (-1)^n \int_{t_0}^{t_f}{dt_n \int_{t_0}^{t_n}{dt_{n-1} \cdots }} \int_{t_0}^{t_2}{dt_1} \\
-&  \prod_{i=1}^{n}{\left( \frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i} \Gamma_{i-1}(t_i) \right) \mathcal{P}_{n}(t_n,t)}
-\end{split}
-\end{equation}
-This multidimensional integral can be numerically evaluated
-using a Monte Carlo integration scheme that is particularly
-efficient for long paths. In this method, a random number $y_0$ is
-first chosen for species $S_0$ in the interval $(P_{min}^{0}(t_0),1)$ where
-$P_{min}^{0}(t_0) = \mathcal{P}_0(t_0, t)$ is the minimum of the survival probability of
-$S_0$ that occurs at $t$. Then, $y_0=\mathcal{P}_0(t_0,t_1)$ is inverted to obtain $t_1$, the time of the reaction $R_1$, which is used in eqn. \ref{ch3:eqn7}. Then, for species $S_1$ a second random number, $y_1$, is chosen in the interval
-$P_{min}^{1}(t_1)$; as before, the reaction time $t_2$ is obtained and
-branching ratio $\Gamma _2$ is computed. This process is continued for
-all the followed-atom containing species along the pathway,
-which thus requires a string of n random numbers. We have for
-the final MC expression
-\begin{equation}
-\label{ch3:eqn9}
-P_{path}(t_0,t)= \frac{1}{N} \sum_{q=1}^{N} {\mathcal{P}_n(t_n^q, t) \prod_{k=1}^{n} \left( \Gamma_{k-1}(t_k^{q})\left( 1-P_{min}^{k-1}(t_k^q)\right)  \right) }
-\end{equation}
-where the index q is used to specify each string of n-random numbers.
+To find the probability for a given pathway, We adopted the importance sampling based technique mentioned in Section \ref{ch2:sec:path_prob} using a modest number of MC string.
 \newline
 \paragraph{}
 The final step in the method is to combine the pathway
-probabilities to obtain the desired observable. Most observables
+probabilities to obtain the desired observable. As discussed in Section \ref{ch2:sec:const_ob}, most observables
 of interest can be expressed in terms of the chemical
 concentrations. Thus, we describe how to compute the
 concentration of some species $S_i$ at a time $t_f$, $X_i(t_f)$, given the
@@ -293,24 +210,19 @@ initial conditions $\mathbf{X}(t)$ at time $t_0$. We follow a specific atom foun
 in $X_i(t_f)$ that may potentially originate from one of several
 initial species, $S_k$, each of which may contain more than one
 chemically equivalent followed atom, viz. $\mu_k$. The pathways are
-labeled by “$m_k$” where $k$ specifies the species of origin for the
+labeled by “$j_k$” where $k$ specifies the species of origin for the
 path of the followed atom. The probability of the atom
-following pathway $m_k$ from initial species $S_k$ arriving at the
-target species $S_i$ at time $t_f$ is given by $P_{m_k}(t_f)$. Then the
-concentration of $S_i$ is given by
-\begin{equation}
-\label{ch3:eqn10}
-X_{i}(t_f) \cdot \mu_i = \sum_{m_k}{X_{k}(t_0) P_{m_k}(t_f) \cdot \mu_k}
-\end{equation}
-where we define $X_i$ to be the concentration of species $S_i$. Each
+following pathway $j_k$ from initial species $S_k$ arriving at the
+target species $S_i$ at time $t_f$ is given by $P_{j_k}(t_f)$. Then the
+concentration of $S_i$ is given by eqn. \ref{ch2:eqn16}. Where we define $X_i$ to be the concentration of species $S_i$. Each
 chemically equivalent followed atom in a reagent species is
 sampled equally and the sum of all probabilities for a given
-followed atom is 1, and thus, $\sum_{m_k}{P_{m_k}(t)} = 1$, at any time $t>t_0$.
+followed atom is 1, and thus, $\sum_{j_k}{P_{j_k}(t)} = 1$, at any time $t>t_0$.
 
 \subsection{Sensitivity Analysis}
 In sensitivity analysis, we define a
 target observable, $\tau$, that is computed using solutions to the
-kinetics equation eqn. \ref{ch3:eqn2} and is a function of the variable factors.
+kinetics equation eqn. \ref{ch2:eqn2} and is a function of the variable factors.
 Examples of $\tau$ might be the concentration of a species $S_i$ at a
 specific time or the ignition delay time in a combustion
 problem. To be explicit, we shall consider the variable factors to
@@ -388,7 +300,7 @@ the model.
 In the present work, we shall focus on the most basic set of
 target functions of the rate coefficients, viz. the $S_i$ species
 concentration at time t, i.e., $\tau=X_i(t)$. The sensitivity indices are
-obtained by simply solving the differential eqn. \ref{ch3:eqn2} from fixed
+obtained by simply solving the differential eqn. \ref{ch2:eqn2} from fixed
 initial conditions, $\mathbf{X}(t=0)$ while varying ${k_j}'s$. These quantities are
 a probe of the “speciation” of the reaction network which may,
 under some circumstances, be directly measured in experiments.
@@ -402,7 +314,7 @@ the contributions of separate chemical pathways via
 \tau = \sum_{i}{c_ip_i}
 \end{equation}
 In eqn. \ref{ch3:eqn17:tau}, $p_i$ are the pathway probabilities and the constants
-$c_i$ do not depend explicitly on $p_i$. From eqn. \ref{ch3:eqn10} we see that for speciation the ${c_i}'s$ are given by the initial concentrations and the
+$c_i$ do not depend explicitly on $p_i$. From eqn. \ref{ch2:eqn16} we see that for speciation the ${c_i}'s$ are given by the initial concentrations and the
 stoichiometric coefficients and do not depend on the rate
 coefficients. Hence the sensitivity of this target to the $k's$ is
 carried totally by the pathway probabilities themselves.
@@ -500,7 +412,7 @@ disproportionation reaction (R13) becomes larger at longer
 times. We also notice that the rate for R15 (H$_2$O$_2$ + M $\rightarrow$ 2OH
 + M), which is an important sink for H$_2$O$_2$, crosses that for
 both R13 and R17$\ast$. We also show, in Fig. \ref{ch3:fig3}, the behavior of
-the species decay rate (defined as $A_i(t)$ in eqn. \ref{ch3:eqn5}) for all eight
+the species decay rate (defined as $A_i(t)$ in eqn. \ref{ch2:eqn10}) for all eight
 species versus time. It is seen that the chemical lifetimes of the
 key species H$_2$O$_2$ and HO$_2$ are on the order of $10^{-3}$ s, which is
 comparable to the ignition time itself.
@@ -530,7 +442,7 @@ the ignition time. The reaction index is defined in Table \ref{ch3:spe_label} an
 \end{figure}
 The global sensitivity indices for the speciation targets $\tau=X_i(t)$ for i = 1−8 were computed at a grid of times between t =
 0 and the ignition time, $\tau_{ign}$. These computations employed
-numerical solutions of the kinetic rate equations, eqn. \ref{ch3:eqn2}, with
+numerical solutions of the kinetic rate equations, eqn. \ref{ch2:eqn2}, with
 rate coefficients randomly selected from within their
 uncertainty ranges. For rate coefficients of the form $k(T)=AT^{\delta}exp\left( -{E_a}/\left({RT}\right)\right)$, this sampling is accomplished by varying the value of the pre-exponential factor A. The rate coefficients
 reverse reactions are set by detailed balance and thus are not
@@ -543,7 +455,7 @@ HDMR component functions $F_i(k_i)$ from eqn. \ref{ch3:eqn15:HDMR} were fit by
 regression to fifth-order expansions in Legendre polynomials in
 a single fitting procedure consisting of 19 $\times$ 6 = 114
 parameters. As in our previous work, the sensitivity indices
-were then obtained by integration using eqn. \ref{ch3:eqn10}.\cite{ch3_41_skodje2010theoretical,ch3_42_klippenstein2011uncertainty,ch3_43_davis2011global,ch3_44_zhou2013multitarget} In Fig. \ref{ch3:fig4} we show the sensitivity indices $W_i$ versus time for all 8
+were then obtained by integration using eqn. \ref{ch2:eqn16}.\cite{ch3_41_skodje2010theoretical,ch3_42_klippenstein2011uncertainty,ch3_43_davis2011global,ch3_44_zhou2013multitarget} In Fig. \ref{ch3:fig4} we show the sensitivity indices $W_i$ versus time for all 8
 species. For clarity, we have included in the plot only the most
 important reactions. It is seen that reactions R17, R15, R13, R9,
 and R0 have consistently the highest values of $W_i$. We note that
@@ -640,8 +552,8 @@ the present problem, typically about 100 pathways were
 identified in this way, although many fewer were needed to
 converge the targets. Although this calculation is not efficient
 enough to compute accurate pathway probabilities, it does yield
-the important pathways for high level computation using eqn. \ref{ch3:eqn8}
-or \ref{ch3:eqn9}. Because the ordering of the pathway probabilities will be
+the important pathways for high level computation using eqn. \ref{ch2:eqn13}
+or \ref{ch2:eqn14}. Because the ordering of the pathway probabilities will be
 a function of $\mathbf{k}$, we retain some of the smaller probability
 pathways because they may become larger in certain regions of
 k-space.

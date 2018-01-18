@@ -15,17 +15,7 @@ A new approach is presented for simulating the time-evolution of chemically reac
 Simulation of chemical reaction networks using mass-action chemical kinetics provides an invaluable tool for uncovering chemical mechanisms and predicting time-dependent chemical behavior as functions of controllable parameters such as temperature, pressure, and initial concentrations.  As chemical mechanisms grow large, such as for hydrocarbon combustion, the resulting kinetic behavior can become quite difficult to physically decipher and, in some cases, the simulations themselves can bog down due to the proliferation of species and the need for small time steps owing to the existence of multiple time scales.  Thus, considerable effort has been devoted in the disciplines of chemistry, biochemistry, physics and engineering to interpreting and simplifying kinetic behavior in complex networks.
 \newline
 \paragraph{}
-The usual computational approach to mass-action kinetics involves constructing and solving a set of differential equations in the continuous concentration variables $X_i(t)$ that model the local rates of formation and destruction of each of the N chemical species, $S_i$,\cite{ch4_1_laidler1987chemical,ch4_2_steinfeld1989chemical,ch4_3_pilling1996reaction} i.e. 
-\begin{equation}
-\label{ch4:eqn:1}
-\frac{dX_i}{dt}=\sum_{j}^{sources}{v_{i,j}R_j} - \sum_{j}^{sinks}{{\tilde{v}}_{i,j}^{}R_j} ~~~i=1,\cdots, N
-\end{equation}
-For the M elementary reaction steps, defined by
-\begin{equation}
-\label{ch4:eqn:2}
-\sum_{i}^{reactants}{{\tilde{v}}_{i,j}^{}R_j} = \sum_{i}^{products}{v_{i,j}^{}R_j}~~~j=1,\cdots, M
-\end{equation}
-the explicit rate laws $R_j(\mathbf{X})$ are provided by an external experimental or theoretical determination and $v_{i,j}$ are known constants.  This representation is properly regarded as a mean field theory that becomes valid in the thermodynamic limit.   For systems involving very low concentrations or strong local environment effects, more intensive simulations may be used that employ stochastic or Monte Carlo algorithms that may account for the influence of fluctuations.\cite{ch4_4_mcquarrie1967stochastic,ch4_5_gillespie1976general,ch4_6_kampen2007langevin}
+The usual computational approach to mass-action kinetics involves constructing and solving a set of differential equations in the continuous concentration variables $X_i(t)$ that model the local rates of formation and destruction of each of the N chemical species, $S_i$. (Underpinning kinetics equations are defined in eqns. \ref{ch2:eqn2} and \ref{ch2:eqn3}.) For the M elementary reaction steps, defined in eqn. \ref{ch2:eqn1}, the explicit rate laws $R_j(\mathbf{X})$ are provided by an external experimental or theoretical determination and $v_{i,j}$ are known constants.\cite{ch4_1_laidler1987chemical,ch4_2_steinfeld1989chemical,ch4_3_pilling1996reaction} This representation is properly regarded as a mean field theory that becomes valid in the thermodynamic limit.   For systems involving very low concentrations or strong local environment effects, more intensive simulations may be used that employ stochastic or Monte Carlo algorithms that may account for the influence of fluctuations.\cite{ch4_4_mcquarrie1967stochastic,ch4_5_gillespie1976general,ch4_6_kampen2007langevin}
 \newline
 \paragraph{}
 In this paper, we propose a new method to simulate the kinetics of general nonlinear mechanisms that builds on, and fundamentally extends, our earlier work.\cite{ch4_7_kramer2014following,ch4_8_bai2014sum,ch4_9_bai2015sum,ch4_10_bai2016sum} In contrast to the local rate equation approach to kinetics, we propose a self-contained global method based on chemical pathways that tracks molecules and fragments as they move throughout the network.  A pathway follows a chemical moiety, at a molecular level, as it hops from species to species under the influence of elementary chemical steps. A convenient approach to the unique specification of a chemical pathway utilizes an atom-following algorithm.  If, e.g., the carbon-atom in a CH$_4$ reagent is initially “tagged”,  $\textcolor{red}{\textbf{C}}\text{H}_4(+\text{OH}) \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3 (+\text{OH})  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_2 (+\text{O}) \xrightarrow[\text{R}_{3}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_2\text{O}$ defines a three-step pathway leading from CH$_4$ to the product CH$_2$O.  Each reaction is modeled as a random event governed by transition probabilities obtained from the elementary rate laws.  By constructing paths for a complete set of atoms in the initial state at a time $t_0$, it is possible to predict the subsequent values of any kinetic observable given the pathway probabilities (see below).  Hence, the method is global in the sense that it replaces local rate equations based on instantaneous rates for individual species with expressions that span the entire network over finite times using multistep chemical pathways.
@@ -69,15 +59,14 @@ interpretive analysis, the nonlinear kinetics was first solved
 using conventional kinetics to obtain a reference trajectory,
 $\mathbf{X}(t)$, and then the kinetics was decomposed into contributing
 pathways. In this work, we overcome this limitation and formulate the SOHR as a predictive theory that does not
-require a solution to eqn. \ref{ch4:eqn:1}. In this way, the need to solve the
+require a solution to eqn. \ref{ch2:eqn2}. In this way, the need to solve the
 usual differential equations of mass action kinetics is avoided,
 and the pathway probabilities can be solved in a self-consistent
 manner.
 \newline
 \paragraph{}
 The key to our formulation is the use of an iterative solution
-technique to obtain the pathway probabilities. After a brief
-review of the interpretive SOHR method, the iterative SOHR
+technique to obtain the pathway probabilities. Here The iterative SOHR
 method is presented. Given a set of chemical pathways, the
 pathway probabilities and the species concentrations are
 obtained simultaneously by the iteration. A strategy to identify
@@ -88,3 +77,59 @@ presented demonstrate that the method is accurate and quickly
 convergent. We conclude with a discussion of the possible
 advantages of the new method.
 \section{The Predictive SOHR Method}
+For a linear kinetic network, the SOHR formulation is automatically predictive
+since the pathway probabilities are known analytically via eqn. \ref{ch2dot5:eqn1}.
+Thus, if a sufficient number of pathways are enumerated, the
+sums in eqn. \ref{ch2:eqn16} are guaranteed to converge to the correct
+concentration functions. However, we can immediately see a
+difficulty in applying this formalism to general nonlinear kinetic
+networks. Namely, the quantities Ai,m(t) are no longer constants
+and pathway probabilities seen to require the solution to the
+conventional kinetics eqn. \ref{ch2:eqn2} as input into eqn. \ref{ch2:eqn11}. In a departure
+from our previous work, we now show how this requirement
+can be avoided using a new methodology.
+\newline
+\paragraph{}
+We shall assume that a finite number of distinct pathways, $J$,
+is adequate to accurately describe the evolution of the N species
+concentrations $X_i(t)$ over a time interval $t \in (0, T)$ . In the next
+paragraph, we discuss how those pathways may be identified. If
+the concentrations $X(t) = \left(X_1(t),\cdots,X_N(t)\right)$, which solve eqn. \ref{ch2:eqn2}
+with initial conditions $\mathbf{X}(t = t_0) = {\textbf{X}}_0$ are known, by some
+method, then the $J$ probability functions $\overline{\mathbf{P}}(t_0,t) = \left(P_1(t_0, t), \cdots,
+P_J(t_0, t)\right)$ can be calculated using eqn. \ref{ch2:eqn13} or \ref{ch2:eqn14}. We can express this
+fact using the functional relation
+\begin{equation}
+\label{ch4:eqn12}
+\overline{\mathbf{P}}(t_0,t) = \overline{\mathbf{F}} \left[ \mathbf{X} \right]
+\end{equation}
+The concentrations are likewise represented as linear
+combinations of pathway probabilities (eqn. \ref{ch2:eqn16}) that can be
+symbolically represented as
+\begin{equation}
+\label{ch4:eqn13}
+\mathbf{X}(t) = \overline{\overline{\mathbf{G}}} \cdot \overline{\mathbf{P}}(t_0,t)
+\end{equation}
+Here $ \overline{\mathbf{P}}$ and $ \overline{\mathbf{F}}$ are $J$-dimensional vectors, $\mathbf{X}$ is a $N$-dimensional
+vector, and $\overline{\overline{\mathbf{G}}}$ is a $N \times J$ matrix. In order to solve the kinetics
+problem, we need to simultaneously solve eqns. \ref{ch4:eqn12} and \ref{ch4:eqn13} to
+obtain the self-consistent solution $\left[ \mathbf{X}(t), \overline{\mathbf{P}}(t_0,t) \right]$ . A standard
+approach to a problem such as this is to employ functional
+iteration.\cite{ch4_27_roussel1990geometry} Thus, one makes an initial guess for the
+concentrations that is then used to obtain the pathway
+probabilities. These probabilities are then used to recompute
+the concentrations. If $m$ is the iteration number, we have
+\begin{equation}
+\label{ch4:eqn14}
+{\overline{\mathbf{P}}}^{m+1}(t_0,t) = \overline{\mathbf{F}} \left[ {\mathbf{X}}^{m} \right]
+\end{equation}
+\begin{equation}
+\label{ch4:eqn15}
+{\mathbf{X}}^{m+1}(t) = \overline{\overline{\mathbf{G}}} \cdot {\overline{\mathbf{P}}}^{m}(t_0,t)
+\end{equation}
+The iteration is continued until convergence is obtained. We
+view the convergence properties and stability of this functional
+iteration as an empirical matter. In our numerical applications,
+we have found that the iteration is stable, given a sensible initial
+guess, and the iteration converges within 10 steps to a level
+consistent with the numerical error of the MC integration of $\overline{\mathbf{P}}(t_0,t)$.

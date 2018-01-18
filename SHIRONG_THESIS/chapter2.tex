@@ -1,16 +1,22 @@
-\chapter{Mathematical development}
+\chapter{Mathematical Development}
 \label{mathchapter}
+Some of the contents of this chapter are reprinted, with permission, from \
+\begin{enumerate}
+\item[\cite{ch4_10_bai2016sum}] Bai, S., \& Skodje, R. T. The Sum Over Histories Representation for Chemical Kinetics: A Quantitative Theory Based on Chemical Pathways. \textit{International Reviews in Physical Chemistry}, 35(4), 539-567. \textbf{2016}
+\end{enumerate}
+\section{Introduction}
+\label{ch2:sec:intro}
 The application of the SOHR approach requires a well-defined chemical model, and
 thus we begin with a review of conventional kinetics. The chemistry of a reaction network
 is traditionally modeled using mass-action kinetics where the concentrations for
-N-species are solved as functions of time, i.e. $\left(X_1(t), X_2(t), \cdots X_N(t)\right) = X(t)$. We shall
+$N$-species are solved as functions of time, i.e. $\left(X_1(t), X_2(t), \cdots X_N(t)\right) = X(t)$. We shall
 assume that the chemical model under consideration consists of M elementary chemical
 reactions in a homogeneous well-stirred reactor
 \begin{equation}
 \label{ch2:eqn1}
 \sum_{i}^{reactants}{{\bar{v}}_{i,j}S_i} = \sum_{i}^{products}{v_{i,j}S_i} ~~~j=1,\cdots,M 
 \end{equation}
-involving N distinct chemical species $S_i$ which have concentration $X_i$. The molecularities,
+involving $N$ distinct chemical species $S_i$ which have concentration $X_i$. The molecularities,
 $v_{i,j}$ and ${\bar{v}}_{i,j}$, enforce the elemental mass conservation for each reaction indexed by
 j. The rate of each reaction is given by a well-defined rate law, $R_j(\mathbf{X})$. [Nothing
 prevents the SOHR method from being applied to problems with time-dependent rate
@@ -48,7 +54,7 @@ mean field ean. \ref{ch2:eqn2}. It is also much more difficult to solve the CME 
 concentration based kinetics equations. The most effective numerical techniques for
 solving the CME involve averaging many stochastic trajectories which simulate the
 time evolution of a large ensemble of molecules.
-\section{Defining chemical pathways}
+\section{Defining Chemical Pathways}
 \label{ch2:def_path}
 The basic units of description in the SOHR are the chemical pathway themselves. The
 pathways represent the condition of a chemical moiety as it moves from species to species
@@ -214,7 +220,7 @@ written as an integral of a time-ordered product.\cite{ch1_IRPC_16_bai2014sum,ch
 \begin{equation}
 \label{ch2:eqn13}
 \begin{split}
-P_{path}(t_0,t)&= (-1)^n \int_{t_0}^{t_f}{dt_n \int_{t_0}^{t_n}{dt_{n-1} \cdots }} \int_{t_0}^{t_2}{dt_1} \\
+P_{path}(t_0,t_f)&= (-1)^n \int_{t_0}^{t_f}{dt_n \int_{t_0}^{t_n}{dt_{n-1} \cdots }} \int_{t_0}^{t_2}{dt_1} \\
 &  \prod_{i=1}^{n}{\left( \frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i} \Gamma_{i-1}(t_i) \right) \mathcal{P}_{n}(t_n,t)}
 \end{split}
 \end{equation}
@@ -239,7 +245,7 @@ We have for the final MC expression
 P_{path}(t_0,t_f)= \frac{1}{N} \sum_{q=1}^{N} {\mathcal{P}_n(t_n^q, t_f) \prod_{k=1}^{n} \left( \Gamma_{k-1}(t_k^{q})\left( 1-P_{min}^{k-1}(t_k^q)\right)  \right) }
 \end{equation}
 where the index q is used to specify each string of n-random numbers where, in this
-equation only, N is the size of the MC sampling. It is important to note that, except for
+equation only, $N$ is the size of the MC sampling. It is important to note that, except for
 linear or steady state systems, the SOHR apparently requires input from the traditional
 kinetics representation since the pseudo-first-order rate coefficients $A_{i,j}(t)$ are computed
 using the kinetic solutions $\mathbf{X}(t)$. The reference trajectory $\mathbf{X}(t)$ is an input when treating
@@ -284,3 +290,147 @@ path. The concentration of $S_i$ is thus seen to be
 Most other kinetic observables can be expressed in terms of the species concentrations,
 and hence the pathway representation can be employed to analyse most kinetic
 problems.
+\section{Graph Theoretic Enumeration of Chemical Pathways}
+\label{ch2:sec:theo_enu_path}
+While eqn. \ref{ch2:eqn16} provides a means to represent kinetic observables given a sufficient
+number of paths, we must still devise a method to generate those paths. For simple
+mechanisms that contain a small number of species and reactions, it is possible to
+construct the chemical pathways by inspection or with chemical insight. When the
+mechanism is complicated, however, it becomes necessary to employ a more systematic
+algorithm. A useful approach involves the use of graph theoretic methods.\cite{ch1_IRPC_29_balaban1976chemical} We
+construct the chemical graph using two sorts of elements: vertices and edges. The vertices,
+represented by dots on the graph, are species which contain the followed-atom.
+The edges (or lines) on the graph connect the vertices and correspond to elementary
+reactions that deliver the followed-atom from one species (vertex) to another. The
+kinetic graphs employed here have certain specific characteristics which prove useful.
+First, the graphs are directed since the elementary reactions have a sense of direction.
+Second, the graphs are weighted since the edges are quantified by the pseudo-first-order
+rate coefficients, $A_{i,j}$. Third, the kinetic graphs are multigraphs since there may be more
+than one edge connecting two given vertices. Fourth, the graphs are dynamical since
+the weights are generally time-dependent. A unique chemical pathway of length n is
+represented by a specific directed sequence of n + 1-vertices and n-edges on the graph.
+\newline
+\paragraph{}
+Elementary graph theory can be used to enumerate those chemical pathways that
+are sufficiently short. Consider first the case of simple graphs where at most one edge
+connects any two vertices and no vertex is connected by an edge to itself. This might
+describe, e.g. the case of a totally linear kinetic network. We define the adjacency
+matrix, $\mathbf{M}$, as an $N$ $\times$ $N$ matrix (where $N$ is the order of graph, i.e. the number of vertices)
+which has the matrix elements given by
+\begin{eqnarray}
+  M_{i,j} = \twochoices
+	{1, && if ~i ~and ~j ~are ~connected ~by ~an ~edge}
+	{0, && if ~i ~and ~j ~are ~not ~connected ~by ~an ~edge}
+\label{ch2:eqn17}
+\end{eqnarray}
+For a simple graph, it is not hard to show that the total number of paths of length n
+between species $i$ and $j$, $K(n; i, j)$, is given by
+\begin{equation}
+\label{ch2:eqn18}
+K(n;i,j) = {\left( {\mathbf{M}}^n \right)}_{i,j}
+\end{equation}
+Furthermore, we can explicitly generate these $K(n; i, j)$ paths using matrix multiplication.
+Define the closely related S-matrix to be $S_{i,j} = M_{i,j}s_j$, where the dummy variable $s_j$
+is the species label (i.e. a symbol). Then the sum of paths of length n may be obtained
+by expanding out the $(i,j)$th matrix element in the product
+\begin{equation}
+\label{ch2:eqn19}
+s_i \times {\left(  {\mathbf{S}}^n \right)}_{i,j}
+\end{equation}
+These $K(n; i, j)$ symbol sequences of species labels uniquely define paths on a simple
+graph since only one possible edge can connect any two vertices.
+\newline
+\paragraph{}
+The situation is more complicated for a general kinetic multigraph where more than
+one reaction (i.e. edge) can deliver a tagged atom between two species. In this case we
+need to specify which edge is being followed by the tagged atom. For a multigraph,
+define the generalized adjacency matrix, $\mathbf{M}$, to be
+\begin{eqnarray}
+  M_{i,j} = \twochoices
+	{m_{i,j}, && if ~i ~and ~j ~are ~connected ~by ~m_{i,j} ~edge}
+	{0, && if ~i ~and ~j ~are ~not ~connected ~by ~an ~edge}
+\label{ch2:eqn20}
+\end{eqnarray}
+Then, again, the number of paths of length n connecting species $i$ and $j$ is given by the
+matrix element of ${\mathbf{M}}^n$ specified in eqn. \ref{ch2:eqn18}. To explicitly generate these paths, we generalize the $\mathbf{S}$-matrix above to the $\mathbf{SR}$-matrix that represents both the species and
+reactions involved in the path. We define
+\begin{eqnarray}
+  {\left(  SR \right)}_{i,j} = \twochoices
+	{\sum{r \left( i,j \right) \times s_j}, && if ~M_{i,j} \neq 0}
+	{0, && if ~M_{i,j} = 0}
+\label{ch2:eqn21}
+\end{eqnarray}
+where $r \left( i,j \right)$ are the $m_{i,j}$ dummy variables (i.e. symbols) labeling the elementary reactions
+connecting species $i$ and $j$, directed as $i \xrightarrow[]{} j$, and $s_j$ are again species symbols.
+The sum of symbol sequences for paths of length $n$ are obtained expanding the matrix
+product
+\begin{equation}
+\label{ch2:eqn22}
+s_i \times {\left(  {SR}^n \right)}_{i,j}
+\end{equation}
+The most straightforward approach to the pathway enumeration problem in the SOHR is
+to use the expansion in eqn. \ref{ch2:eqn22} to compute all the paths of length up to $n = n_{max}$,
+and then converge the observables by progressively increasing this maximum length.
+\newline
+\paragraph{}
+Obviously the number of potential paths can grow tremendously large as the path
+length $n$, or graph order $N$, increases. Even with the efficient MC-algorithm for computing
+the pathway weights, eqn. \ref{ch2:eqn14}, the SOHR method can bog down if the number
+of paths required becomes too large. We point out, however, that it is common to
+find that many of the paths enumerated in eqn. \ref{ch2:eqn22} have very low probabilities
+and make a negligible contribution in the expansion of the observables. Hence, it is
+often advisable to use a method that selects the most important pathways rather than
+simply employing a full expansion of all paths up to a given length. This brings us to
+the topic of path search algorithms.
+\newline
+\paragraph{}
+It is a classic problem in computer science to locate optimal paths on a weighted
+graph.\cite{ch1_IRPC_40_leiserson2001introduction} For example, there have been a number of algorithms developed to systematically
+find the shortest path between two vertices where the edge weight, $w_i$, is identified
+as a length. In that problem, the path length, i.e. the sum of lengths of individual
+edges $L = \sum{w_i}$, is minimised by varying the path itself. The Dijkstra algorithm\cite{ch1_IRPC_41_dijkstra1959note} is a
+commonly used procedure to solve this problem. The Bellman-Ford\cite{ch1_IRPC_42_bellman1958routing} and A*-search
+algorithms\cite{ch1_IRPC_43_hart1968formal} are also well-known methods and provide somewhat more computationally
+efficient approaches. The present kinetics system is different from the
+traditional shortest path problem in several ways. First, we generally need to find many
+important paths rather than a single optimal path. This is not a major problem since
+several of the traditional optimal path methods have been generalised to obtain the
+'K-shortest paths' on a weighted graph\cite{ch1_IRPC_44_eppstein1998finding}. Second, the chemical paths we seek will
+maximise a probability rather than minimising a length. The total probability of a
+chemical pathway is related to the product of weights for each edge rather than the
+sum of edge weights used for computing path length. This distinction is easily overcome
+by taking the logarithm of the pathway weights which converts the product into
+a sum. Third, and most problematic, as a dynamical graph\cite{ch1_IRPC_45_harary1997dynamic} the weights of the
+kinetic graph are time-dependent and thus the optimization process is itself time-dependent.
+This is because the weights of the edges are computed from the time-dependent
+pseudo-first-order rate coefficients $A_{i,j}(t)$. One simple shortcut around this problem
+would be to hold fixed the values of $A_{i,j}(t)$ at some particular time value and carry out
+the optimization for the resulting static graph. Alternatively, one might carry out the
+search using weights averaged over some time interval. The time-independent weights
+might also be updated during the run according to some criterion. While the static
+approximations to the dynamical graph problem may prove useful for some problems,it is easy to imagine scenarios where the true high probability pathways are not
+correctly identified. Therefore, we have adopted an approach based on stochastic sampling
+which is discussed in the next section.
+\section{Stochastic Pathway Enumeration}
+\label{ch2:sec:Stochastic_pathway_enumeration}
+We have devised a simple method to enumerate the important chemical pathways on a
+dynamical graph using a stochastic sampling method closely related to the simulation
+algorithm developed by Gillespie and coworkers\cite{ch1_IRPC_36_gillespie2013perspective} and others\cite{ch1_IRPC_46_tosatto2013simplifying}. Imagine that we
+want to identify important paths that carry a tagged atom from an initial species, $S_0$, to
+a final species $S_f$. We can locate such pathways by propagating individual molecules
+through the reaction network using a kinetic MC simulation. An individual molecule of
+type $S_i$ carrying the tagged atom has a instantaneous transition probability (not PDF) for going to species
+$S_k$ by reaction $R_j$ given by
+\begin{equation}
+\label{ch2:eqn23}
+TP\left(  S_i \xrightarrow[]{} S_k; R_j \right) = A_{i,j}(t) \times \gamma_k^j
+\end{equation}
+Where $\gamma_k^j$ indicates the branching ratio the 'tagged' atom flows into species $S_k$ given reaction $R_j$ ($\gamma_k^j$ is typically a constant tensor). Using importance sampling based on the species survival probability, as above, the
+tagged atom can be propagated efficiently through the network via a random walk. For
+one step of that walk, a single random number determines the reaction time while a
+second random number selects the product branching. Those paths that go from $S_0$ to
+$S_j$ are recorded. Using a modest number of such MC trajectories, a list of the important
+paths along with their approximate ranking is obtained. While this method is not appropriate
+for locating rare paths, we have found it very useful for many of the kinetic systems
+we have studied. Since this method involves probabilistic sampling, it is naturally
+possible that paths can be missed if too few random walks are employed.

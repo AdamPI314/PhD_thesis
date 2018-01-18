@@ -1,4 +1,4 @@
-PWD D:/Google Drive/documents/phd_graduation/Thesis/SHIRONG_THESIS
+PWD D:/Github/SOHR/projects/PhD_thesis/SHIRONG_THESIS
 INPUT c:/Program Files/texlive/2017/texmf.cnf
 INPUT c:/Program Files/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT c:/Program Files/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -143,15 +143,31 @@ INPUT chapter1.tex
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT chapter2.tex
-INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
-INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT figs/chapter2/fig1.png
 INPUT ./figs/chapter2/fig1.png
 INPUT ./figs/chapter2/fig1.png
+INPUT chapter2dot5.tex
+INPUT figs/chapter2dot5/fig2.png
+INPUT ./figs/chapter2dot5/fig2.png
+INPUT ./figs/chapter2dot5/fig2.png
+INPUT figs/chapter2dot5/fig3.png
+INPUT ./figs/chapter2dot5/fig3.png
+INPUT ./figs/chapter2dot5/fig3.png
+INPUT figs/chapter2dot5/fig4.png
+INPUT ./figs/chapter2dot5/fig4.png
+INPUT ./figs/chapter2dot5/fig4.png
+INPUT figs/chapter2dot5/fig5.png
+INPUT ./figs/chapter2dot5/fig5.png
+INPUT ./figs/chapter2dot5/fig5.png
+INPUT figs/chapter2dot5/fig6.png
+INPUT ./figs/chapter2dot5/fig6.png
+INPUT ./figs/chapter2dot5/fig6.png
 INPUT chapter3.tex
-INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT figs/chapter3/fig1.png
 INPUT ./figs/chapter3/fig1.png
 INPUT ./figs/chapter3/fig1.png
@@ -271,3 +287,4 @@ INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

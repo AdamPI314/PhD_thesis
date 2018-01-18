@@ -1,0 +1,5 @@
+PWD D:/Google Drive/documents/phd_graduation/Thesis/SHIRONG_THESIS
+INPUT c:/Program Files/texlive/2017/texmf.cnf
+INPUT c:/Program Files/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT c:/Program Files/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT ./mythesis.tex

@@ -1,0 +1,273 @@
+PWD D:/Google Drive/documents/phd_graduation/Thesis/SHIRONG_THESIS
+INPUT c:/Program Files/texlive/2017/texmf.cnf
+INPUT c:/Program Files/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT c:/Program Files/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT ./mythesis.tex
+OUTPUT mythesis.log
+INPUT thesis.cls
+INPUT thesis.cls
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/base/report.cls
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/base/report.cls
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/base/size11.clo
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/base/size11.clo
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/url/url.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/url/url.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT mythesis.aux
+INPUT mythesis.aux
+OUTPUT mythesis.aux
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT mythesis.out
+INPUT mythesis.out
+INPUT mythesis.out
+INPUT mythesis.out
+OUTPUT mythesis.pdf
+INPUT ./mythesis.out
+INPUT ./mythesis.out
+OUTPUT mythesis.out
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Program Files/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT mythesis.toc
+INPUT mythesis.toc
+OUTPUT mythesis.toc
+INPUT mythesis.lot
+INPUT mythesis.lot
+OUTPUT mythesis.lot
+INPUT mythesis.lof
+INPUT mythesis.lof
+OUTPUT mythesis.lof
+INPUT macros.tex
+INPUT chapter1.tex
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT chapter2.tex
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT figs/chapter2/fig1.png
+INPUT ./figs/chapter2/fig1.png
+INPUT ./figs/chapter2/fig1.png
+INPUT chapter3.tex
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT figs/chapter3/fig1.png
+INPUT ./figs/chapter3/fig1.png
+INPUT ./figs/chapter3/fig1.png
+INPUT figs/chapter3/fig2.png
+INPUT ./figs/chapter3/fig2.png
+INPUT ./figs/chapter3/fig2.png
+INPUT figs/chapter3/fig3.png
+INPUT ./figs/chapter3/fig3.png
+INPUT ./figs/chapter3/fig3.png
+INPUT figs/chapter3/fig4.jpg
+INPUT ./figs/chapter3/fig4.jpg
+INPUT ./figs/chapter3/fig4.jpg
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT figs/chapter3/fig5.png
+INPUT ./figs/chapter3/fig5.png
+INPUT ./figs/chapter3/fig5.png
+INPUT figs/chapter3/fig6.jpg
+INPUT ./figs/chapter3/fig6.jpg
+INPUT ./figs/chapter3/fig6.jpg
+INPUT figs/chapter3/fig7.png
+INPUT ./figs/chapter3/fig7.png
+INPUT ./figs/chapter3/fig7.png
+INPUT figs/chapter3/fig8.jpg
+INPUT ./figs/chapter3/fig8.jpg
+INPUT ./figs/chapter3/fig8.jpg
+INPUT figs/chapter3/fig9.png
+INPUT ./figs/chapter3/fig9.png
+INPUT ./figs/chapter3/fig9.png
+INPUT figs/chapter3/fig10.jpg
+INPUT ./figs/chapter3/fig10.jpg
+INPUT ./figs/chapter3/fig10.jpg
+INPUT figs/chapter3/fig11.png
+INPUT ./figs/chapter3/fig11.png
+INPUT ./figs/chapter3/fig11.png
+INPUT figs/chapter3/fig12.png
+INPUT ./figs/chapter3/fig12.png
+INPUT ./figs/chapter3/fig12.png
+INPUT figs/chapter3/fig13_a.png
+INPUT ./figs/chapter3/fig13_a.png
+INPUT ./figs/chapter3/fig13_a.png
+INPUT figs/chapter3/fig13_b.png
+INPUT ./figs/chapter3/fig13_b.png
+INPUT ./figs/chapter3/fig13_b.png
+INPUT figs/chapter3/fig13_c.png
+INPUT ./figs/chapter3/fig13_c.png
+INPUT ./figs/chapter3/fig13_c.png
+INPUT figs/chapter3/fig13_d.png
+INPUT ./figs/chapter3/fig13_d.png
+INPUT ./figs/chapter3/fig13_d.png
+INPUT figs/chapter3/fig13_e.png
+INPUT ./figs/chapter3/fig13_e.png
+INPUT ./figs/chapter3/fig13_e.png
+INPUT figs/chapter3/fig14_1.png
+INPUT ./figs/chapter3/fig14_1.png
+INPUT ./figs/chapter3/fig14_1.png
+INPUT figs/chapter3/fig14_2.png
+INPUT ./figs/chapter3/fig14_2.png
+INPUT ./figs/chapter3/fig14_2.png
+INPUT figs/chapter3/fig15_a.png
+INPUT ./figs/chapter3/fig15_a.png
+INPUT ./figs/chapter3/fig15_a.png
+INPUT figs/chapter3/fig15_b.png
+INPUT ./figs/chapter3/fig15_b.png
+INPUT ./figs/chapter3/fig15_b.png
+INPUT figs/chapter3/fig15_c.png
+INPUT ./figs/chapter3/fig15_c.png
+INPUT ./figs/chapter3/fig15_c.png
+INPUT figs/chapter3/fig16.jpg
+INPUT ./figs/chapter3/fig16.jpg
+INPUT ./figs/chapter3/fig16.jpg
+INPUT chapter4.tex
+INPUT figs/chapter4/fig1.png
+INPUT ./figs/chapter4/fig1.png
+INPUT ./figs/chapter4/fig1.png
+INPUT mythesis.bbl
+INPUT mythesis.bbl
+INPUT appendixA.tex
+INPUT appendixB.tex
+INPUT appendixC.tex
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT mythesis.aux
+INPUT ./mythesis.out
+INPUT ./mythesis.out
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb

@@ -1,0 +1,23 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Mathematical development}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Defining chemical pathways}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Pathway Probabilities}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Constructing Observables}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{Kinetic Sensitivity Analysis Using Sum Over Histories Representation}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Abstract}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Introduction}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{Methodology}{chapter.3}% 9
+\BOOKMARK [2][-]{subsection.3.3.1}{Sum over Histories Representation}{section.3.3}% 10
+\BOOKMARK [2][-]{subsection.3.3.2}{Sensitivity Analysis}{section.3.3}% 11
+\BOOKMARK [1][-]{section.3.4}{Sensitivity Analysis of Hydrogen Combustion Chemistry}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.5}{Description of Chemical Pathways for H2-O2 Combustion}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.6}{Pathway Interpretation of Sensitivity}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.7}{Conclusions}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Simulating Chemical Kinetics Without Differential Equations}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Abstract}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Introduction}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{The Predictive SOHR Method}{chapter.4}% 19
+\BOOKMARK [-1][-]{chapter*.59}{ Bibliography}{}% 20
+\BOOKMARK [0][-]{appendix.A}{Weird Exam Answers}{chapter*.59}% 21
+\BOOKMARK [0][-]{appendix.B}{Ode to Spot}{chapter*.59}% 22
+\BOOKMARK [0][-]{appendix.C}{The Hydrogen Combustion Model}{chapter*.59}% 23

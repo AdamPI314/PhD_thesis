@@ -1,0 +1,87 @@
+\chapter{Introduction}
+\label{introchap}
+Many problems of great practical importance are described by large interconnected networks
+of elementary chemical reactions.\cite{ch1_IRPC_1_laidler1987chemical,ch1_IRPC_2_pilling1996reaction,ch1_IRPC_3_steinfeld1989chemical} In combustion chemistry, for example,
+numerical simulations combine chemical mechanisms with computational fluid dynamics
+to describe the consumption of fuels under engine operating conditions.\cite{ch1_IRPC_4_warnatz2017combustion,ch1_IRPC_5_westbrook2000chemical,ch1_IRPC_6_miller1990chemical,ch1_IRPC_7_battin2008detailed,ch1_IRPC_8_zador2011kinetics} These
+mechanisms can grow quite large, e.g. n-heptane combustion can be modelled by a network
+of 7000 elementary gas phase reactions.\cite{ch1_IRPC_9_curran1998comprehensive} Likewise, the CAM-chem model of
+tropospheric chemistry can potentially consist of thousands of elementary chemical
+reactions.\cite{ch1_IRPC_10_lamarque2012cam} Reactions on surfaces provide another class of problems modelled by
+large chemical mechanisms.\cite{ch1_IRPC_11_somorjai2010introduction,ch1_IRPC_12_hammer2000theoretical} The accurate performance of these models is necessary
+for important objectives such as engine design\cite{ch1_IRPC_13_som2013quantum} and climate prediction.\cite{ch1_IRPC_14_lamarque2013atmospheric}
+The construction of accurate chemical mechanisms is typically an iterative endeavour
+where the model is repeatedly improved after comparison to experiment. This process
+requires insight into the workings of the chemical network. Unfortunately, the behaviour
+of complex kinetic mechanisms can become quite obscure making the process of
+validation and improvement difficult. Even the task of numerical simulation can
+become computationally prohibitive if the mechanism grows too large especially if spatial
+transport or multi-phase behaviour needs to be included.
+\newline
+\paragraph{}
+We have recently developed a new approach to modeling the kinetics of chemical
+networks which we term ‘the sum over histories representation’, or SOHR for short.\cite{ch1_IRPC_15_kramer2014following,ch1_IRPC_16_bai2014sum,ch1_IRPC_17_bai2015sum,ch1_IRPC_18_bai2017simulating} This method replaces the usual concentration based kinetics with a representation
+based on chemical pathways and can lead to new insight and increased computational
+capability when properly applied. A chemical pathway is a sequence of
+elementary reactions where the product of one reaction becomes the reagent for the
+next reaction. Of course, the notion of the chemical pathway is quite familiar and is
+ubiquitous in all areas of chemistry. In kinetics, it has been often employed to provide
+mechanistic insight into complex networks of reactions.\cite{ch1_IRPC_19_he2008graph,ch1_IRPC_20_lehmann2004algorithm,ch1_IRPC_21_feng2010dominant,ch1_IRPC_22_chern1990effective} In chemical synthesis,
+for another example, a substrate molecule can be successively functionalized by a
+sequence of chemical steps. In atmospheric chemistry, a chlorine atom may be followed
+through a catalytic cycle that leads to the breakdown of ozone. We note that in these
+cases we are following a chemical moiety as it migrates from species to species due to
+reactions. In the SOHR, the idea of the chemical pathway becomes the basis of a quantitative
+representation of the chemical kinetics. The pathways are explicitly defined by
+following a ‘tagged atom’ as it migrates through species space. We find that if all the
+relevant chemical pathways and their associated probabilities are known, then it is possible
+to directly compute the value of any kinetic observable. The method draws its
+motivation from Feynman’s ‘sum over histories’ approach to quantum mechanics.\cite{ch1_IRPC_23_feynman1965quantum}
+As with Feynman path integrals, chemical pathway theory is often more computationally
+intensive than traditional approaches but it can provide new insight or numerical
+advantage for select problems.\cite{ch1_IRPC_24_makri1999time,ch1_IRPC_25_cao1994formulation,ch1_IRPC_26_berne1986simulation} The key mathematical relation in SOHR is an explicit expression for the probability of an arbitrary chemical path in terms of an
+integral of a time-ordered product. This high-dimensional integral can be evaluated
+using an efficient Monte Carlo (MC) integration scheme.
+\newline
+\paragraph{}
+We have found it quite useful to visualise the chemical pathways using the methods
+of graph theory. On a chemical graph, the species are represented by nodes (or vertices)
+and the chemical reactions that interconvert the species are represented by edges (or
+lines).\cite{ch1_IRPC_27_christiansen1953elucidation,ch1_IRPC_28_hansen1988chemical,ch1_IRPC_29_balaban1976chemical,ch1_IRPC_30_temkin1992application,ch1_IRPC_31_lu2005directed} As we follow a tagged atom through the chemical network, the pathway
+is represented by a sequence of vertices and edges. The graph then allows any pathway
+to be associated with a unique symbol sequence that labels the vertices and edges. Furthermore,
+all paths of a given length can be automatically generated by expansions in
+the symbol sequence. The chemical graphs we use here are weighted since the reaction
+rates can be used to assign a weight to each edge. This identification opens up the possibility
+of using graphical search algorithms to locate the most important paths that contribute
+to a given process.
+\newline
+\paragraph{}
+One aspect of the present method that distinguishes it from previous attempts to
+quantify chemical pathways\cite{ch1_IRPC_20_lehmann2004algorithm,ch1_IRPC_32_chemkin201115112} is that SOHR fully embraces the dynamical nature
+of the chemical kinetics graphs. The time-dependence of edge weights (i.e. reactions
+rates) are accurately included even though this makes the computation of the probabilities
+much more challenging. Thus, as a molecule moves through the network its path
+instantaneously responds to the time varying rates. Other methods use static snapshots
+of the reaction flux or time-averages of the reaction rates to compute quantities such as
+the branching ratios in the chemical network. Since the rates of reaction can vary dramatically
+as a function of time, the passage through the network may be badly approximated
+by the static approximation.
+\newline
+\paragraph{}
+The mathematical underpinning of the SOHR is discussed in Section 2. The computation
+of pathway probabilities and the methods for pathway enumeration are discussed
+in detail in this section. In Section 3 we present the results for a chemical network
+described by linear kinetics which serve to illustrate some of the general characteristics
+of the method. For a chemical system composed only of first-order reactions, the pathway
+probabilities can be computed analytically and is found to reduce to a sum of
+exponentials in time. It is shown that this linear kinetic problem can be solved with
+many fewer paths than might be expected. In Section 4, we discuss an application of
+SOHR to the catalytic decomposition of methanol. Under the conditions of low coverage,
+the system provides a realistic example of first-order kinetics. In Section 5, the H$_2$
+combustion problem is analysed using the SOHR method. It is shown that the ignition
+chemistry for this system can be accurately represented using a small number of chemical
+pathways. The use of the pathway representation also provides new insight into the
+mechanism and kinetic sensitivities of this problem. Finally, Section 6 presents a short
+conclusion and some ideas for future research.
+

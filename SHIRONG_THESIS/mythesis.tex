@@ -1,0 +1,101 @@
+\documentclass[defaultstyle,11pt]{thesis}
+
+\usepackage{amssymb}		% to get all AMS symbols
+\usepackage{amsmath}
+\usepackage{xcolor}
+%\usepackage{subfloat}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}		% to insert figures
+\usepackage{hyperref}		% PDF hyperreferences??
+
+%https://tex.stackexchange.com/questions/3450/make-pdf-open-in-fill-window-mode-with-hyperref
+%XYZ, Fit, FitH, FitV, FitR, FitB, FitBH, FitBV
+\hypersetup{pdfstartview={FitH null null 1.00}}
+
+%%%%%%%%%%%%   All the preamble material:   %%%%%%%%%%%%
+
+\title{Sum Over Histories Representation of Chemical Kinetics: A Interpretive and Predictive Method for Modeling Chemical Kinetics Using Time-dependent Pathways}
+
+\author{Shirong}{Bai}
+
+\otherdegrees{B.S., University of Science and Technology of China, 2012 \\
+	      M.S., University of Colorado Boulder, 2016}
+
+\degree{Doctor of Philosophy, Chemical Physics}		%  #1 {long descr.}
+	{Ph.D., Chemical Physics}		%  #2 {short descr.}
+
+\dept{Department of}			%  #1 {designation}
+	{Chemistry and Biochemistry}		%  #2 {name}
+
+\advisor{Prof.}				%  #1 {title}
+	{Rex T. Skodje}			%  #2 {name}
+
+\reader{Prof.~Robert Parson}		%  2nd person to sign thesis
+%\readerThree{Ms.~Thora Nea}		%  3rd person to sign thesis
+
+\abstract{  %\OnePageChapter	% because it is very short
+Chemical kinetics can be viewed as the cooperative propagation of chemical substances. This idea leads us to use a chemical network to study the cooperative behavior of chemical species. What's more, because of the changing nature of chemical systems, a time-dependent chemical network was adopted in the work of this thesis. When it comes to interpreting and predicting chemical kinetics, the history of chemical moieties can play vital roles. In order to study the histories of chemical substances using time-dependent chemical network, this thesis focuses on developing a Sum Over Histories Representation (SOHR for short) of chemical kinetics. The description of time-dependent chemistry of a reaction network is provided by chemical pathways defined at a molecular level. Using this methodology, the quantitative time evolution of the kinetics is described by enumerating the most important pathways followed by a chemical moiety such as a tagged atom. An explicit formula for the pathway probabilities is derived which takes the form of an integral over a time-ordered product. This expression has a simple and computationally efficient Monte Carlo representation which permits the method to be applied to a wide range of problems.
+\newline
+\paragraph{}
+In SOHR, the history of the chemical moiety can be described by time-dependent pathways. Unlike the static flux methods for path analysis, SOHR includes the explicit time-dependence of pathway probabilities. Using SOHR, the sensitivity of an observable with respect to a kinetic parameter such as a rate coefficient is then analyzed in terms of how that parameter affects the chemical pathway probabilities. This thesis demonstrates that large sensitives are often associated with rate limiting steps along important chemical pathways or by reactions that control the branching of reactive flux, though they vary with time.
+\newline
+\paragraph{}
+In addition to interpreting chemical kinetics, this thesis studies the practical approach to modeling chemical kinetics without solving conventional mass-action ODEs. An iterative framework was introduced that allows the time-dependent pathway probabilities to be generated from a knowledge of elementary rate coefficients. To avoid the pitfall of integrating over the histories of long paths, we proposed a sector-by-sector strategy that shortens the candidate path without losing numerical accuracy. This method was successfully applied to the model Lotka-Volterra system and to a realistic H$_2$ combustion system.
+\newline
+\paragraph{}    
+This thesis culminates with another application of SOHR that tackles a problem of time-dependent dimension reduction. Instead of clustering the closest related nodes in a chemical network, we grouped the chattering species based the sum over histories chattering probabilities.
+
+
+
+
+	}
+
+\dedication[Dedication]{	% NEVER use \OnePageChapter here.
+	\begin{center}
+	To Zhangying Bai
+	\end{center}
+	}
+
+\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+	Here's where you acknowledge folks who helped.
+	But keep it short, i.e., no more than one page,
+	as required by the Grad School Specifications.
+	}
+
+% \IRBprotocol{E927F29.001X}	% optional!
+
+\ToCisShort	% use this only for 1-page Table of Contents
+
+\LoFisShort	% use this only for 1-page Table of Figures
+% \emptyLoF	% use this if there is no List of Figures
+
+\LoTisShort	% use this only for 1-page Table of Tables
+% \emptyLoT	% use this if there is no List of Tables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input macros.tex
+\input chapter1.tex
+\input chapter2.tex
+\input chapter3.tex
+\input chapter4.tex
+
+%%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
+\bibliographystyle{plain}	% or "siam", or "alpha", etc.
+\nocite{*}		% list all refs in database, cited or not
+\bibliography{refs}		% Bib database in "refs.bib"
+
+%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
+\appendix
+\input appendixA.tex
+\input appendixB.tex
+\input appendixC.tex
+
+
+\end{document}
+

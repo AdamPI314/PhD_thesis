@@ -1,0 +1,90 @@
+\chapter{Simulating Chemical Kinetics Without Differential Equations}
+\label{chapter4}
+Most of the contents of this chapter are reprinted, with permission, from \
+\begin{enumerate}
+\item[\cite{ch4_10_bai2016sum}] Bai, S., \& Skodje, R. T. The Sum Over Histories Representation for Chemical Kinetics: A Quantitative Theory Based on Chemical Pathways. \textit{International Reviews in Physical Chemistry}, 35(4), 539-567. \textbf{2016}
+\item[\cite{bai2017simulating}] Bai, S., \& Skodje, R. T. Simulating Chemical Kinetics Without Differential Equations: A Quantitative Theory Based on Chemical Pathways. \textit{The Journal of Physical Chemistry Letters}, 8(16), 3826-3833. \textbf{2017}
+\end{enumerate}
+
+\section{Abstract}
+\label{ch4:sec:abstract}
+A new approach is presented for simulating the time-evolution of chemically reactive systems.  This method provides an alternative to conventional modeling of mass-action kinetics that involves solving differential equations for the species concentrations.  The method presented here avoids the need to solve the rate equations by switching to a representation based on chemical pathways.  In the Sum Over Histories Representation (or SOHR) method, any time-dependent kinetic observable, such as concentration, is written as a linear combination of probabilities for chemical pathways leading to a desired outcome.  In this work, an iterative method is introduced that allows the time-dependent pathway probabilities to be generated from a knowledge of the elementary rate coefficients thus avoiding the pitfalls involved in solving the differential equations of kinetics.  The method is successfully applied to the model Lotka-Volterra system and to a realistic H$_2-$O$_2$ combustion model.
+
+\section{Introduction}
+\label{ch4:sec:intro}
+Simulation of chemical reaction networks using mass-action chemical kinetics provides an invaluable tool for uncovering chemical mechanisms and predicting time-dependent chemical behavior as functions of controllable parameters such as temperature, pressure, and initial concentrations.  As chemical mechanisms grow large, such as for hydrocarbon combustion, the resulting kinetic behavior can become quite difficult to physically decipher and, in some cases, the simulations themselves can bog down due to the proliferation of species and the need for small time steps owing to the existence of multiple time scales.  Thus, considerable effort has been devoted in the disciplines of chemistry, biochemistry, physics and engineering to interpreting and simplifying kinetic behavior in complex networks.
+\newline
+\paragraph{}
+The usual computational approach to mass-action kinetics involves constructing and solving a set of differential equations in the continuous concentration variables $X_i(t)$ that model the local rates of formation and destruction of each of the N chemical species, $S_i$,\cite{ch4_1_laidler1987chemical,ch4_2_steinfeld1989chemical,ch4_3_pilling1996reaction} i.e. 
+\begin{equation}
+\label{ch4:eqn:1}
+\frac{dX_i}{dt}=\sum_{j}^{sources}{v_{i,j}R_j} - \sum_{j}^{sinks}{{\tilde{v}}_{i,j}^{}R_j} ~~~i=1,\cdots, N
+\end{equation}
+For the M elementary reaction steps, defined by
+\begin{equation}
+\label{ch4:eqn:2}
+\sum_{i}^{reactants}{{\tilde{v}}_{i,j}^{}R_j} = \sum_{i}^{products}{v_{i,j}^{}R_j}~~~j=1,\cdots, M
+\end{equation}
+the explicit rate laws $R_j(\mathbf{X})$ are provided by an external experimental or theoretical determination and $v_{i,j}$ are known constants.  This representation is properly regarded as a mean field theory that becomes valid in the thermodynamic limit.   For systems involving very low concentrations or strong local environment effects, more intensive simulations may be used that employ stochastic or Monte Carlo algorithms that may account for the influence of fluctuations.\cite{ch4_4_mcquarrie1967stochastic,ch4_5_gillespie1976general,ch4_6_kampen2007langevin}
+\newline
+\paragraph{}
+In this paper, we propose a new method to simulate the kinetics of general nonlinear mechanisms that builds on, and fundamentally extends, our earlier work.\cite{ch4_7_kramer2014following,ch4_8_bai2014sum,ch4_9_bai2015sum,ch4_10_bai2016sum} In contrast to the local rate equation approach to kinetics, we propose a self-contained global method based on chemical pathways that tracks molecules and fragments as they move throughout the network.  A pathway follows a chemical moiety, at a molecular level, as it hops from species to species under the influence of elementary chemical steps. A convenient approach to the unique specification of a chemical pathway utilizes an atom-following algorithm.  If, e.g., the carbon-atom in a CH$_4$ reagent is initially “tagged”,  $\textcolor{red}{\textbf{C}}\text{H}_4(+\text{OH}) \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3 (+\text{OH})  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_2 (+\text{O}) \xrightarrow[\text{R}_{3}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_2\text{O}$ defines a three-step pathway leading from CH$_4$ to the product CH$_2$O.  Each reaction is modeled as a random event governed by transition probabilities obtained from the elementary rate laws.  By constructing paths for a complete set of atoms in the initial state at a time $t_0$, it is possible to predict the subsequent values of any kinetic observable given the pathway probabilities (see below).  Hence, the method is global in the sense that it replaces local rate equations based on instantaneous rates for individual species with expressions that span the entire network over finite times using multistep chemical pathways.
+\newline
+\paragraph{}
+The use of chemical paths to analyze the behavior of chemical networks has a long history.  A most convenient way to visualize and enumerate chemical paths involves the use of graph theory.\cite{ch4_11_mekenyan1994graph,ch4_12_balaban1976chemical,ch4_13_garcia2008some} Graph theoretic analysis of chemical mechanisms was initiated by the early work of Christiansen\cite{ch4_14_christiansen1953elucidation} and also King and Altman\cite{ch4_15_king1956schematic} who exploited the analogy between chemical and electrical circuit theory.  Since then, there have been numerous treatments of chemical networks, especially for biochemical systems, that have demonstrated the utility of graph theory.\cite{ch4_16_oster1971network,ch4_17_hill1966studies,ch4_18_fishtik2004reaction,ch4_19_he2008graph,
+ch4_20_lehmann2004algorithm,ch4_21_feng2010dominant,ch4_22_lu2006applicability} Closely related work on the solution of master equations via network analysis has also been explored using graph theory.\cite{ch4_23_schnakenberg1976network,ch4_24_andrieux2007fluctuation} Much of work on kinetic graphs has focused on the developing expressions for the steady state rates for first-order or pseudo-first-order chemical mechanisms.  Typically, the vertices of those graphs comprise a subset of the species, such as biochemical intermediates, and the edges are reaction steps.  Quantitative treatment of the kinetics are possible using edge weights obtained from the steady state fluxes.
+\begin{figure}[htbp]
+	\caption[A schematic representation of a time-dependent pathway]{A schematic representation of a time-dependent pathway
+followed by a tagged atom through a chemical network of five species.
+The reactions occur instantaneously at times $t_1$, $t_2$, $t_3$, and $t_4$, which are
+randomly selected and averaged to obtain the pathway probability.}
+    \begin{center}
+	\includegraphics[width=100mm]{figs/chapter4/fig1.png}
+    \end{center}
+\label{ch4:fig:1}
+\end{figure}
+In our work, we have developed a quantitative pathway
+analysis, called the Sum Over Histories Representation or
+SOHR, which goes beyond steady state conditions and fully
+embraces the time-dependent and nonlinear behavior of
+general mechanisms. As emphasized in the schematic diagram
+of Fig. \ref{ch4:fig:1}, the SOHR method employs time-resolved chemical pathways in which reaction occur at specific randomly selected
+times. This treatment employs dynamical graph theory\cite{ch4_25_harary1997dynamic} in
+which the edge weights are time-dependent. This is quite
+important for quantitative modeling since static snapshots of
+the reactive flow can be very deceptive for interpreting and
+modeling time-dependent chemical flux. Our approach draws
+inspiration from Feynman’s path integral representation of
+quantum mechanics.\cite{ch4_26_feynman2010quantum} We have previously used the SOHR
+method to interpret the workings of several kinetic networks,
+including those involved with surface catalysis and combustion.
+While we could readily identify and quantify the important
+chemical paths that guided the kinetics, the results were
+interpretative rather than predictive. That is, for general
+nonlinear problems, the determination of the pathway
+probabilities requires a knowledge of the time-dependence of
+the pseudo-first order rate coefficients which, in turn, requires
+an a priori knowledge of the concentrations versus time. For
+interpretive analysis, the nonlinear kinetics was first solved
+using conventional kinetics to obtain a reference trajectory,
+$\mathbf{X}(t)$, and then the kinetics was decomposed into contributing
+pathways. In this work, we overcome this limitation and formulate the SOHR as a predictive theory that does not
+require a solution to eqn. \ref{ch4:eqn:1}. In this way, the need to solve the
+usual differential equations of mass action kinetics is avoided,
+and the pathway probabilities can be solved in a self-consistent
+manner.
+\newline
+\paragraph{}
+The key to our formulation is the use of an iterative solution
+technique to obtain the pathway probabilities. After a brief
+review of the interpretive SOHR method, the iterative SOHR
+method is presented. Given a set of chemical pathways, the
+pathway probabilities and the species concentrations are
+obtained simultaneously by the iteration. A strategy to identify
+the most important chemical pathways is given. The new
+predictive SOHR method is numerically tested on the Lotka$−$
+Volterra model and H$_2-$O$_2$ combustion system. The results
+presented demonstrate that the method is accurate and quickly
+convergent. We conclude with a discussion of the possible
+advantages of the new method.
+\section{The Predictive SOHR Method}

@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: mythesis.aux
+The style file: plain.bst
+Database file #1: refs.bib
+Warning--there's a number but no series in ch1_IRPC_1_laidler1987chemical
+Warning--empty publisher in ch1_IRPC_1_laidler1987chemical
+Warning--there's a number but no series in ch3_1_laidler1987chemical
+Warning--empty publisher in ch3_1_laidler1987chemical
+Warning--there's a number but no series in ch4_1_laidler1987chemical
+Warning--empty publisher in ch4_1_laidler1987chemical
+Warning--empty journal in aHm_3_radhakrishnan1993description
+You've used 176 entries,
+            2118 wiz_defined-function locations,
+            1330 strings with 29446 characters,
+and the built_in function-call counts, 59756 in all, are:
+= -- 5949
+> -- 2839
+< -- 13
++ -- 1150
+- -- 946
+* -- 4655
+:= -- 10072
+add.period$ -- 528
+call.type$ -- 176
+change.case$ -- 974
+chr.to.int$ -- 0
+cite$ -- 183
+duplicate$ -- 1947
+empty$ -- 4617
+format.name$ -- 946
+if$ -- 12077
+int.to.chr$ -- 0
+int.to.str$ -- 176
+missing$ -- 188
+newline$ -- 878
+num.names$ -- 352
+pop$ -- 841
+preamble$ -- 1
+purify$ -- 819
+quote$ -- 0
+skip$ -- 1279
+stack$ -- 0
+substring$ -- 4563
+swap$ -- 205
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 662
+warning$ -- 7
+while$ -- 620
+width$ -- 179
+write$ -- 1901
+(There were 7 warnings)

@@ -1,0 +1,989 @@
+\begin{thebibliography}{100}
+
+\bibitem{ch1_IRPC_47_abel1906besonders}
+E~Abel.
+\newblock {\"U}ber einen besonders einfachen fall von stufenreaktionen.
+\newblock {\em Zeitschrift f{\"u}r Physikalische Chemie}, 56(1):558--564, 1906.
+
+\bibitem{ch4_24_andrieux2007fluctuation}
+David Andrieux and Pierre Gaspard.
+\newblock Fluctuation theorem for currents and schnakenberg network theory.
+\newblock {\em Journal of statistical physics}, 127(1):107--131, 2007.
+
+\bibitem{ch1_IRPC_51_antony2013pathways}
+Abbin Antony, Aravind Asthagiri, and Jason~F Weaver.
+\newblock Pathways and kinetics of methane and ethane c--h bond cleavage on pdo
+  (101).
+\newblock {\em The Journal of chemical physics}, 139(10):104702, 2013.
+
+\bibitem{ch1_IRPC_17_ch4_9_bai2015sum}
+Shirong Bai, Michael~J Davis, and Rex~T Skodje.
+\newblock Sum over histories representation for kinetic sensitivity analysis:
+  How chemical pathways change when reaction rate coefficients are varied.
+\newblock {\em The Journal of Physical Chemistry A}, 119(45):11039--11052,
+  2015.
+
+\bibitem{ch4_10_bai2016sum}
+Shirong Bai and Rex~T Skodje.
+\newblock The sum over histories representation for chemical kinetics: a
+  quantitative theory based on chemical pathways.
+\newblock {\em International Reviews in Physical Chemistry}, 35(4):539--567,
+  2016.
+
+\bibitem{ch1_IRPC_18_bai2017simulating}
+Shirong Bai and Rex~T Skodje.
+\newblock Simulating chemical kinetics without differential equations: A
+  quantitative theory based on chemical pathways.
+\newblock {\em The Journal of Physical Chemistry Letters}, 8(16):3826--3833,
+  2017.
+
+\bibitem{ch1_IRPC_16_ch3_6_ch4_8_bai2014sum}
+Shirong Bai, Dingyu Zhou, Michael~J Davis, and Rex~T Skodje.
+\newblock Sum over histories representation for chemical kinetics.
+\newblock {\em The journal of physical chemistry letters}, 6(1):183--188, 2014.
+
+\bibitem{ch1_IRPC_29_balaban1976chemical}
+Alexandru~T Balaban.
+\newblock {\em Chemical applications of graph theory}.
+\newblock Academic Press, 1976.
+
+\bibitem{ch1_IRPC_7_battin2008detailed}
+Fr{\'e}d{\'e}rique Battin-Leclerc.
+\newblock Detailed chemical kinetic models for the low-temperature combustion
+  of hydrocarbons with application to gasoline and diesel fuel surrogates.
+\newblock {\em Progress in Energy and Combustion Science}, 34(4):440--498,
+  2008.
+
+\bibitem{baylor}
+G.~I. Baylor.
+\newblock Up, up and away.
+\newblock {\em Proc. Roy. Soc., London A}, 294:456--475, 1959.
+
+\bibitem{ch1_IRPC_42_bellman1958routing}
+Richard Bellman.
+\newblock On a routing problem.
+\newblock {\em Quarterly of applied mathematics}, 16(1):87--90, 1958.
+
+\bibitem{ch1_IRPC_26_berne1986simulation}
+Bruce~J Berne and D~Thirumalai.
+\newblock On the simulation of quantum systems: path integral methods.
+\newblock {\em Annual Review of Physical Chemistry}, 37(1):401--424, 1986.
+
+\bibitem{ch4_28_biggs1993algebraic}
+Norman Biggs.
+\newblock {\em Algebraic graph theory}.
+\newblock Cambridge university press, 1993.
+
+\bibitem{ch1_IRPC_25_cao1994formulation}
+Jianshu Cao and Gregory~A Voth.
+\newblock The formulation of quantum statistical mechanics based on the feynman
+  path centroid density. i. equilibrium properties.
+\newblock {\em The Journal of chemical physics}, 100(7):5093--5105, 1994.
+
+\bibitem{ch1_IRPC_32_chemkin201115112}
+Release CHEMKIN-PRO.
+\newblock 15112, reaction design.
+\newblock {\em Inc., San Diego, CA}, 2011.
+
+\bibitem{ch1_IRPC_22_chern1990effective}
+Jia-Ming Chern and Friedrich~G Helfferich.
+\newblock Effective kinetic modeling of multistep homogeneous reactions.
+\newblock {\em AIChE Journal}, 36(8):1200--1208, 1990.
+
+\bibitem{ch3_12_chern1990effective}
+Jia-Ming Chern and Friedrich~G Helfferich.
+\newblock Effective kinetic modeling of multistep homogeneous reactions.
+\newblock {\em AIChE Journal}, 36(8):1200--1208, 1990.
+
+\bibitem{ch1_IRPC_27_christiansen1953elucidation}
+JA~Christiansen.
+\newblock The elucidation of reaction mechanisms by the method of intermediates
+  in quasi-stationary concentrations.
+\newblock {\em Advances in Catalysis}, 5:311--353, 1953.
+
+\bibitem{ch4_14_christiansen1953elucidation}
+JA~Christiansen.
+\newblock The elucidation of reaction mechanisms by the method of intermediates
+  in quasi-stationary concentrations.
+\newblock {\em Advances in Catalysis}, 5:311--353, 1953.
+
+\bibitem{ch4_30_cormen2001introduction}
+Thomas~H Cormen, Charles~E Leiserson, Ronald~L Rivest, and Clifford Stein.
+\newblock Introduction to algorithms second edition, 2001.
+
+\bibitem{crow}
+M.~E. Crow.
+\newblock Aerodynamic sound emission as a singular perturbation problem.
+\newblock {\em Stud. Appl. Math.}, 29:21--44, 1968.
+
+\bibitem{ch3_26_cukier1973study}
+RI~Cukier, CM~Fortuin, Kurt~E Shuler, AG~Petschek, and JH~Schaibly.
+\newblock Study of the sensitivity of coupled reaction systems to uncertainties
+  in rate coefficients. i theory.
+\newblock {\em The Journal of chemical physics}, 59(8):3873--3878, 1973.
+
+\bibitem{ch3_27_cukier1975study}
+RI~Cukier, JH~Schaibly, and Kurt~E Shuler.
+\newblock Study of the sensitivity of coupled reaction systems to uncertainties
+  in rate coefficients. iii. analysis of the approximations.
+\newblock {\em The Journal of Chemical Physics}, 63(3):1140--1149, 1975.
+
+\bibitem{ch1_IRPC_9_curran1998comprehensive}
+Henry~J Curran, Paolo Gaffuri, William~J Pitz, and Charles~K Westbrook.
+\newblock A comprehensive modeling study of n-heptane oxidation.
+\newblock {\em Combustion and flame}, 114(1):149--177, 1998.
+
+\bibitem{ch3_43_davis2011global}
+Michael~J Davis, Rex~T Skodje, and Alison~S Tomlin.
+\newblock Global sensitivity analysis of chemical-kinetic reaction mechanisms:
+  construction and deconstruction of the probability density function.
+\newblock {\em The Journal of Physical Chemistry A}, 115(9):1556--1578, 2011.
+
+\bibitem{ch1_IRPC_65_davis2011global}
+Michael~J Davis, Rex~T Skodje, and Alison~S Tomlin.
+\newblock Global sensitivity analysis of chemical-kinetic reaction mechanisms:
+  construction and deconstruction of the probability density function.
+\newblock {\em The Journal of Physical Chemistry A}, 115(9):1556--1578, 2011.
+
+\bibitem{ch1_IRPC_41_dijkstra1959note}
+Edsger~W Dijkstra.
+\newblock A note on two problems in connexion with graphs.
+\newblock {\em Numerische mathematik}, 1(1):269--271, 1959.
+
+\bibitem{dole}
+Julian~D. Dole.
+\newblock {\em Perturbation Methods in Applied Mathematics}.
+\newblock Winsdell Publishing Company, 1967.
+
+\bibitem{ch1_IRPC_44_eppstein1998finding}
+David Eppstein.
+\newblock Finding the k shortest paths.
+\newblock {\em SIAM Journal on computing}, 28(2):652--673, 1998.
+
+\bibitem{fabnis}
+J.~S. Fabnis, H.~J. Giblet, and H.~McDormand.
+\newblock Navier-stokes analysis of solid rocket motor internal flow.
+\newblock {\em J. Prop. and Power}, 2:157--164, 1980.
+
+\bibitem{ch4_33_feinstein1975socialism}
+Charles~Hilliard Feinstein.
+\newblock Socialism, capitalism and economic growth.
+\newblock Technical report, Cambridge University Press, 1975.
+
+\bibitem{ch1_IRPC_21_feng2010dominant}
+Haidong Feng, Bo~Han, and Jin Wang.
+\newblock Dominant kinetic paths of complex systems: gene networks.
+\newblock {\em The Journal of Physical Chemistry Letters}, 1(12):1836--1840,
+  2010.
+
+\bibitem{ch3_16_feng2010dominant}
+Haidong Feng, Bo~Han, and Jin Wang.
+\newblock Dominant kinetic paths of complex systems: gene networks.
+\newblock {\em The Journal of Physical Chemistry Letters}, 1(12):1836--1840,
+  2010.
+
+\bibitem{ch4_21_feng2010dominant}
+Haidong Feng, Bo~Han, and Jin Wang.
+\newblock Dominant kinetic paths of complex systems: gene networks.
+\newblock {\em The Journal of Physical Chemistry Letters}, 1(12):1836--1840,
+  2010.
+
+\bibitem{ch4_26_feynman2010quantum}
+Richard~P Feynman, Albert~R Hibbs, and Daniel~F Styer.
+\newblock {\em Quantum mechanics and path integrals}.
+\newblock Courier Corporation, 2010.
+
+\bibitem{ch1_IRPC_23_feynman1965quantum}
+Richard~Phillips Feynman and AR~Hibbs.
+\newblock {\em Quantum mechanics and path integrals [by] RP Feynman [and] AR
+  Hibbs}.
+\newblock McGraw-Hill, 1965.
+
+\bibitem{ch3_7_feynman1965quantum}
+Richard~Phillips Feynman and AR~Hibbs.
+\newblock {\em Quantum mechanics and path integrals [by] RP Feynman [and] AR
+  Hibbs}.
+\newblock McGraw-Hill, 1965.
+
+\bibitem{ch4_18_fishtik2004reaction}
+Ilie Fishtik, Caitlin~A Callaghan, and Ravindra Datta.
+\newblock Reaction route graphs. i. theory and algorithm.
+\newblock {\em The Journal of Physical Chemistry B}, 108(18):5671--5682, 2004.
+
+\bibitem{ch4_13_garcia2008some}
+Ram{\'o}n Garc{\'\i}a-Domenech, Jorge G{\'a}lvez, Jesus~V de~Juli{\'a}n-Ortiz,
+  and Lionello Pogliani.
+\newblock Some new trends in chemical graph theory.
+\newblock {\em Chemical Reviews}, 108(3):1127--1169, 2008.
+
+\bibitem{ch3_9_gardiner1985handbook}
+Crispin~W Gardiner.
+\newblock Handbook of stochastic methods for physics, chemistry and the natural
+  sciences, + berlin.
+\newblock {\em Springer-Verlag Gibson, JJ (1986). The ecological approach to
+  visual perception. Hillsdale, Nj: Lawrence Erlbaum Associates, Inc.(Original
+  work published 1979) Hosking, JRM (1981), Fractional differencing.
+  Biometrika}, 68:165--176, 1985.
+
+\bibitem{ch1_IRPC_37_gibson2000efficient}
+Michael~A Gibson and Jehoshua Bruck.
+\newblock Efficient exact stochastic simulation of chemical systems with many
+  species and many channels.
+\newblock {\em The journal of physical chemistry A}, 104(9):1876--1889, 2000.
+
+\bibitem{ch3_23_gibson2000efficient}
+Michael~A Gibson and Jehoshua Bruck.
+\newblock Efficient exact stochastic simulation of chemical systems with many
+  species and many channels.
+\newblock {\em The journal of physical chemistry A}, 104(9):1876--1889, 2000.
+
+\bibitem{aHm_2_gilbert1983theory}
+RG~Gilbert, K\_ Luther, and J~Troe.
+\newblock Theory of thermal unimolecular reactions in the fall-off range. ii.
+  weak collision rate constants.
+\newblock {\em Berichte der Bunsengesellschaft f{\"u}r physikalische Chemie},
+  87(2):169--177, 1983.
+
+\bibitem{ch1_IRPC_35_gillespie1976general}
+Daniel~T Gillespie.
+\newblock A general method for numerically simulating the stochastic time
+  evolution of coupled chemical reactions.
+\newblock {\em Journal of computational physics}, 22(4):403--434, 1976.
+
+\bibitem{ch3_22_gillespie1976general}
+Daniel~T Gillespie.
+\newblock A general method for numerically simulating the stochastic time
+  evolution of coupled chemical reactions.
+\newblock {\em Journal of computational physics}, 22(4):403--434, 1976.
+
+\bibitem{ch4_5_gillespie1976general}
+Daniel~T Gillespie.
+\newblock A general method for numerically simulating the stochastic time
+  evolution of coupled chemical reactions.
+\newblock {\em Journal of computational physics}, 22(4):403--434, 1976.
+
+\bibitem{ch1_IRPC_36_gillespie2013perspective}
+Daniel~T Gillespie, Andreas Hellander, and Linda~R Petzold.
+\newblock Perspective: Stochastic algorithms for chemical kinetics.
+\newblock {\em The Journal of chemical physics}, 138(17):05B201\_1, 2013.
+
+\bibitem{ch3_24_gillespie2013perspective}
+Daniel~T Gillespie, Andreas Hellander, and Linda~R Petzold.
+\newblock Perspective: Stochastic algorithms for chemical kinetics.
+\newblock {\em The Journal of chemical physics}, 138(17):05B201\_1, 2013.
+
+\bibitem{ch1_IRPC_48_greeley2004competitive}
+Jeff Greeley and Manos Mavrikakis.
+\newblock Competitive paths for methanol decomposition on pt (111).
+\newblock {\em Journal of the American Chemical Society}, 126(12):3910--3919,
+  2004.
+
+\bibitem{ch1_IRPC_49_gu2010first}
+Xiang-Kui Gu and Wei-Xue Li.
+\newblock First-principles study on the origin of the different selectivities
+  for methanol steam reforming on cu (111) and pd (111).
+\newblock {\em The Journal of Physical Chemistry C}, 114(49):21539--21547,
+  2010.
+
+\bibitem{guillot}
+F.~Guillot and Z.~Javalon.
+\newblock Acoustic boundary layers in propellant rocket motors.
+\newblock {\em J. Prop. and Power}, 5:331--339, 1989.
+
+\bibitem{ch1_IRPC_12_hammer2000theoretical}
+Bj{\o}rk Hammer and Jens~Kehlet N{\o}rskov.
+\newblock Theoretical surface science and catalysis—calculations and
+  concepts.
+\newblock {\em Advances in catalysis}, 45:71--129, 2000.
+
+\bibitem{ch1_IRPC_28_hansen1988chemical}
+Peter~J Hansen and Peter~C Jurs.
+\newblock Chemical applications of graph theory. part i. fundamentals and
+  topological indices.
+\newblock {\em J. Chem. Educ}, 65(7):574, 1988.
+
+\bibitem{ch4_29_harary1962determinant}
+Frank Harary.
+\newblock The determinant of the adjacency matrix of a graph.
+\newblock {\em Siam Review}, 4(3):202--210, 1962.
+
+\bibitem{ch1_IRPC_45_harary1997dynamic}
+Frank Harary and Gopal Gupta.
+\newblock Dynamic graph models.
+\newblock {\em Mathematical and Computer Modelling}, 25(7):79--87, 1997.
+
+\bibitem{ch4_25_harary1997dynamic}
+Frank Harary and Gopal Gupta.
+\newblock Dynamic graph models.
+\newblock {\em Mathematical and Computer Modelling}, 25(7):79--87, 1997.
+
+\bibitem{ch1_IRPC_43_hart1968formal}
+Peter~E Hart, Nils~J Nilsson, and Bertram Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock {\em IEEE transactions on Systems Science and Cybernetics},
+  4(2):100--107, 1968.
+
+\bibitem{ch3_20_hashemi2015hydrogen}
+Hamid Hashemi, Jakob~M Christensen, Sander Gersen, and Peter Glarborg.
+\newblock Hydrogen oxidation at high pressure and intermediate temperatures:
+  Experiments and kinetic modeling.
+\newblock {\em Proceedings of the Combustion Institute}, 35(1):553--560, 2015.
+
+\bibitem{ch1_IRPC_53_hashemi2015hydrogen}
+Hamid Hashemi, Jakob~M Christensen, Sander Gersen, and Peter Glarborg.
+\newblock Hydrogen oxidation at high pressure and intermediate temperatures:
+  Experiments and kinetic modeling.
+\newblock {\em Proceedings of the Combustion Institute}, 35(1):553--560, 2015.
+
+\bibitem{ch1_IRPC_19_he2008graph}
+Kaiyuan He, Marianthi~G Ierapetritou, and Ioannis~P Androulakis.
+\newblock A graph-based approach to developing adaptive representations of
+  complex reaction mechanisms.
+\newblock {\em Combustion and Flame}, 155(4):585--604, 2008.
+
+\bibitem{ch3_15_he2008graph}
+Kaiyuan He, Marianthi~G Ierapetritou, and Ioannis~P Androulakis.
+\newblock A graph-based approach to developing adaptive representations of
+  complex reaction mechanisms.
+\newblock {\em Combustion and Flame}, 155(4):585--604, 2008.
+
+\bibitem{ch4_19_he2008graph}
+Kaiyuan He, Marianthi~G Ierapetritou, and Ioannis~P Androulakis.
+\newblock A graph-based approach to developing adaptive representations of
+  complex reaction mechanisms.
+\newblock {\em Combustion and Flame}, 155(4):585--604, 2008.
+
+\bibitem{ch1_IRPC_50_henkelman2000climbing}
+Graeme Henkelman, Blas~P Uberuaga, and Hannes J{\'o}nsson.
+\newblock A climbing image nudged elastic band method for finding saddle points
+  and minimum energy paths.
+\newblock {\em The Journal of chemical physics}, 113(22):9901--9904, 2000.
+
+\bibitem{ch4_17_hill1966studies}
+Terrell~L Hill.
+\newblock Studies in irreversible thermodynamics iv. diagrammatic
+  representation of steady state fluxes for unimolecular systems.
+\newblock {\em Journal of theoretical biology}, 10(3):442--459, 1966.
+
+\bibitem{softy}
+IBM.
+\newblock {S}{P}{S}{S} {S}tatistics.
+\newblock download from vendor site, 2012.
+\newblock version 21.
+
+\bibitem{ch3_10_ito1961wiener}
+Kiyosi It{\^o}.
+\newblock Wiener integral and feynman integral.
+\newblock In {\em Proc. Fourth Berkeley Symposium on Mathematical Statistics
+  and Probability}, volume~2, pages 227--238, 1961.
+
+\bibitem{ch4_6_kampen2007langevin}
+NV~Kampen.
+\newblock The langevin approach.
+\newblock {\em Stochastic Processes in Physics and Chemistry (Third Edition),
+  Elsevier, Amsterdam}, page 219, 2007.
+
+\bibitem{ch3_18_karwat2011chemical}
+Darshan~MA Karwat, Scott~W Wagnon, Paul~D Teini, and Margaret~S Wooldridge.
+\newblock On the chemical kinetics of n-butanol: ignition and speciation
+  studies.
+\newblock {\em The Journal of Physical Chemistry A}, 115(19):4909--4921, 2011.
+
+\bibitem{ch3_17_kee2008chemkin}
+RJ~Kee, FM~Ruply, and JA~Miller.
+\newblock Chemkin-pro, reaction design.
+\newblock {\em Inc., San Diego, CA}, 2008.
+
+\bibitem{aHm_4_kee2008chemkin}
+RJ~Kee, FM~Ruply, and JA~Miller.
+\newblock Chemkin-pro, reaction design.
+\newblock {\em Inc., San Diego, CA}, 2008.
+
+\bibitem{ch3_48_keromnes2013experimental}
+Alan K{\'e}romn{\`e}s, Wayne~K Metcalfe, Karl~A Heufer, Nicola Donohoe,
+  Apurba~K Das, Chih-Jen Sung, J{\"u}rgen Herzler, Clemens Naumann, Peter
+  Griebel, Olivier Mathieu, et~al.
+\newblock An experimental and detailed chemical kinetic modeling study of
+  hydrogen and syngas mixture oxidation at elevated pressures.
+\newblock {\em Combustion and Flame}, 160(6):995--1011, 2013.
+
+\bibitem{ch3_47_killingsworth2011increased}
+Nick~J Killingsworth, Vi~H Rapp, Daniel~L Flowers, Salvador~M Aceves, J-Y Chen,
+  and Robert Dibble.
+\newblock Increased efficiency in si engine with air replaced by oxygen in
+  argon mixture.
+\newblock {\em Proceedings of the Combustion Institute}, 33(2):3141--3149,
+  2011.
+
+\bibitem{ch4_15_king1956schematic}
+Edward~L King and Carl Altman.
+\newblock A schematic method of deriving the rate laws for enzyme-catalyzed
+  reactions.
+\newblock {\em The Journal of physical chemistry}, 60(10):1375--1378, 1956.
+
+\bibitem{ch3_42_klippenstein2011uncertainty}
+Stephen~J Klippenstein, Lawrence~B Harding, Michael~J Davis, Alison~S Tomlin,
+  and Rex~T Skodje.
+\newblock Uncertainty driven theoretical kinetics studies for ch 3 oh ignition:
+  Ho 2+ ch 3 oh and o 2+ ch 3 oh.
+\newblock {\em Proceedings of the Combustion Institute}, 33(1):351--357, 2011.
+
+\bibitem{ch3_19_konnov2008remaining}
+Alexander~A Konnov.
+\newblock Remaining uncertainties in the kinetic mechanism of hydrogen
+  combustion.
+\newblock {\em Combustion and flame}, 152(4):507--528, 2008.
+
+\bibitem{ch1_IRPC_52_konnov2008remaining}
+Alexander~A Konnov.
+\newblock Remaining uncertainties in the kinetic mechanism of hydrogen
+  combustion.
+\newblock {\em Combustion and flame}, 152(4):507--528, 2008.
+
+\bibitem{ch1_IRPC_15_kramer2014following}
+Zeb~C Kramer, Xiang-Kui Gu, Dingyu~DY Zhou, Wei-Xue Li, and Rex~T Skodje.
+\newblock Following molecules through reactive networks: surface catalyzed
+  decomposition of methanol on pd (111), pt (111), and ni (111).
+\newblock {\em The Journal of Physical Chemistry C}, 118(23):12364--12383,
+  2014.
+
+\bibitem{ch3_5_kramer2014following}
+Zeb~C Kramer, Xiang-Kui Gu, Dingyu~DY Zhou, Wei-Xue Li, and Rex~T Skodje.
+\newblock Following molecules through reactive networks: surface catalyzed
+  decomposition of methanol on pd (111), pt (111), and ni (111).
+\newblock {\em The Journal of Physical Chemistry C}, 118(23):12364--12383,
+  2014.
+
+\bibitem{ch4_7_kramer2014following}
+Zeb~C Kramer, Xiang-Kui Gu, Dingyu~DY Zhou, Wei-Xue Li, and Rex~T Skodje.
+\newblock Following molecules through reactive networks: surface catalyzed
+  decomposition of methanol on pd (111), pt (111), and ni (111).
+\newblock {\em The Journal of Physical Chemistry C}, 118(23):12364--12383,
+  2014.
+
+\bibitem{ch1_IRPC_1_laidler1987chemical}
+Keith~JKJ Laidler.
+\newblock {\em Chemical kinetics}.
+\newblock Number 544.4 LAI. 1987.
+
+\bibitem{ch3_1_laidler1987chemical}
+Keith~JKJ Laidler.
+\newblock {\em Chemical kinetics}.
+\newblock Number 544.4 LAI. 1987.
+
+\bibitem{ch4_1_laidler1987chemical}
+Keith~JKJ Laidler.
+\newblock {\em Chemical kinetics}.
+\newblock Number 544.4 LAI. 1987.
+
+\bibitem{ch1_IRPC_14_lamarque2013atmospheric}
+J-F Lamarque, Drew~T Shindell, B~Josse, PJ~Young, I~Cionni, Veronika Eyring,
+  D~Bergmann, Philip Cameron-Smith, William~J Collins, R~Doherty, et~al.
+\newblock The atmospheric chemistry and climate model intercomparison project
+  (accmip): overview and description of models, simulations and climate
+  diagnostics.
+\newblock {\em Geoscientific Model Development}, 6:179--206, 2013.
+
+\bibitem{ch1_IRPC_10_lamarque2012cam}
+JF~Lamarque, LK~Emmons, PG~Hess, DE~Kinnison, S~Tilmes, F~Vitt, CL~Heald,
+  EA~Holland, PH~Lauritzen, J~Neu, et~al.
+\newblock Cam-chem: description and evaluation of interactive atmospheric
+  chemistry in the community earth system model, geosci. model dev., 5,
+  369--411, doi: 10.5194, 2012.
+
+\bibitem{lao:thesis}
+Henry Lao.
+\newblock {\em Linear Acoustic Processes in Rocket Engines}.
+\newblock PhD thesis, University of Colorado at Boulder, 1979.
+
+\bibitem{lao:paper}
+Q.~Lao, M.~N. Cassoy, and K.~Kirkpatrick.
+\newblock Acoustically generated vorticity from internal flow.
+\newblock {\em J. Fluid Mechanics}, 2:122--133, 1996.
+
+\bibitem{lao:97}
+Q.~Lao, D.~R. Kassoy, and K.~Kirkkopru.
+\newblock Nonlinear acoustic processes in rocket engines.
+\newblock {\em J. Fluid Mechanics}, 3:245--261, 1997.
+
+\bibitem{ch1_IRPC_68_law2003development}
+Chung~K Law, Chih~Jen Sung, Hai Wang, and TF~Lu.
+\newblock Development of comprehensive detailed and reduced reaction mechanisms
+  for combustion modeling.
+\newblock {\em AIAA journal}, 41(9):1629--1646, 2003.
+
+\bibitem{ch3_49_lee1998hydrogen}
+Daeyup Lee and Simone Hochgreb.
+\newblock Hydrogen autoignition at pressures above the second explosion limit
+  (0.6--4.0 mpa).
+\newblock {\em International journal of chemical kinetics}, 30(6):385--406,
+  1998.
+
+\bibitem{ch1_IRPC_20_lehmann2004algorithm}
+Ralph Lehmann.
+\newblock An algorithm for the determination of all significant pathways in
+  chemical reaction systems.
+\newblock {\em Journal of atmospheric chemistry}, 47(1):45--78, 2004.
+
+\bibitem{ch3_14_lehmann2004algorithm}
+Ralph Lehmann.
+\newblock An algorithm for the determination of all significant pathways in
+  chemical reaction systems.
+\newblock {\em Journal of atmospheric chemistry}, 47(1):45--78, 2004.
+
+\bibitem{ch4_20_lehmann2004algorithm}
+Ralph Lehmann.
+\newblock An algorithm for the determination of all significant pathways in
+  chemical reaction systems.
+\newblock {\em Journal of atmospheric chemistry}, 47(1):45--78, 2004.
+
+\bibitem{ch1_IRPC_40_leiserson2001introduction}
+Charles~E Leiserson, Ronald~L Rivest, Clifford Stein, and Thomas~H Cormen.
+\newblock Introduction to algorithms, 2001.
+
+\bibitem{ch3_36_li2001high}
+Genyuan Li, Carey Rosenthal, and Herschel Rabitz.
+\newblock High dimensional model representations.
+\newblock {\em The Journal of Physical Chemistry A}, 105(33):7765--7777, 2001.
+
+\bibitem{ch1_IRPC_61_li2001high}
+Genyuan Li, Carey Rosenthal, and Herschel Rabitz.
+\newblock High dimensional model representations.
+\newblock {\em The Journal of Physical Chemistry A}, 105(33):7765--7777, 2001.
+
+\bibitem{ch3_37_li2002practical}
+Genyuan Li, Sheng-Wei Wang, and Herschel Rabitz.
+\newblock Practical approaches to construct rs-hdmr component functions.
+\newblock {\em The Journal of Physical Chemistry A}, 106(37):8721--8733, 2002.
+
+\bibitem{ch1_IRPC_62_li2002practical}
+Genyuan Li, Sheng-Wei Wang, and Herschel Rabitz.
+\newblock Practical approaches to construct rs-hdmr component functions.
+\newblock {\em The Journal of Physical Chemistry A}, 106(37):8721--8733, 2002.
+
+\bibitem{aHm_1_li2007comprehensive}
+Juan Li, Zhenwei Zhao, Andrei Kazakov, Marcos Chaos, Frederick~L Dryer, and
+  James~J Scire.
+\newblock A comprehensive kinetic mechanism for co, ch2o, and ch3oh combustion.
+\newblock {\em International Journal of Chemical Kinetics}, 39(3):109--136,
+  2007.
+
+\bibitem{ch4_31_lotka1910contribution}
+Alfred~J Lotka.
+\newblock Contribution to the theory of periodic reactions.
+\newblock {\em The Journal of Physical Chemistry}, 14(3):271--274, 1910.
+
+\bibitem{ch1_IRPC_31_lu2005directed}
+Tianfeng Lu and Chung~K Law.
+\newblock A directed relation graph method for mechanism reduction.
+\newblock {\em Proceedings of the Combustion Institute}, 30(1):1333--1341,
+  2005.
+
+\bibitem{ch3_13_lu2005directed}
+Tianfeng Lu and Chung~K Law.
+\newblock A directed relation graph method for mechanism reduction.
+\newblock {\em Proceedings of the Combustion Institute}, 30(1):1333--1341,
+  2005.
+
+\bibitem{ch4_22_lu2006applicability}
+Tianfeng Lu and Chung~K Law.
+\newblock On the applicability of directed relation graphs to the reduction of
+  reaction mechanisms.
+\newblock {\em Combustion and Flame}, 146(3):472--483, 2006.
+
+\bibitem{ch1_IRPC_69_maas1992simplifying}
+Ulrich Maas and Stephen~B Pope.
+\newblock Simplifying chemical kinetics: intrinsic low-dimensional manifolds in
+  composition space.
+\newblock {\em Combustion and flame}, 88(3):239--264, 1992.
+
+\bibitem{ch1_IRPC_24_makri1999time}
+Nancy Makri.
+\newblock Time-dependent quantum methods for large systems.
+\newblock {\em Annual review of physical chemistry}, 50(1):167--191, 1999.
+
+\bibitem{ch1_IRPC_34_mcquarrie1967stochastic}
+Donald~A McQuarrie.
+\newblock Stochastic approach to chemical kinetics.
+\newblock {\em Journal of applied probability}, 4(3):413--478, 1967.
+
+\bibitem{ch3_21_mcquarrie1967stochastic}
+Donald~A McQuarrie.
+\newblock Stochastic approach to chemical kinetics.
+\newblock {\em Journal of applied probability}, 4(3):413--478, 1967.
+
+\bibitem{ch4_4_mcquarrie1967stochastic}
+Donald~A McQuarrie.
+\newblock Stochastic approach to chemical kinetics.
+\newblock {\em Journal of applied probability}, 4(3):413--478, 1967.
+
+\bibitem{ch3_28_mcrae1982global}
+Gregory~J McRae, James~W Tilden, and John~H Seinfeld.
+\newblock Global sensitivity analysis—a computational implementation of the
+  fourier amplitude sensitivity test (fast).
+\newblock {\em Computers \& Chemical Engineering}, 6(1):15--25, 1982.
+
+\bibitem{ch4_11_mekenyan1994graph}
+O~Mekenyan, SS~Basak, D~Bonchev, and O~Mekenyan.
+\newblock Graph theoretical approaches to chemical reactivity, 1994.
+
+\bibitem{ch1_IRPC_6_miller1990chemical}
+James~A Miller, Robert~J Kee, and Charles~K Westbrook.
+\newblock Chemical kinetics and combustion modeling.
+\newblock {\em Annual Review of Physical Chemistry}, 41(1):345--387, 1990.
+
+\bibitem{ch1_IRPC_39_mjolsness2013time}
+Eric Mjolsness.
+\newblock Time-ordered product expansions for computational stochastic system
+  biology.
+\newblock {\em Physical biology}, 10(3):035009, 2013.
+
+\bibitem{ch3_25_mjolsness2013time}
+Eric Mjolsness.
+\newblock Time-ordered product expansions for computational stochastic system
+  biology.
+\newblock {\em Physical biology}, 10(3):035009, 2013.
+
+\bibitem{mulick}
+F.~C. Mulick.
+\newblock Rotational axisymmetric mean flow and damping of acoustic waves in a
+  solid propellant.
+\newblock {\em AIAA J.}, 3:1062--1063, 1964.
+
+\bibitem{mulick75}
+F.~C. Mulick.
+\newblock Stability of four-dimensional motions in a combustion chamber.
+\newblock {\em Comb. Sci. Tech.}, 19:99--124, 1981.
+
+\bibitem{ch3_4_najm2009uncertainty}
+Habib~N Najm, Bert~J Debusschere, Youssef~M Marzouk, Steve Widmer, and
+  OP~Le~Ma{\^\i}tre.
+\newblock Uncertainty quantification in chemical systems.
+\newblock {\em International journal for numerical methods in engineering},
+  80(6-7):789--814, 2009.
+
+\bibitem{ch1_IRPC_56_najm2009uncertainty}
+Habib~N Najm, Bert~J Debusschere, Youssef~M Marzouk, Steve Widmer, and
+  OP~Le~Ma{\^\i}tre.
+\newblock Uncertainty quantification in chemical systems.
+\newblock {\em International journal for numerical methods in engineering},
+  80(6-7):789--814, 2009.
+
+\bibitem{ch4_16_oster1971network}
+George Oster, Alan Perelson, and Aharon Katchalsky.
+\newblock Network thermodynamics.
+\newblock {\em Nature}, 234(5329):393--399, 1971.
+
+\bibitem{ch1_IRPC_2_pilling1996reaction}
+Michael~J Pilling, Paul~W Seakins, et~al.
+\newblock {\em Reaction kinetics}.
+\newblock Oxford University Press, 1996.
+
+\bibitem{ch4_3_pilling1996reaction}
+Michael~J Pilling, Paul~W Seakins, et~al.
+\newblock {\em Reaction kinetics}.
+\newblock Oxford University Press, 1996.
+
+\bibitem{ch3_35_rabitz1999general}
+Herschel Rabitz and {\"O}mer~F Ali{\c{s}}.
+\newblock General foundations of high-dimensional model representations.
+\newblock {\em Journal of Mathematical Chemistry}, 25(2-3):197--233, 1999.
+
+\bibitem{aHm_3_radhakrishnan1993description}
+Krishnan Radhakrishnan and Alan~C Hindmarsh.
+\newblock Description and use of lsode, the livermore solver for ordinary
+  differential equations.
+\newblock 1993.
+
+\bibitem{richards}
+R.~S. Richards and A.~M. Brown.
+\newblock Coupling between acoustic velocity oscillations and solid propellant
+  combustion.
+\newblock {\em J. Prop. and Power}, 5:828--837, 1982.
+
+\bibitem{ch4_27_roussel1990geometry}
+Marc~R Roussel and Simon~J Fraser.
+\newblock Geometry of the steady-state approximation: Perturbation and
+  accelerated convergence methods.
+\newblock {\em The Journal of chemical physics}, 93(2):1072--1081, 1990.
+
+\bibitem{ch3_2_saltelli2000}
+A~Saltelli, K~Chan, and EM~Scott.
+\newblock 2000, sensitivity analysis.
+
+\bibitem{ch1_IRPC_54_saltelli2000sensitivity}
+Andrea Saltelli, Karen Chan, E~Marian Scott, et~al.
+\newblock {\em Sensitivity analysis}, volume~1.
+\newblock Wiley New York, 2000.
+
+\bibitem{ch3_32_saltelli2008global}
+Andrea Saltelli, Marco Ratto, Terry Andres, Francesca Campolongo, Jessica
+  Cariboni, Debora Gatelli, Michaela Saisana, and Stefano Tarantola.
+\newblock {\em Global sensitivity analysis: the primer}.
+\newblock John Wiley \& Sons, 2008.
+
+\bibitem{ch1_IRPC_58_saltelli2008global}
+Andrea Saltelli, Marco Ratto, Terry Andres, Francesca Campolongo, Jessica
+  Cariboni, Debora Gatelli, Michaela Saisana, and Stefano Tarantola.
+\newblock {\em Global sensitivity analysis: the primer}.
+\newblock John Wiley \& Sons, 2008.
+
+\bibitem{ch4_23_schnakenberg1976network}
+J{\"u}rgen Schnakenberg.
+\newblock Network theory of microscopic and macroscopic behavior of master
+  equation systems.
+\newblock {\em Reviews of Modern physics}, 48(4):571, 1976.
+
+\bibitem{ch1_IRPC_38_schulmann1996techniques}
+Lawrence~S Schulmann.
+\newblock Techniques and applications of paths integrals, 1996.
+
+\bibitem{ch3_33_scire2001comparison}
+James~J Scire, Frederick~L Dryer, and Richard~A Yetter.
+\newblock Comparison of global and local sensitivity techniques for rate
+  constants determined using complex reaction mechanisms.
+\newblock {\em International Journal of Chemical Kinetics}, 33(12):784--802,
+  2001.
+
+\bibitem{ch1_IRPC_59_scire2001comparison}
+James~J Scire, Frederick~L Dryer, and Richard~A Yetter.
+\newblock Comparison of global and local sensitivity techniques for rate
+  constants determined using complex reaction mechanisms.
+\newblock {\em International Journal of Chemical Kinetics}, 33(12):784--802,
+  2001.
+
+\bibitem{ch4_35_skeel1992limits}
+Robert~D Skeel and Hon-Wah Tam.
+\newblock Limits of parallelism in explicit ode methods.
+\newblock {\em Numerical Algorithms}, 2(3):337--349, 1992.
+
+\bibitem{ch1_IRPC_67_skodje2001geometrical}
+Rex~T Skodje and Michael~J Davis.
+\newblock Geometrical simplification of complex kinetic systems.
+\newblock {\em The Journal of Physical Chemistry A}, 105(45):10356--10365,
+  2001.
+
+\bibitem{ch3_51_skodje2001geometrical}
+Rex~T Skodje and Michael~J Davis.
+\newblock Geometrical simplification of complex kinetic systems.
+\newblock {\em The Journal of Physical Chemistry A}, 105(45):10356--10365,
+  2001.
+
+\bibitem{ch3_41_skodje2010theoretical}
+Rex~T Skodje, Alison~S Tomlin, Stephen~J Klippenstein, Lawrence~B Harding, and
+  Michael~J Davis.
+\newblock Theoretical validation of chemical kinetic mechanisms: combustion of
+  methanol.
+\newblock {\em The Journal of Physical Chemistry A}, 114(32):8286--8301, 2010.
+
+\bibitem{ch1_IRPC_64_skodje2010theoretical}
+Rex~T Skodje, Alison~S Tomlin, Stephen~J Klippenstein, Lawrence~B Harding, and
+  Michael~J Davis.
+\newblock Theoretical validation of chemical kinetic mechanisms: combustion of
+  methanol.
+\newblock {\em The Journal of Physical Chemistry A}, 114(32):8286--8301, 2010.
+
+\bibitem{smitty}
+T.~M. Smitty, R.~L. Coach, and F.~B. H\"ondra.
+\newblock Unsteady flow in simulated solid rocket motors.
+\newblock In {\em 16st Aerospace Sciences Meeting}, number 0112 in 78. AIAA,
+  1978.
+
+\bibitem{ch3_34_sobol2001global}
+Ilya~M Sobol.
+\newblock Global sensitivity indices for nonlinear mathematical models and
+  their monte carlo estimates.
+\newblock {\em Mathematics and computers in simulation}, 55(1):271--280, 2001.
+
+\bibitem{ch1_IRPC_13_som2013quantum}
+Sibendu Som, Wei Liu, Dingyu~DY Zhou, Gina~M Magnotti, Raghu Sivaramakrishnan,
+  Douglas~E Longman, Rex~T Skodje, and Michael~J Davis.
+\newblock Quantum tunneling affects engine performance.
+\newblock {\em The journal of physical chemistry letters}, 4(12):2021--2025,
+  2013.
+
+\bibitem{ch1_IRPC_11_somorjai2010introduction}
+Gabor~A Somorjai and Yimin Li.
+\newblock {\em Introduction to surface chemistry and catalysis}.
+\newblock John Wiley \& Sons, 2010.
+
+\bibitem{ch1_IRPC_3_steinfeld1989chemical}
+Jeffrey~I Steinfeld, Joseph~Salvadore Francisco, and William~L Hase.
+\newblock {\em Chemical kinetics and dynamics}, volume~3.
+\newblock Prentice Hall Englewood Cliffs (New Jersey), 1989.
+
+\bibitem{ch4_2_steinfeld1989chemical}
+Jeffrey~I Steinfeld, Joseph~Salvadore Francisco, and William~L Hase.
+\newblock {\em Chemical kinetics and dynamics}, volume~3.
+\newblock Prentice Hall Englewood Cliffs (New Jersey), 1989.
+
+\bibitem{taum}
+Joseph~D. Taum.
+\newblock Investigation of flow turning phenomenon.
+\newblock In {\em 20th Aerospace Sciences Meeting}, number 0297 in 82. AIAA,
+  1982.
+
+\bibitem{ch1_IRPC_30_temkin1992application}
+Oleg~N Temkin and Danail~G Bonchev.
+\newblock Application of graph theory to chemical kinetics: Part 1. kinetics of
+  complex reactions.
+\newblock {\em J. Chem. Educ}, 69(7):544, 1992.
+
+\bibitem{ch3_11_temkin1996chemical}
+Oleg~N Temkin, Andrew~V Zeigarnik, and DG~Bonchev.
+\newblock {\em Chemical reaction networks: a graph-theoretical approach}.
+\newblock CRC Press, 1996.
+
+\bibitem{ch1_IRPC_46_tosatto2013simplifying}
+Luca Tosatto and Youssef Marzouk.
+\newblock Simplifying chemical kinetic systems under uncertainty using markov
+  chains.
+\newblock In {\em extended abstract, Workshop on Numerical Combustion}, 2013.
+
+\bibitem{ch3_3_turanyi2008sensitivity}
+Tam{\'a}s Tur{\'a}nyi.
+\newblock Sensitivity analysis in chemical kinetics.
+\newblock {\em International Journal of Chemical Kinetics}, 40(11):685--686,
+  2008.
+
+\bibitem{ch1_IRPC_55_turanyi2008sensitivity}
+Tam{\'a}s Tur{\'a}nyi.
+\newblock Sensitivity analysis in chemical kinetics.
+\newblock {\em International Journal of Chemical Kinetics}, 40(11):685--686,
+  2008.
+
+\bibitem{ch1_IRPC_33_van1992stochastic}
+Nicolaas~Godfried Van~Kampen.
+\newblock {\em Stochastic processes in physics and chemistry}, volume~1.
+\newblock Elsevier, 1992.
+
+\bibitem{ch3_8_van1992stochastic}
+Nicolaas~Godfried Van~Kampen.
+\newblock {\em Stochastic processes in physics and chemistry}, volume~1.
+\newblock Elsevier, 1992.
+
+\bibitem{ch4_32_volterra1928variations}
+Vito Volterra.
+\newblock Variations and fluctuations of the number of individuals in animal
+  species living together.
+\newblock {\em ICES Journal of Marine Science}, 3(1):3--51, 1928.
+
+\bibitem{ch3_31_wang2015combustion}
+Hai Wang and David~A Sheen.
+\newblock Combustion kinetic model uncertainty quantification, propagation and
+  minimization.
+\newblock {\em Progress in Energy and Combustion Science}, 47:1--31, 2015.
+
+\bibitem{ch1_IRPC_57_wang2015combustion}
+Hai Wang and David~A Sheen.
+\newblock Combustion kinetic model uncertainty quantification, propagation and
+  minimization.
+\newblock {\em Progress in Energy and Combustion Science}, 47:1--31, 2015.
+
+\bibitem{ch1_IRPC_4_warnatz2017combustion}
+J~Warnatz, U~Maas, and RW~Dibble.
+\newblock Combustion: physical and chemical fundamentals, modeling and
+  simulation, experiments, pollutant formation. 2006.
+\newblock {\em Int. J. Comp. Meth. and Exp. Meas}, 5(1), 2017.
+
+\bibitem{ch4_34_warnatz2006physical}
+J{\"u}rgen Warnatz, Ulrich Maas, and Robert~W Dibble.
+\newblock Physical and chemical fundamentals, modeling and simulation,
+  experiments, pollutant formation.
+\newblock {\em Springer, Berlin Frenklach M, Wang H (1990) Detailed kinetic
+  modelling of soot particle nucleation and growth. Proc Comb Inst},
+  23:1559--1566, 2006.
+
+\bibitem{ch1_IRPC_5_westbrook2000chemical}
+Charles~K Westbrook.
+\newblock Chemical kinetics of hydrocarbon ignition in practical combustion
+  systems.
+\newblock {\em Proceedings of the Combustion Institute}, 28(2):1563--1577,
+  2000.
+
+\bibitem{ch3_46_westbrook2000chemical}
+Charles~K Westbrook.
+\newblock Chemical kinetics of hydrocarbon ignition in practical combustion
+  systems.
+\newblock {\em Proceedings of the Combustion Institute}, 28(2):1563--1577,
+  2000.
+
+\bibitem{ch1_IRPC_8_zador2011kinetics}
+Judit Z{\'a}dor, Craig~A Taatjes, and Ravi~X Fernandes.
+\newblock Kinetics of elementary reactions in low-temperature autoignition
+  chemistry.
+\newblock {\em Progress in energy and combustion science}, 37(4):371--421,
+  2011.
+
+\bibitem{ch3_29_zador2005local}
+Judit Zador, Istvan~Gy Zsely, Tamas Turanyi, Marco Ratto, Stefano Tarantola,
+  and Andrea Saltelli.
+\newblock Local and global uncertainty analyses of a methane flame model.
+\newblock {\em The Journal of Physical Chemistry A}, 109(43):9795--9807, 2005.
+
+\bibitem{ch3_30_zador2005local}
+Judit Zador, Istvan~Gy Zsely, Tamas Turanyi, Marco Ratto, Stefano Tarantola,
+  and Andrea Saltelli.
+\newblock Local and global uncertainty analyses of a methane flame model.
+\newblock {\em The Journal of Physical Chemistry A}, 109(43):9795--9807, 2005.
+
+\bibitem{ch1_IRPC_60_zador2005local}
+Judit Zador, Istvan~Gy Zsely, Tamas Turanyi, Marco Ratto, Stefano Tarantola,
+  and Andrea Saltelli.
+\newblock Local and global uncertainty analyses of a methane flame model.
+\newblock {\em The Journal of Physical Chemistry A}, 109(43):9795--9807, 2005.
+
+\bibitem{zeddini}
+Robert~A. Zeddini.
+\newblock Injection-induced flows in porous-walled ducts.
+\newblock {\em AIAA Journal}, 14:766--773, 1981.
+
+\bibitem{ch3_44_zhou2013multitarget}
+Dingyu~DY Zhou, Michael~J Davis, and Rex~T Skodje.
+\newblock Multitarget global sensitivity analysis of n-butanol combustion.
+\newblock {\em The Journal of Physical Chemistry A}, 117(17):3569--3584, 2013.
+
+\bibitem{ch1_IRPC_66_zhou2013multitarget}
+Dingyu~DY Zhou, Michael~J Davis, and Rex~T Skodje.
+\newblock Multitarget global sensitivity analysis of n-butanol combustion.
+\newblock {\em The Journal of Physical Chemistry A}, 117(17):3569--3584, 2013.
+
+\bibitem{ch3_50_zhou2012theoretical}
+Dingyu~DY Zhou, Keli Han, Peiyu Zhang, Lawrence~B Harding, Michael~J Davis, and
+  Rex~T Skodje.
+\newblock Theoretical determination of the rate coefficient for the ho2+ ho2→
+  h2o2+ o2 reaction: Adiabatic treatment of anharmonic torsional effects.
+\newblock {\em The Journal of Physical Chemistry A}, 116(9):2089--2100, 2012.
+
+\bibitem{ch3_40_ziehn2009global}
+T~Ziehn, KJ~Hughes, JF~Griffiths, R~Porter, and AS~Tomlin.
+\newblock A global sensitivity study of cyclohexane oxidation under low
+  temperature fuel-rich conditions using hdmr methods.
+\newblock {\em Combustion Theory and Modelling}, 13(4):589--605, 2009.
+
+\bibitem{ch1_IRPC_63_ziehn2009global}
+T~Ziehn, KJ~Hughes, JF~Griffiths, R~Porter, and AS~Tomlin.
+\newblock A global sensitivity study of cyclohexane oxidation under low
+  temperature fuel-rich conditions using hdmr methods.
+\newblock {\em Combustion Theory and Modelling}, 13(4):589--605, 2009.
+
+\bibitem{ch3_39_ziehn2009gui}
+T~Ziehn and Alison~S Tomlin.
+\newblock Gui--hdmr--a software tool for global sensitivity analysis of complex
+  models.
+\newblock {\em Environmental Modelling \& Software}, 24(7):775--785, 2009.
+
+\bibitem{ch3_38_ziehn2008global}
+Tilo Ziehn and Alison~S Tomlin.
+\newblock A global sensitivity study of sulfur chemistry in a premixed methane
+  flame model using hdmr.
+\newblock {\em International Journal of Chemical Kinetics}, 40(11):742--753,
+  2008.
+
+\bibitem{ch3_52_zsely2005similarity}
+I~Gy Zs{\'e}ly, J~Z{\'a}dor, and T~Tur{\'a}nyi.
+\newblock On the similarity of the sensitivity functions of methane combustion
+  models.
+\newblock {\em Combustion Theory and Modelling}, 9(4):721--738, 2005.
+
+\end{thebibliography}

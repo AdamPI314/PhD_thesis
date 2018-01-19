@@ -33,12 +33,18 @@ INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/Program Files/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
@@ -246,6 +252,9 @@ INPUT chapter4.tex
 INPUT figs/chapter4/fig1.png
 INPUT ./figs/chapter4/fig1.png
 INPUT ./figs/chapter4/fig1.png
+INPUT figs/chapter4/fig2.jpg
+INPUT ./figs/chapter4/fig2.jpg
+INPUT ./figs/chapter4/fig2.jpg
 INPUT mythesis.bbl
 INPUT mythesis.bbl
 INPUT appendixA.tex

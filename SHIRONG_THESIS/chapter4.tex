@@ -133,3 +133,123 @@ iteration as an empirical matter. In our numerical applications,
 we have found that the iteration is stable, given a sensible initial
 guess, and the iteration converges within 10 steps to a level
 consistent with the numerical error of the MC integration of $\overline{\mathbf{P}}(t_0,t)$.
+\section{Pathway Generation}
+\label{ch4:sec:path_generation}
+An important ingredient in the
+SOHR method is the choice of the "important" chemical
+pathways needed to treat a given kinetic network. Since we
+have discussed this procedure elsewhere\cite{ch4_10_bai2016sum}, and since this issue
+is not the primary focus of this work, we shall only address this
+point briefly. A general chemical network will typically have an
+infinite number of pathways on a kinetic graph that can deliver
+a tagged atom from an initial species $S_r$ to a final species $S_i$;
+however, the probabilistic weights fall off for long path lengths,
+and the pathway expansion can be truncated. For the simple
+special case of acyclic graphs, which do not satisfy micro-reversibility
+and form trees, there will actually be only a finite
+number of possible paths. We have previously outlined three
+strategies to generate the paths for the general problem:
+\begin{enumerate}
+\item Matrix enumeration of the paths using the adjacency matrix, as previously introduced in Section \ref{ch2:sec:theo_enu_path}.
+\item Monte Carlo path sampling using a small stochastic simulation of the kinetics, as previously discussed in Section \ref{ch2:sec:Stochastic_pathway_enumeration}.
+\item Search algorithms to find optimal paths on weighted graphs.\cite{ch1_IRPC_40_leiserson2001introduction, ch1_IRPC_41_dijkstra1959note, ch1_IRPC_42_bellman1958routing, ch1_IRPC_43_hart1968formal, ch1_IRPC_44_eppstein1998finding, ch1_IRPC_45_harary1997dynamic}
+\end{enumerate}
+\paragraph{}
+To illustrate and explore the performance of the iterative
+SOHR method, we have chosen two test problems: the model
+Lotka-Volterra (LV) system and the high-temperature
+combustion problem H$_2$-O$_2$. The LV is a simple three-reaction
+model that has often been employed in the literature to explore
+new ideas in nonlinear kinetics and dynamical systems. This
+application allows us to investigate the workings of the SOHR
+method without the complications encountered in "real"
+problems. In particular, there are only a finite number of
+chemical pathways in the LV mechanism due to the absence of
+reverse reactions. The H$_2$-O$_2$ combustion system is, in contrast,
+a true physical problem of some complexity with 21 reversible
+reactions and empirically determined temperature/pressure dependent 
+rate coefficients. (Detailed mechanism is described in Appendix \ref{appendixC}) There are an infinite number of
+potential chemical pathways that must be efficiently pruned to
+yield a manageable numerical problem. Success with this system
+demonstrates that the predictive iterative SOHR method has
+the potential of practical utility to physical systems.
+\section{The Lotka-Volterra System}
+\label{ch4:sec:lv}
+The LV system is a nonlinear dynamical system that has been used to study
+chemical kinetics\cite{ch4_31_lotka1910contribution} as well other problems such as predator-prey population ecology\cite{ch4_32_volterra1928variations} and macroeconomics.\cite{ch4_33_feinstein1975socialism} In kinetics,
+the autocatalytic LV system corresponds to the three reactions
+%%%https://tex.stackexchange.com/questions/135567/how-can-i-label-only-one-line-of-an-equation-array
+\begin{align*}
+    & A + X \xrightarrow[]{\makebox[1cm]{}} 2X	\tag{$R_1$} \label{ch4:lv:rxn1}\\
+    & X + Y \xrightarrow[]{\makebox[1cm]{}} 2Y		\tag{$R_2$} \label{ch4:lv:rxn2}\\
+    & Y \xrightarrow[]{\makebox[1cm]{}} B				\tag{$R_3$} \label{ch4:lv:rxn3}
+\end{align*}
+This yields the simple kinetics equations,
+%%% && as column delimiter in eqnarray
+%%% right aligned, center-ish
+%\begin{eqnarray}
+%    \frac{dA}{dt} = -k_1 A \cdot X			\label{ch4:eqn18} \\
+%    \frac{dX}{dt} = k_1 A \cdot X - k_2 X \cdot Y	\label{ch4:eqn19} \\
+%    \frac{dY}{dt} = k_2 X \cdot Y - k_3 Y		\label{ch4:eqn20} \\
+%    \frac{dB}{dt} = k_3 Y				\label{ch4:eqn21}
+%\end{eqnarray}
+%%% left aligned, center-ish
+\begin{eqnarray}
+    && \frac{dA}{dt} = -k_1 A \cdot X			\label{ch4:eqn18} \\
+    && \frac{dX}{dt} = k_1 A \cdot X - k_2 X \cdot Y	\label{ch4:eqn19} \\
+    && \frac{dY}{dt} = k_2 X \cdot Y - k_3 Y		\label{ch4:eqn20} \\
+    && \frac{dB}{dt} = k_3 Y				\label{ch4:eqn21}
+\end{eqnarray}
+\begin{figure}[htbp]
+	\caption[Kinetic graph for the Lotka-Volterra model]{Kinetic graph for the Lotka-Volterra model.}
+    \begin{center}
+	\includegraphics[width=100mm]{figs/chapter4/fig2.jpg}
+    \end{center}
+\label{ch4:fig:2}
+\end{figure}
+
+\begin{table}[htb]
+    \caption[Lotka-Volterra System]{Lotka-Volterra System: The System Parameters
+and Paths Used in the Iterative Solution Procedure.}
+    \begin{center}
+\begin{tabular}{clcc}
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{c}{\cellcolor[HTML]{C0C0C0}reactions}               & rate coefficients    & initial conditions             \\
+$R_1$                & $A+X \xrightarrow[]{} 2X$                    & $k_1 = 10$           & \multicolumn{1}{l}{$A(0)=1.0$} \\
+$R_2$                & $X+Y \xrightarrow[]{} 2Y$                    & $k_2 = 10$           & \multicolumn{1}{l}{$B(0)=1.0$} \\
+$R_3$                & $Y \xrightarrow[]{} B$                       & $k_3 = 10$           & \multicolumn{1}{l}{$X(0)=1.0$} \\
+\multicolumn{1}{l}{} &                                              & \multicolumn{1}{l}{} & \multicolumn{1}{l}{$Y(0)=1.0$} \\
+\rowcolor[HTML]{C0C0C0} 
+path                 & \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}} &                      & length                         \\
+\multicolumn{3}{c}{$A$}                                                                    & 0                              \\
+\multicolumn{3}{c}{$B$}                                                                    & 0                              \\
+\multicolumn{3}{c}{$X$}                                                                    & 0                              \\
+\multicolumn{3}{c}{$Y$}                                                                    & 0                              \\
+\multicolumn{3}{c}{$A \rightarrow X$}                                                      & 1                              \\
+\multicolumn{3}{c}{$X \rightarrow Y$}                                                      & 1                              \\
+\multicolumn{3}{c}{$Y \rightarrow B$}                                                      & 1                              \\
+\multicolumn{3}{c}{$A \rightarrow X \rightarrow Y$}                                        & 2                              \\
+\multicolumn{3}{c}{$X \rightarrow Y \rightarrow B$}                                        & 2                              \\
+\multicolumn{3}{c}{$A \rightarrow X \rightarrow Y \rightarrow B$}                          & 3                             
+\end{tabular}
+   \\ \rule{0mm}{5mm}
+   ${}^\dagger$Concentration of A can vary with time.		% footnote symbol
+\end{center}
+\label{ch4:table1}
+\end{table}
+
+where $A$, $B$, $X$, and $Y$ stand for the time-dependent
+concentrations, and $k_1$, $k_2$, and $k_3$ are the rate coefficients in
+reactions \ref{ch4:lv:rxn1}, \ref{ch4:lv:rxn2} and \ref{ch4:lv:rxn3}. When we hold fixed the value of $A$, the
+intermediates $X$ and $Y$ can undergo a variety of interesting
+nonlinear effects such as persistent chemical oscillation. For the
+autonomous LV problem, where $A$ varies in time, the kinetics
+approaches a simple stable equilibrium state. Since reactions
+\ref{ch4:lv:rxn1}, \ref{ch4:lv:rxn2} and \ref{ch4:lv:rxn3} conserve the number of molecules, we can hypothesize
+a fictitious atom at the core of each species that we choose to
+follow. The directed chemical graph, shown in Fig. \ref{ch4:fig:2}, illustrates the simple connectivity of the chemical mechanism.
+We list in Table 1 the parameters used in the calculation and
+the possible reaction routes followed by a fictitious atom. In the
+pathway representation, the kinetics is represented by 10
+independent chemical paths: three terminating on B
+

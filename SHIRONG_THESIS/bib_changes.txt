@@ -1,9 +1,268 @@
-ch1_IRPC_17_ch4_9_bai2015sum
-ch1_IRPC_17_ch4_9_bai2015sum
-ch1_IRPC_17_ch4_9_bai2015sum
+[1]
+crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf
+bai2015sum
+crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf
 
 -->
 
-ch1_IRPC_17_ch1_IRPC_17_ch4_9_bai2015sum
+ch1_IRPC_17_crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf
+
+crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf
+
 
 ch1_IRPC_17_ch4_9_bai2015sum
+
+
+[2]
+bai2017simulating
+ch1_IRPC_18_bai2017simulating
+
+
+ch1_IRPC_18_bai2017simulating
+
+[3]
+ch4_8_bai2014sum
+ch3_6_bai2014sum
+ch1_IRPC_16_bai2014sum
+
+ch1_IRPC_16_ch3_6_ch4_8_bai2014sum
+
+grep . -rlw -e "ch4_8_bai2014sum" | xargs sed -i 's/ch4_8_bai2014sum/crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf/g'
+grep . -rlw -e "ch3_6_bai2014sum" | xargs sed -i 's/ch3_6_bai2014sum/crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf/g'
+grep . -rlw -e "ch1_IRPC_16_bai2014sum" | xargs sed -i 's/ch1_IRPC_16_bai2014sum/crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf/g'
+
+grep . -rlw -e "crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf" | xargs sed -i 's/crazy_identifier_777_666_9098889766_afaldfjkfdafaefadfadf/ch1_IRPC_16_ch3_6_ch4_8_bai2014sum/g'
+
+
+[4]
+ch4_12_balaban1976chemical
+ch1_IRPC_29_balaban1976chemical
+
+[5]
+ch3_12_chern1990effective
+ch1_IRPC_22_chern1990effective
+grep . -rlw -e "ch3_12_chern1990effective" | xargs sed -i 's/ch3_12_chern1990effective/ch1_IRPC_22_chern1990effective/g'
+
+[6]
+ch4_14_christiansen1953elucidation
+ch1_IRPC_27_christiansen1953elucidation
+
+grep . -rlw -e "ch4_14_christiansen1953elucidation" | xargs sed -i 's/ch4_14_christiansen1953elucidation/ch1_IRPC_27_christiansen1953elucidation/g'
+
+[7] around 23
+ch3_43_davis2011global
+ch1_IRPC_65_davis2011global
+
+grep . -rlw -e "ch3_43_davis2011global" | xargs sed -i 's/ch3_43_davis2011global/ch1_IRPC_65_davis2011global/g'
+
+[8] around 29
+ch4_21_feng2010dominant
+ch3_16_feng2010dominant
+ch1_IRPC_21_feng2010dominant
+
+grep . -rlw -e "ch4_21_feng2010dominant" | xargs sed -i 's/ch4_21_feng2010dominant/ch1_IRPC_21_feng2010dominant/g'
+grep . -rlw -e "ch3_16_feng2010dominant" | xargs sed -i 's/ch3_16_feng2010dominant/ch1_IRPC_21_feng2010dominant/g'
+
+[9] around 30
+ch4_26_feynman2010quantum
+ch3_7_feynman1965quantum
+ch1_IRPC_23_feynman1965quantum
+
+grep . -rlw -e "ch3_7_feynman1965quantum" | xargs sed -i 's/ch3_7_feynman1965quantum/ch4_26_feynman2010quantum/g'
+grep . -rlw -e "ch1_IRPC_23_feynman1965quantum" | xargs sed -i 's/ch1_IRPC_23_feynman1965quantum/ch4_26_feynman2010quantum/g'
+
+[10] around 34
+ch3_23_gibson2000efficient
+ch1_IRPC_37_gibson2000efficient
+
+grep . -rlw -e "ch3_23_gibson2000efficient" | xargs sed -i 's/ch3_23_gibson2000efficient/ch1_IRPC_37_gibson2000efficient/g'
+
+[11] around 36
+ch4_5_gillespie1976general
+ch3_22_gillespie1976general
+ch1_IRPC_35_gillespie1976general
+
+grep . -rlw -e "ch4_5_gillespie1976general" | xargs sed -i 's/ch4_5_gillespie1976general/ch1_IRPC_35_gillespie1976general/g'
+grep . -rlw -e "ch3_22_gillespie1976general" | xargs sed -i 's/ch3_22_gillespie1976general/ch1_IRPC_35_gillespie1976general/g'
+
+[12] around 39
+ch3_24_gillespie2013perspective
+ch1_IRPC_36_gillespie2013perspective
+
+grep . -rlw -e "ch3_24_gillespie2013perspective" | xargs sed -i 's/ch3_24_gillespie2013perspective/ch1_IRPC_36_gillespie2013perspective/g'
+
+[13] around 44
+ch4_25_harary1997dynamic
+ch1_IRPC_45_harary1997dynamic
+
+grep . -rlw -e "ch4_25_harary1997dynamic" | xargs sed -i 's/ch4_25_harary1997dynamic/ch1_IRPC_45_harary1997dynamic/g'
+
+[14] around 47
+ch3_20_hashemi2015hydrogen
+ch1_IRPC_53_hashemi2015hydrogen
+
+grep . -rlw -e "ch3_20_hashemi2015hydrogen" | xargs sed -i 's/ch3_20_hashemi2015hydrogen/ch1_IRPC_53_hashemi2015hydrogen/g'
+
+[15] around 47
+ch4_19_he2008graph
+ch3_15_he2008graph
+ch1_IRPC_19_he2008graph
+
+grep . -rlw -e "ch4_19_he2008graph" | xargs sed -i 's/ch4_19_he2008graph/ch1_IRPC_19_he2008graph/g'
+grep . -rlw -e "ch3_15_he2008graph" | xargs sed -i 's/ch3_15_he2008graph/ch1_IRPC_19_he2008graph/g'
+
+[16] around 54
+aHm_4_kee2008chemkin
+ch1_IRPC_32_chemkin201115112
+ch3_17_kee2008chemkin
+
+grep . -rlw -e "aHm_4_kee2008chemkin" | xargs sed -i 's/aHm_4_kee2008chemkin/ch3_17_kee2008chemkin/g'
+grep . -rlw -e "ch1_IRPC_32_chemkin201115112" | xargs sed -i 's/ch1_IRPC_32_chemkin201115112/ch3_17_kee2008chemkin/g'
+
+[17] around 58
+ch3_19_konnov2008remaining
+ch1_IRPC_52_konnov2008remaining
+
+grep . -rlw -e "ch3_19_konnov2008remaining" | xargs sed -i 's/ch3_19_konnov2008remaining/ch1_IRPC_52_konnov2008remaining/g'
+
+[18] around 61
+ch4_7_kramer2014following
+ch3_5_kramer2014following
+ch1_IRPC_15_kramer2014following
+
+
+grep . -rlw -e "ch4_7_kramer2014following" | xargs sed -i 's/ch4_7_kramer2014following/ch1_IRPC_15_kramer2014following/g'
+grep . -rlw -e "ch3_5_kramer2014following" | xargs sed -i 's/ch3_5_kramer2014following/ch1_IRPC_15_kramer2014following/g'
+
+[19] around 60
+ch4_1_laidler1987chemical
+ch3_1_laidler1987chemical
+ch1_IRPC_1_laidler1987chemical
+
+grep . -rlw -e "ch4_1_laidler1987chemical" | xargs sed -i 's/ch4_1_laidler1987chemical/ch1_IRPC_1_laidler1987chemical/g'
+grep . -rlw -e "ch3_1_laidler1987chemical" | xargs sed -i 's/ch3_1_laidler1987chemical/ch1_IRPC_1_laidler1987chemical/g'
+
+[20] around 68
+ch4_20_lehmann2004algorithm
+ch3_14_lehmann2004algorithm
+ch1_IRPC_20_lehmann2004algorithm
+
+grep . -rlw -e "ch4_20_lehmann2004algorithm" | xargs sed -i 's/ch4_20_lehmann2004algorithm/ch1_IRPC_20_lehmann2004algorithm/g'
+grep . -rlw -e "ch3_14_lehmann2004algorithm" | xargs sed -i 's/ch3_14_lehmann2004algorithm/ch1_IRPC_20_lehmann2004algorithm/g'
+
+[21] around 70
+ch3_36_li2001high
+ch1_IRPC_61_li2001high
+
+grep . -rlw -e "ch3_36_li2001high" | xargs sed -i 's/ch3_36_li2001high/ch1_IRPC_61_li2001high/g'
+
+[22] around 72
+ch3_37_li2002practical
+ch1_IRPC_62_li2002practical
+
+grep . -rlw -e "ch3_37_li2002practical" | xargs sed -i 's/ch3_37_li2002practical/ch1_IRPC_62_li2002practical/g'
+
+[23] around 74
+ch3_13_lu2005directed
+ch1_IRPC_31_lu2005directed
+
+grep . -rlw -e "ch3_13_lu2005directed" | xargs sed -i 's/ch3_13_lu2005directed/ch1_IRPC_31_lu2005directed/g'
+
+[24] around 79
+ch4_4_mcquarrie1967stochastic
+ch3_21_mcquarrie1967stochastic
+ch1_IRPC_34_mcquarrie1967stochastic
+
+grep . -rlw -e "ch4_4_mcquarrie1967stochastic" | xargs sed -i 's/ch4_4_mcquarrie1967stochastic/ch1_IRPC_34_mcquarrie1967stochastic/g'
+grep . -rlw -e "ch3_21_mcquarrie1967stochastic" | xargs sed -i 's/ch3_21_mcquarrie1967stochastic/ch1_IRPC_34_mcquarrie1967stochastic/g'
+
+[25] around 82
+ch3_25_mjolsness2013time
+ch1_IRPC_39_mjolsness2013time
+
+grep . -rlw -e "ch3_25_mjolsness2013time" | xargs sed -i 's/ch3_25_mjolsness2013time/ch1_IRPC_39_mjolsness2013time/g'
+
+[26] 86
+ch3_4_najm2009uncertainty
+ch1_IRPC_56_najm2009uncertainty
+
+grep . -rlw -e "ch3_4_najm2009uncertainty" | xargs sed -i 's/ch3_4_najm2009uncertainty/ch1_IRPC_56_najm2009uncertainty/g'
+
+[27] 86
+ch4_3_pilling1996reaction
+ch1_IRPC_2_pilling1996reaction
+
+grep . -rlw -e "ch4_3_pilling1996reaction" | xargs sed -i 's/ch4_3_pilling1996reaction/ch1_IRPC_2_pilling1996reaction/g'
+
+[28] 97
+ch3_32_saltelli2008global
+ch1_IRPC_58_saltelli2008global
+
+grep . -rlw -e "ch3_32_saltelli2008global" | xargs sed -i 's/ch3_32_saltelli2008global/ch1_IRPC_58_saltelli2008global/g'
+
+[28] 101
+ch3_33_scire2001comparison
+ch1_IRPC_59_scire2001comparison
+
+grep . -rlw -e "ch3_33_scire2001comparison" | xargs sed -i 's/ch3_33_scire2001comparison/ch1_IRPC_59_scire2001comparison/g'
+
+[29] 104
+ch3_51_skodje2001geometrical
+ch1_IRPC_67_skodje2001geometrical
+
+grep . -rlw -e "ch3_51_skodje2001geometrical" | xargs sed -i 's/ch3_51_skodje2001geometrical/ch1_IRPC_67_skodje2001geometrical/g'
+
+[30] 106
+ch3_41_skodje2010theoretical
+ch1_IRPC_64_skodje2010theoretical
+
+grep . -rlw -e "ch3_41_skodje2010theoretical" | xargs sed -i 's/ch3_41_skodje2010theoretical/ch1_IRPC_64_skodje2010theoretical/g'
+
+[31] 105
+ch4_2_steinfeld1989chemical
+ch1_IRPC_3_steinfeld1989chemical
+
+grep . -rlw -e "ch4_2_steinfeld1989chemical" | xargs sed -i 's/ch4_2_steinfeld1989chemical/ch1_IRPC_3_steinfeld1989chemical/g'
+
+[32] 111
+ch3_3_turanyi2008sensitivity
+ch1_IRPC_55_turanyi2008sensitivity
+
+
+grep . -rlw -e "ch3_3_turanyi2008sensitivity" | xargs sed -i 's/ch3_3_turanyi2008sensitivity/ch1_IRPC_55_turanyi2008sensitivity/g'
+
+[33] 113
+ch3_8_van1992stochastic
+ch1_IRPC_33_van1992stochastic
+
+grep . -rlw -e "ch3_8_van1992stochastic" | xargs sed -i 's/ch3_8_van1992stochastic/ch1_IRPC_33_van1992stochastic/g'
+
+ch3_31_wang2015combustion
+ch1_IRPC_57_wang2015combustion
+
+grep . -rlw -e "ch3_31_wang2015combustion" | xargs sed -i 's/ch3_31_wang2015combustion/ch1_IRPC_57_wang2015combustion/g'
+
+ch3_46_westbrook2000chemical
+ch1_IRPC_5_westbrook2000chemical
+
+grep . -rlw -e "ch3_46_westbrook2000chemical" | xargs sed -i 's/ch3_46_westbrook2000chemical/ch1_IRPC_5_westbrook2000chemical/g'
+
+
+ch3_30_zador2005local
+ch3_29_zador2005local
+ch1_IRPC_60_zador2005local
+
+grep . -rlw -e "ch3_30_zador2005local" | xargs sed -i 's/ch3_30_zador2005local/ch1_IRPC_60_zador2005local/g'
+grep . -rlw -e "ch3_29_zador2005local" | xargs sed -i 's/ch3_29_zador2005local/ch1_IRPC_60_zador2005local/g'
+
+
+ch3_44_zhou2013multitarget
+ch1_IRPC_66_zhou2013multitarget
+
+grep . -rlw -e "ch3_44_zhou2013multitarget" | xargs sed -i 's/ch3_44_zhou2013multitarget/ch1_IRPC_66_zhou2013multitarget/g'
+
+
+ch3_40_ziehn2009global
+ch1_IRPC_63_ziehn2009global
+
+grep . -rlw -e "ch3_40_ziehn2009global" | xargs sed -i 's/ch3_40_ziehn2009global/ch1_IRPC_63_ziehn2009global/g'

@@ -27,7 +27,7 @@ reactive flux.
 \section{Introduction}
 \label{ch3:intro}
 Sensitivity analysis provides an important tool for the study of
-chemical kinetic networks.\cite{ch3_1_laidler1987chemical,ch3_2_saltelli2000,ch3_3_turanyi2008sensitivity} In chemical kinetic sensitivity analysis the response of a target observable, such as a species
+chemical kinetic networks.\cite{ch1_IRPC_1_laidler1987chemical,ch3_2_saltelli2000,ch1_IRPC_55_turanyi2008sensitivity} In chemical kinetic sensitivity analysis the response of a target observable, such as a species
 concentration at time $t$, $\left[ \textbf{X}_i(t)\right]$, is probed as a function of
 variable “factors”, which are commonly chosen to be the rate
 coefficients, $k_j$. The use of sensitivity measures such as local or
@@ -42,7 +42,7 @@ targeted for removal from the mechanism which will enhance
 the computational efficiency. Furthermore, if the rate
 coefficients can be assigned uncertainty ranges, the overall
 uncertainty of the model predictions can be quantified using
-the function representation of the target.\cite{ch3_4_najm2009uncertainty} Although the utility
+the function representation of the target.\cite{ch1_IRPC_56_najm2009uncertainty} Although the utility
 of sensitivity analysis in chemical kinetics is widely appreciated,
 it is not always possible to identify a specific chemical
 explanation that rationalizes the observed sensitivities. Thus,
@@ -53,7 +53,7 @@ is not well understood, the practical utility of the results for
 model improvement or simplification is a less well motivated
 endeavor. In this work, we propose the use of our recently
 developed “sum over histories” representation as the basis to
-interpret kinetic sensitivity.\cite{ch3_5_kramer2014following,ch1_IRPC_16_ch3_6_ch4_8_bai2014sum} 
+interpret kinetic sensitivity.\cite{ch1_IRPC_15_kramer2014following,ch1_IRPC_16_ch3_6_ch4_8_bai2014sum} 
 \newline
 \paragraph{}
 The sum over histories approach to chemical kinetics is
@@ -62,8 +62,8 @@ chemical network using separate numerical contributions (via
 probabilities) from distinct chemical pathways. Our method to
 simulate the time dependence of a chemical network draws its
 motivation from Feynman’s “sum over histories” approach to
-quantum mechanics\cite{ch3_7_feynman1965quantum} and is closely related to treatments of
-time-ordered Markov chains\cite{ch3_8_van1992stochastic} discussed by Wiener\cite{ch3_9_gardiner1985handbook} and Ito.\cite{ch3_10_ito1961wiener}
+quantum mechanics\cite{ch4_26_feynman2010quantum} and is closely related to treatments of
+time-ordered Markov chains\cite{ch1_IRPC_33_van1992stochastic} discussed by Wiener\cite{ch3_9_gardiner1985handbook} and Ito.\cite{ch3_10_ito1961wiener}
 In our method, the paths lie in chemical space unlike
 Feynman’s dynamical paths. The notion of a chemical pathway
 plays a central role in our understanding of chemical systems
@@ -75,7 +75,7 @@ S$_N$ connected by elementary reaction R$_1$, R$_2$, ..., R$_L$ such that the
 product of one reaction is a reagent for the next reaction along
 the pathway. Reaction pathways and graphical methods are also
 well-known in kinetic studies where they are used effectively to
-interpret and optimize chemical mechanisms.\cite{ch3_11_temkin1996chemical,ch3_12_chern1990effective,ch3_13_lu2005directed,ch3_14_lehmann2004algorithm,ch3_15_he2008graph,ch3_16_feng2010dominant,ch3_17_kee2008chemkin} The sum over histories approach is unique, however, in that it provides a
+interpret and optimize chemical mechanisms.\cite{ch3_11_temkin1996chemical,ch1_IRPC_22_chern1990effective,ch1_IRPC_31_lu2005directed,ch1_IRPC_20_lehmann2004algorithm,ch1_IRPC_19_he2008graph,ch1_IRPC_21_feng2010dominant,ch3_17_kee2008chemkin} The sum over histories approach is unique, however, in that it provides a
 fully quantitative and convergent procedure in which the
 concentration of any target species at time $t$, $\left[ \textbf{X}(t)\right]$ may be
 computed by a linear combination of chemical pathways that
@@ -109,7 +109,7 @@ speciation studies provide a particularly effective approach for
 the improvement and validation of chemical mechanisms.\cite{ch3_18_karwat2011chemical}
 The chemistry of the H$_2$ combustion problem is now fairly well
 understood and the rates of most of the elementary steps are
-known to good accuracy.\cite{ch3_19_konnov2008remaining,ch3_20_hashemi2015hydrogen} Our purpose here, however, is not
+known to good accuracy.\cite{ch1_IRPC_52_konnov2008remaining,ch1_IRPC_53_hashemi2015hydrogen} Our purpose here, however, is not
 to improve the combustion model, but rather to investigate a
 new method to carry out sensitivity analysis. The H$_2$ combustion problem is ideal for such a test because it exhibits
 the generic characteristics of combustion kinetics whereas its
@@ -183,7 +183,7 @@ Monte Carlo trajectories in which a sample of molecules are
 followed through the network. Unlike the more common
 applications of stochastic simulation methods, the present
 approach follows a single tagged atom from reactants to the
-target species.\cite{ch3_21_mcquarrie1967stochastic,ch3_22_gillespie1976general,ch3_23_gibson2000efficient,ch3_24_gillespie2013perspective} The pathways that are followed by the most molecules are then used for the representation. Alternatively,
+target species.\cite{ch1_IRPC_34_mcquarrie1967stochastic,ch1_IRPC_35_gillespie1976general,ch1_IRPC_37_gibson2000efficient,ch1_IRPC_36_gillespie2013perspective} The pathways that are followed by the most molecules are then used for the representation. Alternatively,
 we may generate the paths using a graph theoretic enumeration procedure. In the language of graph theory, the species are
 vertices (or nodes) and the reactions connecting them are
 edges and the chemical pathways are n-step paths on the graph.
@@ -246,14 +246,14 @@ or through the normalized expression
 w_i = \left. \frac{ \left\vert \frac{\partial \tau}{\partial k_i} \right\vert }{\sqrt{\sum_j{\left(  \frac{\partial \tau}{\partial k_j} \right)^2 }}} \right\vert_{\mathbf{k}=\mathbf{k_0}}
 \end{equation}
 If the factors $k_i$ enter eqn. \ref{ch3:eqn11} in a highly nonlinear fashion, or
-if ranges $\delta k_i$ are large, then it is advisable to analyze the kinetics using Global Sensitivity Analysis.\cite{ch3_4_najm2009uncertainty,ch3_26_cukier1973study,ch3_27_cukier1975study,
-ch3_28_mcrae1982global,ch3_29_zador2005local,ch3_30_zador2005local,ch3_31_wang2015combustion,
-ch3_32_saltelli2008global,ch3_33_scire2001comparison} The global sensitivity
+if ranges $\delta k_i$ are large, then it is advisable to analyze the kinetics using Global Sensitivity Analysis.\cite{ch1_IRPC_56_najm2009uncertainty,ch3_26_cukier1973study,ch3_27_cukier1975study,
+ch3_28_mcrae1982global,ch1_IRPC_60_zador2005local,ch1_IRPC_60_zador2005local,ch1_IRPC_57_wang2015combustion,
+ch1_IRPC_58_saltelli2008global,ch1_IRPC_59_scire2001comparison} The global sensitivity
 analysis is carried out using the analysis of variance
 (ANOVA)\cite{ch3_34_sobol2001global} strategy with the aid of the high dimensional
-model representation (HDMR).\cite{ch3_35_rabitz1999general,ch3_36_li2001high,ch3_37_li2002practical,ch3_38_ziehn2008global,
-ch3_39_ziehn2009gui,ch3_40_ziehn2009global,ch3_41_skodje2010theoretical,ch3_42_klippenstein2011uncertainty,
-ch3_43_davis2011global,ch3_44_zhou2013multitarget} The global sensitivity
+model representation (HDMR).\cite{ch3_35_rabitz1999general,ch1_IRPC_61_li2001high,ch1_IRPC_62_li2002practical,ch3_38_ziehn2008global,
+ch3_39_ziehn2009gui,ch1_IRPC_63_ziehn2009global,ch1_IRPC_64_skodje2010theoretical,ch3_42_klippenstein2011uncertainty,
+ch1_IRPC_65_davis2011global,ch1_IRPC_66_zhou2013multitarget} The global sensitivity
 index for rate coefficient $k_i$ is then given by the ratio of the
 partial variance to the total variance of the target function, i.e.,
 the “main effect”
@@ -455,14 +455,14 @@ HDMR component functions $F_i(k_i)$ from eqn. \ref{ch3:eqn15:HDMR} were fit by
 regression to fifth-order expansions in Legendre polynomials in
 a single fitting procedure consisting of 19 $\times$ 6 = 114
 parameters. As in our previous work, the sensitivity indices
-were then obtained by integration using eqn. \ref{ch2:eqn16}.\cite{ch3_41_skodje2010theoretical,ch3_42_klippenstein2011uncertainty,ch3_43_davis2011global,ch3_44_zhou2013multitarget} In Fig. \ref{ch3:fig4} we show the sensitivity indices $W_i$ versus time for all 8
+were then obtained by integration using eqn. \ref{ch2:eqn16}.\cite{ch1_IRPC_64_skodje2010theoretical,ch3_42_klippenstein2011uncertainty,ch1_IRPC_65_davis2011global,ch1_IRPC_66_zhou2013multitarget} In Fig. \ref{ch3:fig4} we show the sensitivity indices $W_i$ versus time for all 8
 species. For clarity, we have included in the plot only the most
 important reactions. It is seen that reactions R17, R15, R13, R9,
 and R0 have consistently the highest values of $W_i$. We note that
 reactions R17, R13, and R9 involve the production and
 destruction of the HO$_2$ radical, which is known to play an
 important role in determining the ignition properties of H$_2$ and
-other fuels.\cite{ch3_46_westbrook2000chemical,ch3_47_killingsworth2011increased,ch3_48_keromnes2013experimental} Reactions R17, R15, and R13 also involve the
+other fuels.\cite{ch1_IRPC_5_westbrook2000chemical,ch3_47_killingsworth2011increased,ch3_48_keromnes2013experimental} Reactions R17, R15, and R13 also involve the
 H$_2$O$_2$ species, which is also important in the generation of the
 radical OH.\cite{ch3_49_lee1998hydrogen,ch3_50_zhou2012theoretical} Reaction R0, H + O$_2$ = OH + O, is well-known
 to be a critical chain branching step in all combustion reactions.

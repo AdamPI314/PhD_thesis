@@ -1,4 +1,4 @@
-PWD D:/VS_workspace/CPlusPlus/SOHR/projects/PhD_thesis/SHIRONG_THESIS
+PWD D:/Github/SOHR/projects/PhD_thesis/SHIRONG_THESIS
 INPUT c:/Program Files/texlive/2017/texmf.cnf
 INPUT c:/Program Files/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT c:/Program Files/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -255,11 +255,22 @@ INPUT ./figs/chapter4/fig1.png
 INPUT figs/chapter4/fig2.jpg
 INPUT ./figs/chapter4/fig2.jpg
 INPUT ./figs/chapter4/fig2.jpg
+INPUT figs/chapter4/fig3.png
+INPUT ./figs/chapter4/fig3.png
+INPUT ./figs/chapter4/fig3.png
+INPUT figs/chapter4/fig4.png
+INPUT ./figs/chapter4/fig4.png
+INPUT ./figs/chapter4/fig4.png
+INPUT figs/chapter4/fig5.png
+INPUT ./figs/chapter4/fig5.png
+INPUT ./figs/chapter4/fig5.png
+INPUT figs/chapter4/fig6.png
+INPUT ./figs/chapter4/fig6.png
+INPUT ./figs/chapter4/fig6.png
+INPUT chapter5.tex
 INPUT mythesis.bbl
 INPUT mythesis.bbl
 INPUT appendixA.tex
-INPUT appendixB.tex
-INPUT appendixC.tex
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/Program Files/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm

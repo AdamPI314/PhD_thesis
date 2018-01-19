@@ -207,7 +207,6 @@ This yields the simple kinetics equations,
     \end{center}
 \label{ch4:fig:2}
 \end{figure}
-
 \begin{table}[htb]
     \caption[Lotka-Volterra System]{Lotka-Volterra System: The System Parameters
 and Paths Used in the Iterative Solution Procedure.}
@@ -248,8 +247,239 @@ approaches a simple stable equilibrium state. Since reactions
 \ref{ch4:lv:rxn1}, \ref{ch4:lv:rxn2} and \ref{ch4:lv:rxn3} conserve the number of molecules, we can hypothesize
 a fictitious atom at the core of each species that we choose to
 follow. The directed chemical graph, shown in Fig. \ref{ch4:fig:2}, illustrates the simple connectivity of the chemical mechanism.
-We list in Table 1 the parameters used in the calculation and
+We list in Table \ref{ch4:table1} the parameters used in the calculation and
 the possible reaction routes followed by a fictitious atom. In the
 pathway representation, the kinetics is represented by 10
 independent chemical paths: three terminating on B
-
+\begin{align*}
+    A \xrightarrow[]{\makebox[1cm]{$R_1$}} X \xrightarrow[]{\makebox[1cm]{$R_2$}} Y \xrightarrow[]{\makebox[1cm]{$R_3$}} B			\\
+    X \xrightarrow[]{\makebox[1cm]{$R_2$}} Y \xrightarrow[]{\makebox[1cm]{$R_3$}} B	\\
+	Y \xrightarrow[]{\makebox[1cm]{$R_3$}} B			
+\end{align*}
+two additional paths terminating on Y
+\begin{align*}
+    A \xrightarrow[]{\makebox[1cm]{$R_1$}} X \xrightarrow[]{\makebox[1cm]{$R_2$}} Y\\
+    X \xrightarrow[]{\makebox[1cm]{$R_2$}} Y\\		
+\end{align*}
+and one path terminating on X
+\begin{align*}
+    A \xrightarrow[]{\makebox[1cm]{$R_1$}} X \xrightarrow[]{\makebox[1cm]{$R_2$}} Y			
+\end{align*}
+If we include the trivial zero-step paths, where A, X, Y, and B do
+not react, then there are only 10 pathways that describe any
+kinetic observable.
+\newline
+\paragraph{}
+Given the complete set of 10 chemical pathways, we can
+numerically test the predictive SOHR method for the LV
+system. The concentration for any species $Z_i$ is given by 
+\[
+Z_i(t) = \sum_{j=1}^{10}{c_jP_j(0,t)W_j(t=0)}
+\]
+Here, $j$ labels the paths that
+terminate on species $Z_j$, $P_i(0,t)$ is the probability from eqn. \ref{ch2:eqn14},
+$W_j(t = 0)$ is the initial concentration of the first species along
+the pathway containing the "fictitious atom", and the
+stoichiometric coefficients $c_j$ are all equal to 1. Using eqns. \ref{ch4:eqn14}
+and \ref{ch4:eqn15}, we can obtain a set of iterates, $Z_i^n(t)$ based on an initial
+guess $Z_i^0(t)$. To illustrate the robustness of the algorithm, we
+choose the trivial initial guess of constant concentrations, $Z_i^0(t)= Z_i(t = 0)$. The MC integration of the pathway probabilities
+(eqn. \ref{ch2:eqn14}) is carried out using $L = 10 000$ random strings, which is
+expected to yield the concentrations to about $1\%$ accuracy. The
+concentration profiles are evaluated using eqns. \ref{ch2:eqn16} and \ref{ch2:eqn14} on a
+uniform grid of times between $t = 0$ and $t = 0.5$. In Fig. \ref{ch4:fig:3}, we
+show the convergence of the iteration for $n = 0, 1, 3$, and $5$
+along with the "exact" result obtained by integrating eqns. \ref{ch4:eqn18}, \ref{ch4:eqn19}, \ref{ch4:eqn20} and \ref{ch4:eqn21}
+using an ODE solver. We see that the iterative SOHR method
+converges quite quickly to the exact result. Obviously, the
+nonlinear effects are strong in the LV system, and so the rapid
+convergence of the results is a positive omen for the iterative
+computational strategy.
+\begin{figure}[htbp]
+	\caption[Convergence of the iteration for the predictive SOHR method in the LV system]
+	{Convergence of the iteration for the predictive SOHR
+method in the LV system. The initial guess for the concentrations are
+the constants $A(t_0)$ = $X(t_0)$ = $Y(t_0)$ = 1 and $B(t_0)$ = 0. The n = 1, 3,
+and 5 iterations are shown along with the exact results. It is seen that
+by the fifth iteration, the SOHR method has effectively converged to
+the true result.}
+    \begin{center}
+	\includegraphics[width=100mm]{figs/chapter4/fig3.png}
+    \end{center}
+\label{ch4:fig:3}
+\end{figure}
+\section{H$_2$-O$_2$ Combustion}
+\label{ch4:sec:H2_O2}
+Hydrogen combustion kinetics presents a more computationally challenging problem for the
+SOHR method since it exhibits strong nonlinearity, stiffness,
+and thermokinetic behavior. The kinetic behavior of the H$_2$-O$_2$
+system is nevertheless well understood.\cite{ch4_34_warnatz2006physical} To emphasize the
+"traditional" characteristics of this combustion application, we
+carried out the SOHR simulations using standard CHEMKIN
+subroutines for the mechanistic and thermokinetic aspects of
+the problem. The mechanism used here consists of 8 species and 21 reversible reactions (see Table \ref{ch3:spe_label}, \ref{ch3:rxn_label} and \ref{aHm:table1}) and is carried out at
+high temperature T = 2000 K and pressure P = 10 bar using an
+initial stoichiometric mixture of H$_2$ and O$_2$. Under these
+conditions, the system approaches equilibrium within about $1 \mu s$. There are an infinite number of paths; thus, an important
+aspect of the method is the selection and ordering of these
+reaction routes. If, using chemical intuition, we could guess the
+important paths, they could then be directly inserted into the
+SOHR algorithm. Here, to demonstrate the generality of the
+method, we apply an automated pathway selection procedure
+that assumes nothing physical about the H$_2$-O$_2$ combustion
+problem. In previous work, we have applied the interpretive
+SOHR method to identify the key pathways for the H$_2$-O$_2$
+system. Under the conditions studied there, T = 1000 K and P
+= 5 bar, it was found empirically that many of the key reaction
+paths passed through the H$_2$O$_2$ and HO$_2$ intermediates. For the
+higher temperature conditions considered here, we have
+identified a different set of paths.
+\newline
+\paragraph{}
+We employ a pathway generation method that is a hybrid of
+the matrix and Monte Carlo procedures, i.e., a set of "short"
+pathways found by the matrix method are augmented with
+"long" pathways found by the MC-method. First, using the
+matrix method, all potential pathways of up to length $n_{max}$ are
+identified using powers of the sparse $\mathbf{SR}$-matrix, eqn. \ref{ch2:eqn21}. The
+kinetic graphs for the O atom and H atom following pathways
+are shown in Fig. \ref{ch4:fig:4}. These are multigraphs since vertices
+generally have more than one edge connecting them. For the
+initial concentration guess ${\mathbf{X}}_0(t)$ in the iteration scheme, the
+probabilities for those pathways are quickly estimated using a
+low-level MC-evaluation of eqn. \ref{ch2:eqn14}, i.e., using a small value of $L$.
+The top $J$ paths obtained by this screening process are used for
+a higher-level estimation of the probabilities, i.e., a larger value
+of $L$, which are then used in eqns. \ref{ch4:eqn14} and \ref{ch4:eqn15} to obtain the first
+iterative concentrations, ${\mathbf{X}}_1(t)$. The ${\mathbf{X}}_1(t)$ is then used in an
+updated screening process to obtain a new (possibly different)
+set of $J$ paths for the second iteration. A small number of MC pathway
+sampling stochastic trajectories are propagated to test whether paths longer than $n_{max}$ contribute. If so, they are added
+to the list of contributing pathways used in the iteration. The
+process continues until convergence is achieved. Since path
+lengths tend to grow longer with propagation time, we have
+found it efficient to break up the total propagation time into a
+set of shorter sub-intervals (or sectors) for which the iteration
+process is successively converged. In this way, the chemical
+pathways during each phase the chemical evolution are allowed
+to separately optimize.
+\begin{figure}[htbp]
+	\caption[Directed kinetic graphs for the forward reactions in the hydrogen combustion system]
+	{Directed kinetic graphs for the forward reactions in the
+hydrogen combustion system. In the upper panel, we show the graph
+for $O$ atoms. In the lower panel, we show the graph for $H$ atoms. The
+reactions $R_0$-$R_{20}$ correspond the elementary reactions presented in
+Table \ref{ch3:rxn_label}. For brevity, single arrows labeled $A-N$ are used to represent
+the multiple edges listed in the caption. The $\ast$ notation is used to
+indicate a reverse reaction in the nominal left-to-right direction of the
+reactions in Table \ref{ch3:rxn_label}. All forward and backward reactions are included
+in the calculations.}
+    \begin{center}
+	\includegraphics[width=100mm]{figs/chapter4/fig4.png}
+    \end{center}
+\label{ch4:fig:4}
+\end{figure}
+\newline
+\paragraph{}
+In Fig. \ref{ch4:fig:5}, we illustrate the convergence of the sector-by-sector
+iteration scheme for several of the concentration
+functions. The initial guesses again are taken to be the trivial
+constant functions, ${\textbf{X}}^0(t)$= ${\textbf{X}}^0(t_0)$ where ${\textbf{X}}^0(t_0)$ is the initial
+concentration at the beginning of each sector. For a total
+propagation time of T = 0.2 $\mu$s, 20 sectors of 0.01 $\mu$s were
+chosen. The maximum path length was taken to be $n_{max}$ = 5 and
+the number of paths in the iteration was selected as $J$ = 20. It is
+seen that within seven iterations, the concentration profiles of
+all species were converged and stable. The selection of
+convergence parameters requires some experimentation, but
+no strenuous efforts were required to obtain convergence. The
+full concentration profiles obtained by combining the sector-bysector
+results are shown in Fig. \ref{ch4:fig:6} along with a reference
+result obtained by conventional integration of the kinetics
+equations using an implicit integration algorithm. It is seen that
+predictive SOHR results converge globally to exact results to within the tolerance set by the MC-integration scheme. We
+note that the selection and ordering of chemical pathways
+changes considerably over the propagation time. This reflects, e.g., the differences in the chemistry of the initiation and steady
+state regimes of the kinetics. Since our objective in this work is
+the development of the iteration scheme, and not the
+interpretation of the chemical pathways, we shall not delve
+further into an analysis of these interesting changes.
+\begin{figure}[htbp]
+	\caption[Convergence of the SOHR iteration for the H$_2$-O$_2$ system]
+	{Convergence of the SOHR iteration for the H$_2$-O$_2$ system.
+The calculation is carried out using the sector-by-sector method, so the
+iteration is converged for each sector of 0.01 $\mu$s before moving on to
+the next sector to repeat the process. The initial guess for the iteration
+in each new sector is the constant values of the concentrations at the
+end of the previous sector. The conditions chosen for the simulation
+are T = 2000 K, P = 10 bar, and an initially stoichiometric mixture,
+[H$_2$($t_0$)]/[O$_2$($t_0$)] = 2. The results show that the iteration converges
+accurately to the exact solution to eqn. \ref{ch2:eqn2} within about five iterations.}
+    \begin{center}
+	\includegraphics[width=100mm]{figs/chapter4/fig5.png}
+    \end{center}
+\label{ch4:fig:5}
+\end{figure}
+\begin{figure}[htbp]
+	\caption[A comparison of the predictive SOHR method with the conventional ODE]
+	{A comparison of the predictive SOHR method with the
+conventional ODE kinetic modeling for the H$_2$-O$_2$ combustion
+problem. Using approximately 20-25 chemical pathways automatically
+selected by the algorithm, and combining the sector-by-sector
+trajectory fragments obtained with five iterations, the SOHR results
+are seen to converge to the exact kinetics.}
+    \begin{center}
+	\includegraphics[width=100mm]{figs/chapter4/fig6.png}
+    \end{center}
+\label{ch4:fig:6}
+\end{figure}
+\section{Utility of the Method}
+\label{ch4:sec:utility}
+The success of the iterative
+algorithm demonstrates that it is possible to model the
+chemical kinetics of a realistic mechanism without the need
+to solve the conventional system of coupled differential
+equations. This establishes that the SOHR method provides a
+consistent alternative formalism for modeling the evolution of
+chemical systems. The question then arises, under what
+circumstances will the SOHR method be an advantageous
+approach for solving a kinetic problem? In our previous work,
+we demonstrated that SOHR methodology was valuable to
+interpret the behavior of complex mechanisms. Indeed, the
+chemical pathways identified by SOHR provide a physical
+picture of how the chemistry occurs. These dynamical pathways
+can be quite different from the static snapshots provided by
+earlier steady state treatments. Under certain conditions, we
+suggest that the predictive SOHR method may be useful
+approach to carry out the numerical simulations. For example,
+there are cases where the number of species variables becomes
+extremely large such as for the conformation kinetics of large
+polymers. The solution of eqn. \ref{ch2:eqn2} can then become difficult or 
+impossible. However, should it be feasible to identify a much
+smaller number of pathways, by chemical intuition or other
+means, the SOHR representation can then become a more
+efficient approach. Another potential application is to systems
+exhibiting multiple time scales that lead to extremely stiff
+ODE's. While conventional implicit integration methods may
+require very small time-steps to stabilize extremely stiff systems,
+thus greatly lengthening computation time, the pathway
+representation has different convergence properties. The
+importance sampling used the MC evaluation of the pathway
+probabilities uniformly samples the survival probabilities, ${\mathcal{P}}_i$ in,
+roughly, the interval $(0,1)$ for each reaction step along the
+pathway. Thus, even though the species lifetimes may be vastly
+different, each step is integrated on its own appropriate scale. A
+related issue is use of parallelization in the integration of single
+trajectories. In fact, we used parallel coding to carry out the H$_2$-O$_2$ SOHR simulation where individual pathways were
+distributed to different processors. Under some circumstances,
+which we are investigating, there can be parallelism across the
+system. By contrast, conventional ODE solvers can be difficult
+to parallelize for individual trajectories since they involve
+sequential time stepping.\cite{ch4_35_skeel1992limits} Finally, the SOHR method provides
+new avenue for the quantification of rare events occurring in
+kinetic simulations. A rare event may be identified with a very
+low probability chemical pathway that leads to a given outcome,
+such as the production of a trace species. This rare event may
+exist simultaneously with other pathways that have much higher
+probabilities that dominate the chemistry and obscure the rare
+event.

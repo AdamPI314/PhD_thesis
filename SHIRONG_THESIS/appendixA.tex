@@ -1,87 +1,87 @@
-\chapter{Weird Exam Answers}	% *NOT* \OnePageChapter
+\chapter{The Hydrogen Combustion Model}	% *NOT* \OnePageChapter
+\label{appendixC}
+The combustion of H$_2$ is modeled using a detailed mechanism that consists of 21 individual steps and 8 distinct chemical species.  The specific mechanism employed here is a sub-mechanism of a larger model for methanol combustion used by Li et al.\cite{aHm_1_li2007comprehensive} The reactions and species used are listed in the tables below. The temperature dependence of the rate coefficients is given by the three parameter fit
+\begin{equation}
+\label{aHm:eqn1}
+k(T) = AT^{\delta}E^{-E_a/{k_BT}}
+\end{equation}
+where the values of $A$, $\delta$, and $E_a$ for each reaction are listed in Table \ref{aHm:table1}.  The pressure-dependent reactions rate are calculated using the Troe centering expression
+\begin{equation}
+\label{aHm:eqn2}
+k=k_{\infty \left( \frac{P_r}{1+P_r}F \right) }
+\end{equation}
+where
+\begin{equation}
+\label{aHm:eqn3}
+P_r = \frac{k_0 \left[ M \right] }{k_{\infty}}
+\end{equation}
+and the high pressure limit ($k_{\infty}$) and low pressure limit ($k_0$) rate coefficients are parameterized by the three parameter expression in eqn. \ref{aHm:eqn1}.  The function F \footnote{\label{Fdef}  The function F is defined as $logF= {\left[  1+ \left[  \frac{logP_r + c}{n - d(logP_r+c)} \right] \right]}^{-1} logF_{cent} $ where $F_{cent} = (1-\alpha)exp(-T/T^{\ast\ast\ast})+\alpha exp(T/T^{\ast})+exp(-T^{\ast\ast}/T)$ and centering parameters $T^{\ast}$, $T^{\ast\ast}$, and $T^{\ast\ast\ast}$ are provided in the table.} is given by Troe and coworkers.\cite{aHm_2_gilbert1983theory} The reverse reaction rates are defined consistently with micro-reversibility using the equilibrium constant
+\begin{equation}
+\label{aHm:eqn4}
+k_r = \frac{k_f}{k_{eq}^{c}}
+\end{equation}
+In the mechanism, there are two pairs of duplicated reactions; i.e., they have the same reactants and products but different rate coefficients. This allows a much more flexible representation of the overall temperature dependence of the rate coefficients.  
+The combustion kinetics is simulated using the constraints of constant volume and constant energy.  The time development of each species is modeled by the following set of equations:
+\begin{equation}
+\label{aHm:eqn5}
+\begin{split}
+\frac{dY_k}{dt} &= \frac{W_k \dot{\omega}_k}{\rho},~~~k=1,\cdots,8 \\
+\frac{dT}{dt} &= -\frac{1}{\rho C_v} \sum_k{W_k \dot{\omega}_ke_k}
+\end{split}
+\end{equation}
+where $Y_k$ represents the mass fraction of species k (which is proportional to its concentration $\left[ X_k\right]$), $W_k$ is its molecular weight, $\dot{\omega}_k$ refers to the production rate of the kth species obtained from the mechanism, $\rho$ is the bulk density, $C_v$ is the constant volume heat capacity and $e_k$ is the internal energy of the kth species.
 
-\paragraph{About appendices:}
-	Each appendix follow the same page-numbering rules
-	as a regular chapter; the first page of a
-	(multi-page) appendix is not numbered.
-	By the way, the following are supposedly
-	authentic answers to English GCSE exams!
-
-
-\begin{enumerate}
-
-\item
-The Greeks were a highly sculptured people, and without
-them we wouldnt have history. The Greeks also had myths.
-A myth is a female moth.
-
-\item
-Actually, Homer was not written by Homer but by another
-man of that name.
-
-\item
-Socrates was a famous Greek teacher who went around
-giving people advice. They killed him. Socrates died from an
-overdose of wedlock. After his death, his career suffered a
-dramatic decline.
-
-\item
-Julius Caesar extinguished himself on the battlefields
-of Gaul. The Ides of March murdered him because they thought
-he was going to be made king. Dying, he gasped out: Tee hee,
-Brutus.
-
-\item
-Nero was a cruel tyranny who would torture his subjects
-by playing the fiddle to them.
-
-\item
-In midevil times most people were alliterate. The
-greatest writer of the futile ages was Chaucer, who
-wrote many poems and verses and also wrote literature.
-
-\item
-Another story was William Tell, who shot an arrow
-through an apple while standing on his sons head.
-
-\item
-Writing at the same time as Shakespeare was Miguel
-Cervantes. He wrote Donkey Hote. The next great author
-was John Milton. Milton wrote Paradise Lost. Then his
-wife died and he wrote Paradise Regained.
-
-\item
-During the Renaissance America began. Christopher
-Columbus was a great navigator who discovered America while
-cursing about the Atlantic. His ships were called the Nina,
-the Pinta, and the Santa Fe.
-
-\item
-Gravity was invented by Issac Walton. It is chiefly
-noticeable in the autumn when the apples are falling
-off the trees.
-
-\item
-Johann Bach wrote a great many musical compositions and
-had a large number of children. In between he practiced on
-an old spinster which he kept up in his attic. Bach died
-from 1750 to the present. Bach was the most famous composer
-in the world and so was Handel. Handel was half German
-half Italian and half English. He was very large.
-
-\item
-Soon the Constitution of the United States was adopted
-to secure domestic hostility. Under the constitution the
-people enjoyed the right to keep bare arms.
-
-\item
-The sun never set on the British Empire because the
-British Empire is In the East and the sun sets in the West.
-
-\item
-Louis Pasteur discovered a cure for rabbis. Charles
-Darwin was a naturalist who wrote the Organ of the Species.
-Madman Curie discovered radio. And Karl Marx became one of
-the Marx brothers.
-
-\end{enumerate}
+\begin{table}[htb]
+    \caption[Rate coefficients and uncertainty ranges of H$_2$-O$_2$ system]{Rate coefficients and uncertainty ranges of H$_2$-O$_2$ system.}
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Index  & Reaction            & A(cm$^{3}$/mol-s) or s$^{-1}$         & $\delta$     & E$_a$(kcal/mol)         & Uncertainty \\ \hline
+0      & H+O$_2$=O+OH           & 3.55E+15  & -0.4         & 16599.0       & 1.26        \\ \hline
+1      & O+H$_2$=H+OH           & 5.08E+04  & 2.7          & 6290.0        & 1.58        \\ \hline
+2      & H$_2$+OH=H$_2$O+H         & 2.16E+08  & 1.5          & 3430.0        & 2.00        \\ \hline
+3      & O+H$_2$O=OH+OH         & 2.97E+06  & 2.0          & 13400.0       & 2.50        \\ \hline
+4      & H$_2$+M=H+H+M          & 4.58E+19  & -1.4         & 104380.0      & 3.00        \\ \hline
+\multicolumn{3}{|c|}{H$_2$}                 & \multicolumn{3}{l|}{Enhanced by 2.500E+00} \\ \hline
+\multicolumn{3}{|c|}{H$_2$O}                & \multicolumn{3}{l|}{Enhanced by 1.200E+01} \\ \hline
+5      & O+O+M=O$_2$+M          & 6.16E+15  & -0.5         & 0.0           & 2.00        \\ \hline
+\multicolumn{3}{|c|}{H$_2$}                 & \multicolumn{3}{l|}{Enhanced by 2.500E+00} \\ \hline
+\multicolumn{3}{|c|}{H$_2$O}                & \multicolumn{3}{l|}{Enhanced by 1.200E+01} \\ \hline
+6      & O+H+M=OH+M          & 4.71E+18  & -1.0         & 0.0           & 5.00        \\ \hline
+\multicolumn{3}{|c|}{H$_2$}                 & \multicolumn{3}{l|}{Enhanced by 2.500E+00} \\ \hline
+\multicolumn{3}{|c|}{H$_2$O}                & \multicolumn{3}{l|}{Enhanced by 1.200E+01} \\ \hline
+7      & H+OH+M=H$_2$O+M        & 3.80E+22  & -2.0         & 0.0           & 2.00        \\ \hline
+\multicolumn{3}{|c|}{H$_2$}                 & \multicolumn{3}{l|}{Enhanced by 2.500E+00} \\ \hline
+\multicolumn{3}{|c|}{H$_2$O}                & \multicolumn{3}{l|}{Enhanced by,1.200E+01} \\ \hline
+8      & H+O$_2$(+M)=HO$_2$(+M)    & 1.48E+12  & 0.6          & 0.0           & 3.16        \\ \hline
+\multicolumn{3}{|c|}{Low pressure limit} & 0.63660E+21  & -0.17200E+01  & 0.52480E+03 \\ \hline
+\multicolumn{3}{|c|}{TROE centering}     & 0.80000E+00  & 0.10000E-29   & 0.10000E+31 \\ \hline
+\multicolumn{3}{|c|}{H$_2$}                 & \multicolumn{3}{l|}{Enhanced by 2.000E+00} \\ \hline
+\multicolumn{3}{|c|}{H$_2$O}                & \multicolumn{3}{l|}{Enhanced by 1.100E+01} \\ \hline
+\multicolumn{3}{|c|}{O$_2$}                 & \multicolumn{3}{l|}{Enhanced by 7.800E-01} \\ \hline
+9      & HO$_2$+H=H$_2$+O$_2$         & 1.66E+13  & 0.0          & 823.0         & 2.00        \\ \hline
+10     & HO$_2$+H=OH+OH         & 7.08E+13  & 0.0          & 295.0         & 2.00        \\ \hline
+11     & HO$_2$+O=O$_2$+OH         & 3.25E+13  & 0.0          & 0.0           & 3.16        \\ \hline
+12     & HO$_2$+OH=H$_2$O+O$_2$       & 2.89E+13  & 0.0          & -497.0        & 3.16        \\ \hline
+13     & HO$_2$+HO$_2$=H$_2$O$_2$+O$_2$     & 4.20E+14  & 0.0          & 11982.0       & 5.00        \\ \hline
+\multicolumn{6}{|c|}{Declared duplicate reaction...}                                  \\ \hline
+14     & HO$_2$+HO$_2$=H$_2$O$_2$+O$_2$     & 1.30E+11  & 0.0          & -1629.3       & 5.00        \\ \hline
+\multicolumn{6}{|c|}{Declared duplicate reaction...}                                  \\ \hline
+15     & H$_2$O$_2$(+M)=OH+OH(+M)  & 2.95E+14  & 0.0          & 48430.0       & 3.16        \\ \hline
+\multicolumn{3}{|c|}{Low pressure limit} & 0.12020E+18  & 0.00000E+00   & 0.45500E+05 \\ \hline
+\multicolumn{3}{|c|}{TROE centering}     & 0.50000E+00  & 0.10000E-29   & 0.10000E+31 \\ \hline
+\multicolumn{3}{|c|}{H$_2$}                 & \multicolumn{3}{l|}{Enhanced by 2.500E+00} \\ \hline
+\multicolumn{3}{|c|}{H$_2$O}                & \multicolumn{3}{l|}{Enhanced by 1.200E+01} \\ \hline
+16     & H$_2$O$_2$+H=H$_2$O+OH       & 2.41E+13  & 0.0          & 3970.0        & 5.00        \\ \hline
+17     & H$_2$O$_2$+H=HO$_2$+H$_2$       & 4.82E+13  & 0.0          & 7950.0        & 5.00        \\ \hline
+18     & H$_2$O$_2$+O=OH+HO$_2$       & 9.55E+06  & 2.0          & 3970.0        & 3.00        \\ \hline
+19     & H$_2$O$_2$+OH=HO$_2$+H$_2$O     & 1.00E+12  & 0.0          & 0.0           & 5.00        \\ \hline
+\multicolumn{6}{|c|}{Declared duplicate reaction...}                                  \\ \hline
+20     & H$_2$O$_2$+OH=HO$_2$+H$_2$O     & 5.80E+14  & 0.0          & 9557.0        & 5.00        \\ \hline
+\multicolumn{6}{|c|}{Declared duplicate reaction...}                                  \\ \hline
+\end{tabular}
+   \\ \rule{0mm}{5mm}
+   ${}^\dagger$Indices start at 0.		% footnote symbol
+\end{center}
+\label{aHm:table1}
+\end{table}

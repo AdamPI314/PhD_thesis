@@ -30,35 +30,23 @@ chemical moieties are allowed to change as time progresses.
 The SOHR provides a new tool to interpret the quantitative kinetics of large networks
 of reactions. Since chemical pathways are, in essence, mechanisms for the creation
 of specified species, this method provides an attractive physical picture to
-understand the behaviour of large models. As we have shown, e.g. the sensitivity of
+understand the behaviour of large models. In the sum over histories representation, the concentrations of the chemical species are
+decomposed into the sum of probabilities for chemical pathways that follow
+molecules from reactants to products or intermediates. Unlike static flux
+methods for reaction path analysis, the sum over histories approach includes the
+explicit time dependence of the pathway probabilities. Using the sum over
+histories representation, the sensitivity of an observable with respect to a kinetic
+parameter such as a rate coefficient is then analyzed in terms of how that
+parameter affects the chemical pathway probabilities. The method is illustrated
+for species concentration target functions in H$_2$ combustion where the rate
+coefficients are allowed to vary over their associated uncertainty ranges. As we have shown, e.g. the sensitivity of
 target functions to rate coefficients in kinetic simulations can have a physically appealing
 interpretation in terms of the behaviour of chemical pathways. The reaction can
 prove to be sensitive if it is a rate limiting step on a dominant pathway to the target.
 Kinetic simplification\cite{ch1_IRPC_67_skodje2001geometrical,ch1_IRPC_68_law2003development,ch1_IRPC_69_maas1992simplifying} of large mechanisms may likewise be guided by a
-knowledge of important (or unimportant) paths leading to products. Furthermore, as
-illustrated by surface catalysis systems considered above, the chemical pathways themselves
-may leave distinct imprints on the observed kinetics.
+knowledge of important (or unimportant) paths leading to products.
 \newline
 \paragraph{}
-A particularly exciting prospect is that the SOHR can be developed into an
+In addition to interpreting chemical kinetics, we demonstrated SOHR can be developed into an
 independent computational technique that is not dependent upon other representations 
-of the kinetics. At present, the SOHR method relies on the use of a reference trajectory
-$\mathbf{X}(t)$ to compute the pseudo-first-order rate coefficients needed to evaluate the pathway
-probabilities. We are exploring the possibility of eliminating this dependency with a
-method based on the use of numerical iteration.\cite{ch1_IRPC_18_bai2017simulating} Recall that the reference trajectory
-was used in only one way in computing the pathway probability, viz. to determine the
-time-dependence of the pseudo-first-order rate coefficients $A_{i,j}(t)$, in eqn. \ref{ch2:eqn11}. If,
-instead, $A_{i,j}(t)$ were approximated by constants (i.e. a linear approximation) or by using
-the steady state approximation, we would obtain a guess for the pathway probabilities
-using eqn. \ref{ch2:eqn13}. That guess could then be used to approximate the concentrations
-via eqn. \ref{ch2:eqn16}. Then, the next iteration is generated when the updated concentrations
-are used to again compute $A_{i,j}(t)$. Somewhat more formally we can write the iteration
-as the abstract forms of eqns. \ref{ch2:eqn13} and \ref{ch2:eqn16}
-\begin{equation*}
-{\overline{\mathbf{P}}}^{m+1}(t_0,t) = \overline{\mathbf{F}} \left[ {\mathbf{X}}^{m} \right]
-\end{equation*}
-\begin{equation*}
-{\mathbf{X}}^{m+1}(t) = \overline{\overline{\mathbf{G}}} \cdot {\overline{\mathbf{P}}}^{m}(t_0,t)
-\end{equation*}
-where $\overline{\overline{\mathbf{G}}}$ represents the linear combination of eqn. \ref{ch2:eqn16} and ${\overline{\mathbf{P}}}$ represents the
-time-ordered integral in eqn. \ref{ch2:eqn13} and $m$ is the iteration number. It is demonstrated, by using a Lokta-Volterra model system and and a realistic H$_O$-O$_2$ combustion system, that SOHR a has potential of predicting chemical kinetics.
+of the kinetics. This newly developed method provides an alternative to conventional modeling of mass-action kinetics that involves solving differential equations for the species concentrations.  The method presented in this thesis avoids the need to solve the rate equations by switching to a representation based on chemical pathways.  In the Sum Over Histories Representation (or SOHR) method, any time-dependent kinetic observable, such as concentration, is written as a linear combination of probabilities for chemical pathways leading to a desired outcome.  In this work, an iterative method is introduced that allows the time-dependent pathway probabilities to be generated from a knowledge of the elementary rate coefficients thus avoiding the pitfalls involved in solving the differential equations of kinetics.  The method is successfully applied to the model Lotka-Volterra system and to a realistic H$_2-$O$_2$ combustion model.

@@ -1,54 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: mythesis.aux
-The style file: plain.bst
+The style file: unsrt.bst
 Database file #1: refs.bib
-Repeated entry---line 918 of file refs.bib
- : @article{ch1_IRPC_57_wang2015combustion
- :                                        ,
-I'm skipping whatever remains of this entry
 Warning--there's a number but no series in ch1_IRPC_1_laidler1987chemical
 Warning--empty publisher in ch1_IRPC_1_laidler1987chemical
-Warning--empty journal in aHm_3_radhakrishnan1993description
-You've used 125 entries,
-            2118 wiz_defined-function locations,
-            1270 strings with 28014 characters,
-and the built_in function-call counts, 42316 in all, are:
-= -- 4211
-> -- 2022
+You've used 124 entries,
+            1791 wiz_defined-function locations,
+            1215 strings with 27341 characters,
+and the built_in function-call counts, 28995 in all, are:
+= -- 2675
+> -- 1215
 < -- 9
-+ -- 818
-- -- 674
-* -- 3272
-:= -- 7138
-add.period$ -- 373
-call.type$ -- 125
-change.case$ -- 695
++ -- 459
+- -- 335
+* -- 2218
+:= -- 4601
+add.period$ -- 370
+call.type$ -- 124
+change.case$ -- 112
 chr.to.int$ -- 0
-cite$ -- 128
-duplicate$ -- 1379
-empty$ -- 3267
-format.name$ -- 674
-if$ -- 8558
+cite$ -- 126
+duplicate$ -- 1121
+empty$ -- 2871
+format.name$ -- 335
+if$ -- 6276
 int.to.chr$ -- 0
-int.to.str$ -- 125
-missing$ -- 128
-newline$ -- 623
-num.names$ -- 250
-pop$ -- 601
+int.to.str$ -- 124
+missing$ -- 127
+newline$ -- 618
+num.names$ -- 124
+pop$ -- 256
 preamble$ -- 1
-purify$ -- 582
+purify$ -- 0
 quote$ -- 0
-skip$ -- 921
+skip$ -- 413
 stack$ -- 0
-substring$ -- 3187
+substring$ -- 2543
 swap$ -- 150
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 476
-warning$ -- 3
-while$ -- 440
-width$ -- 128
-write$ -- 1349
-(There was 1 error message)
+type$ -- 0
+warning$ -- 2
+while$ -- 314
+width$ -- 127
+write$ -- 1340
+(There were 2 warnings)

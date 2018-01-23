@@ -116,7 +116,7 @@ The essential step that enables the SOHR to be used as a quantitative model of t
 reaction kinetics is the assignment of a numerical probability for a given chemical pathway.
 We consider a general pathway consisting of n-reactions and n + 1-species, 
 i.e. ${\textbf{S}}_{0} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{$t_1$}} {\textbf{S}}_{1}  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{$t_2$}} {\textbf{S}}_{2} \cdots {\textbf{S}}_{n-1} \xrightarrow[\text{R}_{n}]{\makebox[0.6cm]{$t_{n}$}} {\textbf{S}}_{n}$ where the followed-atom hops from S$_i$ to S$_{i+1}$ at time t$_{i+1}$ due to elementary reaction R$_{i+1}$.
-We define a $pathway ~probability ~density ~function$, pPDF for short,
+We define a $pathway ~probability ~density ~function$, $pPDF$ for short,
 \begin{flalign}
 \label{ch2:eqn3.5}
 \begin{split}
@@ -224,7 +224,7 @@ divided by the total reactive flux of species $S_i$, i.e.
 \end{equation}
 In this notation we drop the explicit J-index on $\Gamma$. The stoichiometric factors are not
 included in the numerator of eqn. \ref{ch2:eqn12} since we are following a single tagged
-atom. Using these expressions in eqn. \ref{ch2:eqn10} and \ref{ch2:eqn12}, pPDF defined in eqn. \ref{ch2:eqn3.5} can be written as 
+atom. Using these expressions in eqn. \ref{ch2:eqn10} and \ref{ch2:eqn12}, $pPDF$ defined in eqn. \ref{ch2:eqn3.5} can be written as 
 \begin{equation}
 \label{ch2:eqn12.5}
 \rho(t_0, t_1, \cdots, t_n, t_f) = (-1)^n \prod_{i=1}^{n}{\left( \frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i} \Gamma_{i-1}(t_i) \right) \mathcal{P}_{n}(t_n,t_f)}
@@ -258,7 +258,7 @@ We have for the final MC expression
 \label{ch2:eqn14}
 P_{path}(t_0,t_f)= \frac{1}{N} \sum_{q=1}^{N} {\mathcal{P}_n(t_n^q, t_f) \prod_{k=1}^{n} \left( \Gamma_{k-1}(t_k^{q})\left( 1-P_{min}^{k-1}(t_k^q)\right)  \right) }
 \end{equation}
-where the index q is used to specify each string of n-random numbers where, in this
+where the index $q$ is used to specify each string of n-random numbers where, in this
 equation only, $N$ is the size of the MC sampling. It is important to note that, except for
 linear or steady state systems, the SOHR apparently requires input from the traditional
 kinetics representation since the pseudo-first-order rate coefficients $A_{i,j}(t)$ are computed

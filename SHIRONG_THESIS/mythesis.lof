@@ -27,10 +27,10 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Sensitivity indices for the two dominant paths leading to H$_2$O$_2$}}{58}{figure.caption.62}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces A schematic representation of a time-dependent pathway}}{63}{figure.caption.63}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Kinetic graph for the Lotka-Volterra model}}{67}{figure.caption.70}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Convergence of the iteration for the predictive SOHR method in the LV system}}{69}{figure.caption.72}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Directed kinetic graphs for the forward reactions in the hydrogen combustion system}}{72}{figure.caption.73}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Convergence of the SOHR iteration for the H$_2$-O$_2$ system}}{73}{figure.caption.74}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces A comparison of the predictive SOHR method with the conventional ODE}}{74}{figure.caption.75}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Kinetic graph for the Lotka-Volterra model}}{68}{figure.caption.70}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Convergence of the iteration for the predictive SOHR method in the LV system}}{70}{figure.caption.72}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Directed kinetic graphs for the forward reactions in H$_2$-O$_2$ system}}{72}{figure.caption.73}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Convergence of the SOHR iteration for the H$_2$-O$_2$ system}}{74}{figure.caption.74}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces A comparison of the predictive SOHR method with the conventional ODE}}{75}{figure.caption.75}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -17,7 +17,7 @@ by the corresponding product of species, $S_0S_1 \cdots S_n$ and it is not neces
 the reactions. The quantities $A_{i,j}(t)$ defined in eqn. \ref{ch2:eqn11} are constants in time, i.e.
 $A_{i,j}(t) = k_{i,j}$. The species decay rates, $A_i = \sum{A_{i,j}} = \sum{k_{i,j}} \equiv k_i$, are likewise time-independent
 and all the species survival probabilities correspond to pure exponential decay, i.e.
-${\mathcal{P}}_{i}(t_a, t_b)=exp\left(-k_i(k_a-k_b)\right)$. The reaction branching ratios are given by $\Gamma_i=k_{i,J}/k_i$ where
+${\mathcal{P}}_{i}(t_a, t_b)=exp\left(-k_i(t_b-t_a)\right)$. The reaction branching ratios are given by $\Gamma_i=k_{i,J}/k_i$ where
 $J$ denotes the appropriate channel along the pathway selected. Thus, for linear kinetics
 the reference trajectory $\mathbf{X}(t)$ from eqn. \ref{ch2:eqn2} is not required to implement the
 SOHR. Given these simplifications, the integral of the time-ordered product, eqn. \ref{ch2:eqn3}, can then be evaluated analytically\cite{ch1_IRPC_16_ch3_6_ch4_8_bai2014sum}
@@ -114,7 +114,7 @@ It is instructive to investigate the behaviour of the SOHR in somewhat greater d
 for this simple problem. We note that even though the pseudo-first-order rate coefficients
 are time-independent, the pathway probabilities still possess a strong time-dependence.
 In Fig. \ref{ch2dot5:fig5}, we show the pathway probabilities vs. time for the 100 most
-important paths connecting $S_1$ to $S_{15}$. The paths are colour-coded according to their
+important paths connecting $S_1$ to $S_{15}$. The paths are color-coded according to their
 length. At very early times, the one-step path, i.e. $S_1 \xrightarrow[]{} S_{15}$, dominates the probability.
 At somewhat later times, the two-step paths, i.e. $S_1 \xrightarrow[]{} S_j \xrightarrow[]{} S_{15}$ begin to play a role.
 At still later times, the three- and four-step paths begin to contribute. Heuristically, we can understand that a molecule which arrives at species $S_{15}$ at a later time will tend to take a more circuitous route than one that arrives at an earlier time. In Fig. \ref{ch2dot5:fig6}, we

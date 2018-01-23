@@ -56,7 +56,7 @@ solving the CME involve averaging many stochastic trajectories which simulate th
 time evolution of a large ensemble of molecules.
 \section{Defining Chemical Pathways}
 \label{ch2:def_path}
-The basic units of description in the SOHR are the chemical pathway themselves. The
+The basic units of description in the SOHR are the chemical pathways themselves. The
 pathways represent the condition of a chemical moiety as it moves from species to species
 due to the action of the elementary chemical reactions. Taken collectively, these
 pathways describe the entire chemistry of the model. In order to quantitatively apply
@@ -154,7 +154,7 @@ path $S_0 \xrightarrow[]{} S_1$, and a zero-step path $S_0$. The probability den
 $S_0 \xrightarrow[]{} S_1 \xrightarrow[]{} S_2$ is
 \begin{equation}
 \label{ch2:eqn5}
-P_{path}(t_0,t_1,t_2,t_f) = k_1 e^{-k_1(k_1-k_0)} k_2e^{-k_2(k_2-k_1)} 
+\rho(t_0,t_1,t_2,t_f) = k_1 e^{-k_1(t_1-t_0)} k_2e^{-k_2(t_2-t_1)} 
 \end{equation}
 and the total integrated pathway probability is
 \begin{equation}
@@ -167,7 +167,7 @@ P_{path}(2-step) &= \int_{t_0}^{t_f}{\int_{t_0}^{t_2}{dt_1 \rho(t_0, t_1, t_2, t
 where $\Delta t = t_f - t_0$. The probability density for the one-step path, $S_0 \xrightarrow []{} S_1$, is
 \begin{equation}
 \label{ch2:eqn7}
-\rho(t_0,t_1,t_2,t_f) = k_1 e^{-k_1(k_1-k_0)} e^{-k_2(k_2-k_1)} 
+\rho(t_0,t_1,t_f) = k_1 e^{-k_1(t_1-t_0)} e^{-k_2(t_f-t_1)} 
 \end{equation}
 Note that in eqn. \ref{ch2:eqn7}, we have inserted the non-decay probability of species $S_1$,
 i.e. $e^{-k_2(t_f - t_1)}$, which is created at time $t_1$ and must survive until $t_f$. The corresponding
@@ -191,11 +191,11 @@ It is easily seen that the sum of eqns. \ref{ch2:eqn6}, \ref{ch2:eqn8}, and \ref
 To generalize the probability density for a time-resolved pathway to an arbitrary
 kinetic mechanism, we find it convenient to define two quantities: the species survival
 probability and the reaction branching ratio. The species survival probability, $\mathcal{P}_{i}(t_a,t_b)$,
-is the probability that a molecule of type $S_i$, which is created at ta, undergoes no reaction
+is the probability that a molecule of type $S_i$, which is created at $t_a$, undergoes no reaction
 in the time interval $(t_a, t_b)$ where $\mathcal{P}_{i}(t,t)=1$. Unlike the simple first-order reactions
-above, where $P(t_a, t_b) = exp(-k(t_b - t_a))$, the survival probability is temporally in-homogeneous
+above, where $P(t_a, t_b) = exp(-k(t_b - t_a))$, the survival probability is temporally inhomogeneous
 for general mechanisms, i.e. $\mathcal{P}_{i}(t_a,t_b) \neq \mathcal{P}_{i}(t_a+\Delta,t_b + \Delta) $. However it is
-straightforward to compute the survival probability for any species Si by integrating the
+straightforward to compute the survival probability for any species $S_i$ by integrating the
 species decay probability obtained from the sum of sink reactions defined in the rate
 eqn. \ref{ch2:eqn2}
 \begin{equation}
@@ -216,7 +216,7 @@ along the solution to eqn. \ref{ch2:eqn2}. The instantaneous decay rate for spec
 time $t_b$, assuming that $S_i$ was created at $t_a$, is $-d\mathcal{P}_{i}(t_a,t_b) / d t_b$. A second useful quantity
 is the time-dependent branching ratio, $\Gamma_{i}(t)$, which measures the instantaneous fraction
 of the reactive flux that follows the correct branch when species $S_i$ reacts to form products.
-The branching ratio is simply the reactive flux along the selected ‘Jth-branch’
+The branching ratio is simply the reactive flux along the selected '$J^{th}$-branch'
 divided by the total reactive flux of species $S_i$, i.e.
 \begin{equation}
 \label{ch2:eqn12}
@@ -238,7 +238,7 @@ P_{path}(t_0,t_f)&= (-1)^n \int_{t_0}^{t_f}{dt_n \int_{t_0}^{t_n}{dt_{n-1} \cdot
 &  \prod_{i=1}^{n}{\left( \frac{d\mathcal{P}_{i-1}(t_{i-1},t_i)}{dt_i} \Gamma_{i-1}(t_i) \right) \mathcal{P}_{n}(t_n,t_f)}
 \end{split}
 \end{equation}
-This expression is similar to Dyson’s formula for the amplitude in quantum mechanics.\cite{ch1_IRPC_38_schulmann1996techniques,ch1_IRPC_39_mjolsness2013time} Unlike the quantum expression, however, the integrand of eqn. \ref{ch2:eqn13} is positive definite and thus phase cancellation is not an issue.
+This expression is similar to Dyson's formula for the amplitude in quantum mechanics.\cite{ch1_IRPC_38_schulmann1996techniques,ch1_IRPC_39_mjolsness2013time} Unlike the quantum expression, however, the integrand of eqn. \ref{ch2:eqn13} is positive definite and thus phase cancellation is not an issue.
 \newline
 \paragraph{}
 The evaluation of the path probability using a numerical quadrature for eqn. \ref{ch2:eqn13} can become laborious when the dimension, $n$, is large. However, this multidimensional
@@ -264,8 +264,7 @@ linear or steady state systems, the SOHR apparently requires input from the trad
 kinetics representation since the pseudo-first-order rate coefficients $A_{i,j}(t)$ are computed
 using the kinetic solutions $\mathbf{X}(t)$. The reference trajectory $\mathbf{X}(t)$ is an input when treating
 non-linear kinetic systems. Developing a method to detach the SOHR from traditional
-kinetics, and from need for a reference trajectory by using an iterative solution technique
-is an ongoing area of research.\cite{ch1_IRPC_18_bai2017simulating}
+kinetics, and from need for a reference trajectory by using an iterative solution technique will be discussed in chapter \ref{chapter4}.\cite{ch1_IRPC_18_bai2017simulating}
 
 \section{Constructing Observables}
 \label{ch2:sec:const_ob}
@@ -433,7 +432,7 @@ algorithm developed by Gillespie and coworkers\cite{ch1_IRPC_36_gillespie2013per
 want to identify important paths that carry a tagged atom from an initial species, $S_0$, to
 a final species $S_f$. We can locate such pathways by propagating individual molecules
 through the reaction network using a kinetic MC simulation. An individual molecule of
-type $S_i$ carrying the tagged atom has a instantaneous transition probability (not PDF) for going to species
+type $S_i$ carrying the tagged atom has a instantaneous transition probability (not $PDF$) for going to species
 $S_k$ by reaction $R_j$ given by
 \begin{equation}
 \label{ch2:eqn23}

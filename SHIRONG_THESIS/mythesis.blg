@@ -3,28 +3,26 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: mythesis.aux
 The style file: unsrt.bst
 Database file #1: refs.bib
-Warning--there's a number but no series in ch1_IRPC_1_laidler1987chemical
-Warning--empty publisher in ch1_IRPC_1_laidler1987chemical
 You've used 124 entries,
             1791 wiz_defined-function locations,
-            1215 strings with 27341 characters,
-and the built_in function-call counts, 28995 in all, are:
-= -- 2675
+            1217 strings with 27369 characters,
+and the built_in function-call counts, 28973 in all, are:
+= -- 2673
 > -- 1215
-< -- 9
+< -- 7
 + -- 459
 - -- 335
-* -- 2218
-:= -- 4601
-add.period$ -- 370
+* -- 2212
+:= -- 4600
+add.period$ -- 369
 call.type$ -- 124
-change.case$ -- 112
+change.case$ -- 113
 chr.to.int$ -- 0
-cite$ -- 126
+cite$ -- 124
 duplicate$ -- 1121
 empty$ -- 2871
 format.name$ -- 335
-if$ -- 6276
+if$ -- 6272
 int.to.chr$ -- 0
 int.to.str$ -- 124
 missing$ -- 127
@@ -37,13 +35,12 @@ quote$ -- 0
 skip$ -- 413
 stack$ -- 0
 substring$ -- 2543
-swap$ -- 150
-text.length$ -- 9
+swap$ -- 148
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
+warning$ -- 0
 while$ -- 314
 width$ -- 127
-write$ -- 1340
-(There were 2 warnings)
+write$ -- 1341

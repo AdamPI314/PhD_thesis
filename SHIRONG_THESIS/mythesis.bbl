@@ -54,11 +54,6 @@ Fr{\'e}d{\'e}rique Battin-Leclerc.
 \newblock {\em Progress in Energy and Combustion Science}, 34(4):440--498,
   2008.
 
-\bibitem{baylor}
-G.~I. Baylor.
-\newblock Up, up and away.
-\newblock {\em Proc. Roy. Soc., London A}, 294:456--475, 1959.
-
 \bibitem{ch1_IRPC_42_bellman1958routing}
 Richard Bellman.
 \newblock On a routing problem.
@@ -95,11 +90,6 @@ JA~Christiansen.
 Thomas~H Cormen, Charles~E Leiserson, Ronald~L Rivest, and Clifford Stein.
 \newblock Introduction to algorithms second edition, 2001.
 
-\bibitem{crow}
-M.~E. Crow.
-\newblock Aerodynamic sound emission as a singular perturbation problem.
-\newblock {\em Stud. Appl. Math.}, 29:21--44, 1968.
-
 \bibitem{ch3_26_cukier1973study}
 RI~Cukier, CM~Fortuin, Kurt~E Shuler, AG~Petschek, and JH~Schaibly.
 \newblock Study of the sensitivity of coupled reaction systems to uncertainties
@@ -128,20 +118,10 @@ Edsger~W Dijkstra.
 \newblock A note on two problems in connexion with graphs.
 \newblock {\em Numerische mathematik}, 1(1):269--271, 1959.
 
-\bibitem{dole}
-Julian~D. Dole.
-\newblock {\em Perturbation Methods in Applied Mathematics}.
-\newblock Winsdell Publishing Company, 1967.
-
 \bibitem{ch1_IRPC_44_eppstein1998finding}
 David Eppstein.
 \newblock Finding the k shortest paths.
 \newblock {\em SIAM Journal on computing}, 28(2):652--673, 1998.
-
-\bibitem{fabnis}
-J.~S. Fabnis, H.~J. Giblet, and H.~McDormand.
-\newblock Navier-stokes analysis of solid rocket motor internal flow.
-\newblock {\em J. Prop. and Power}, 2:157--164, 1980.
 
 \bibitem{ch4_33_feinstein1975socialism}
 Charles~Hilliard Feinstein.
@@ -216,11 +196,6 @@ Xiang-Kui Gu and Wei-Xue Li.
 \newblock {\em The Journal of Physical Chemistry C}, 114(49):21539--21547,
   2010.
 
-\bibitem{guillot}
-F.~Guillot and Z.~Javalon.
-\newblock Acoustic boundary layers in propellant rocket motors.
-\newblock {\em J. Prop. and Power}, 5:331--339, 1989.
-
 \bibitem{ch1_IRPC_12_hammer2000theoretical}
 Bj{\o}rk Hammer and Jens~Kehlet N{\o}rskov.
 \newblock Theoretical surface science and catalysis—calculations and
@@ -272,12 +247,6 @@ Terrell~L Hill.
 \newblock Studies in irreversible thermodynamics iv. diagrammatic
   representation of steady state fluxes for unimolecular systems.
 \newblock {\em Journal of theoretical biology}, 10(3):442--459, 1966.
-
-\bibitem{softy}
-IBM.
-\newblock {S}{P}{S}{S} {S}tatistics.
-\newblock download from vendor site, 2012.
-\newblock version 21.
 
 \bibitem{ch3_10_ito1961wiener}
 Kiyosi It{\^o}.
@@ -363,21 +332,6 @@ JF~Lamarque, LK~Emmons, PG~Hess, DE~Kinnison, S~Tilmes, F~Vitt, CL~Heald,
 \newblock Cam-chem: description and evaluation of interactive atmospheric
   chemistry in the community earth system model, geosci. model dev., 5,
   369--411, doi: 10.5194, 2012.
-
-\bibitem{lao:thesis}
-Henry Lao.
-\newblock {\em Linear Acoustic Processes in Rocket Engines}.
-\newblock PhD thesis, University of Colorado at Boulder, 1979.
-
-\bibitem{lao:paper}
-Q.~Lao, M.~N. Cassoy, and K.~Kirkpatrick.
-\newblock Acoustically generated vorticity from internal flow.
-\newblock {\em J. Fluid Mechanics}, 2:122--133, 1996.
-
-\bibitem{lao:97}
-Q.~Lao, D.~R. Kassoy, and K.~Kirkkopru.
-\newblock Nonlinear acoustic processes in rocket engines.
-\newblock {\em J. Fluid Mechanics}, 3:245--261, 1997.
 
 \bibitem{ch1_IRPC_68_law2003development}
 Chung~K Law, Chih~Jen Sung, Hai Wang, and TF~Lu.
@@ -473,17 +427,6 @@ Eric Mjolsness.
   biology.
 \newblock {\em Physical biology}, 10(3):035009, 2013.
 
-\bibitem{mulick}
-F.~C. Mulick.
-\newblock Rotational axisymmetric mean flow and damping of acoustic waves in a
-  solid propellant.
-\newblock {\em AIAA J.}, 3:1062--1063, 1964.
-
-\bibitem{mulick75}
-F.~C. Mulick.
-\newblock Stability of four-dimensional motions in a combustion chamber.
-\newblock {\em Comb. Sci. Tech.}, 19:99--124, 1981.
-
 \bibitem{ch1_IRPC_56_najm2009uncertainty}
 Habib~N Najm, Bert~J Debusschere, Youssef~M Marzouk, Steve Widmer, and
   OP~Le~Ma{\^\i}tre.
@@ -505,12 +448,6 @@ Michael~J Pilling, Paul~W Seakins, et~al.
 Herschel Rabitz and {\"O}mer~F Ali{\c{s}}.
 \newblock General foundations of high-dimensional model representations.
 \newblock {\em Journal of Mathematical Chemistry}, 25(2-3):197--233, 1999.
-
-\bibitem{richards}
-R.~S. Richards and A.~M. Brown.
-\newblock Coupling between acoustic velocity oscillations and solid propellant
-  combustion.
-\newblock {\em J. Prop. and Power}, 5:828--837, 1982.
 
 \bibitem{ch4_27_roussel1990geometry}
 Marc~R Roussel and Simon~J Fraser.
@@ -568,12 +505,6 @@ Rex~T Skodje, Alison~S Tomlin, Stephen~J Klippenstein, Lawrence~B Harding, and
   methanol.
 \newblock {\em The Journal of Physical Chemistry A}, 114(32):8286--8301, 2010.
 
-\bibitem{smitty}
-T.~M. Smitty, R.~L. Coach, and F.~B. H\"ondra.
-\newblock Unsteady flow in simulated solid rocket motors.
-\newblock In {\em 16st Aerospace Sciences Meeting}, number 0112 in 78. AIAA,
-  1978.
-
 \bibitem{ch3_34_sobol2001global}
 Ilya~M Sobol.
 \newblock Global sensitivity indices for nonlinear mathematical models and
@@ -596,12 +527,6 @@ Gabor~A Somorjai and Yimin Li.
 Jeffrey~I Steinfeld, Joseph~Salvadore Francisco, and William~L Hase.
 \newblock {\em Chemical kinetics and dynamics}.
 \newblock Prentice Hall Englewood Cliffs (New Jersey), 1989.
-
-\bibitem{taum}
-Joseph~D. Taum.
-\newblock Investigation of flow turning phenomenon.
-\newblock In {\em 20th Aerospace Sciences Meeting}, number 0297 in 82. AIAA,
-  1982.
 
 \bibitem{ch1_IRPC_30_temkin1992application}
 Oleg~N Temkin and Danail~G Bonchev.
@@ -676,11 +601,6 @@ Judit Zador, Istvan~Gy Zsely, Tamas Turanyi, Marco Ratto, Stefano Tarantola,
   and Andrea Saltelli.
 \newblock Local and global uncertainty analyses of a methane flame model.
 \newblock {\em The Journal of Physical Chemistry A}, 109(43):9795--9807, 2005.
-
-\bibitem{zeddini}
-Robert~A. Zeddini.
-\newblock Injection-induced flows in porous-walled ducts.
-\newblock {\em AIAA Journal}, 14:766--773, 1981.
 
 \bibitem{ch1_IRPC_66_zhou2013multitarget}
 Dingyu~DY Zhou, Michael~J Davis, and Rex~T Skodje.

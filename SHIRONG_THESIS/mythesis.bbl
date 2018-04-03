@@ -54,6 +54,27 @@ Fr{\'e}d{\'e}rique Battin-Leclerc.
 \newblock {\em Progress in Energy and Combustion Science}, 34(4):440--498,
   2008.
 
+\bibitem{baulch1994summary}
+D~Baulch, J~Cobos, A~Cox, P~Frank, G~Hayman, Th~Just, T~Murrells, J~Pilling,
+  J~Troe, R~Walker, et~al.
+\newblock Summary table of evaluated kinetic data for combustion modelling:
+  Supplement 1.
+\newblock {\em Combustion and Flame 98 (1994), pp. 59-79}, 1994.
+
+\bibitem{baulch2005evaluated}
+DL~Baulch, CT~Bowman, CJ~Cobos, RA~Cox, Th~Just, JA~Kerr, MJ~Pilling,
+  D~Stocker, J~Troe, W~Tsang, et~al.
+\newblock Evaluated kinetic data for combustion modeling: supplement ii.
+\newblock {\em Journal of physical and chemical reference data},
+  34(3):757--1397, 2005.
+
+\bibitem{baulch1994evaluated}
+DL~Baulch, CJ~Cobos, RA~Cox, P~Frank, Go~Hayman, Th~Just, JA~Kerr, T~Murrells,
+  MJ~Pilling, J~Troe, et~al.
+\newblock Evaluated kinetic data for combustion modeling. supplement i.
+\newblock {\em Journal of Physical and Chemical Reference Data},
+  23(6):847--848, 1994.
+
 \bibitem{ch1_IRPC_42_bellman1958routing}
 Richard Bellman.
 \newblock On a routing problem.
@@ -439,6 +460,12 @@ George Oster, Alan Perelson, and Aharon Katchalsky.
 \newblock Network thermodynamics.
 \newblock {\em Nature}, 234(5329):393--399, 1971.
 
+\bibitem{pilling2009elementary}
+Michael~J Pilling.
+\newblock From elementary reactions to evaluated chemical mechanisms for
+  combustion models.
+\newblock {\em Proceedings of the Combustion Institute}, 32(1):27--44, 2009.
+
 \bibitem{ch1_IRPC_2_pilling1996reaction}
 Michael~J Pilling, Paul~W Seakins, et~al.
 \newblock {\em Reaction kinetics}.
@@ -469,6 +496,11 @@ Andrea Saltelli, Marco Ratto, Terry Andres, Francesca Campolongo, Jessica
   Cariboni, Debora Gatelli, Michaela Saisana, and Stefano Tarantola.
 \newblock {\em Global sensitivity analysis: the primer}.
 \newblock John Wiley \& Sons, 2008.
+
+\bibitem{saltelli2005sensitivity}
+Andrea Saltelli, Marco Ratto, Stefano Tarantola, and Francesca Campolongo.
+\newblock Sensitivity analysis for chemical models.
+\newblock {\em Chemical reviews}, 105(7):2811--2828, 2005.
 
 \bibitem{ch4_23_schnakenberg1976network}
 J{\"u}rgen Schnakenberg.
@@ -539,11 +571,31 @@ Oleg~N Temkin, Andrew~V Zeigarnik, and DG~Bonchev.
 \newblock {\em Chemical reaction networks: a graph-theoretical approach}.
 \newblock CRC Press, 1996.
 
+\bibitem{tomlin2013role}
+Alison~S Tomlin.
+\newblock The role of sensitivity and uncertainty analysis in combustion
+  modelling.
+\newblock {\em Proceedings of the Combustion Institute}, 34(1):159--176, 2013.
+
 \bibitem{ch1_IRPC_46_tosatto2013simplifying}
 Luca Tosatto and Youssef Marzouk.
 \newblock Simplifying chemical kinetic systems under uncertainty using markov
   chains.
 \newblock In {\em extended abstract, Workshop on Numerical Combustion}, 2013.
+
+\bibitem{tsang1986chemical}
+W~Tsang and RF~Hampson.
+\newblock Chemical kinetic data base for combustion chemistry. part i. methane
+  and related compounds.
+\newblock {\em Journal of Physical and Chemical Reference Data},
+  15(3):1087--1279, 1986.
+
+\bibitem{tsang1992chemical}
+Wing Tsang.
+\newblock Chemical kinetic data base for propellant combustion. ii. reactions
+  involving cn, nco, and hnco.
+\newblock {\em Journal of physical and chemical reference data},
+  21(4):753--791, 1992.
 
 \bibitem{ch1_IRPC_55_turanyi2008sensitivity}
 Tam{\'a}s Tur{\'a}nyi.

@@ -70,19 +70,19 @@ it is necessary to specify both the reactions and the species along the reaction
 pathway in order to achieve uniqueness. Indeed, the same reagents may yield different
 products or the same products may result from different reagents, depending on which
 reaction occurs. For example, if we imagine the gas-phase combustion of the methanol
-molecule, CH$_3$OH, a hypothetical three-step chemical pathway is $\textcolor{red}{\textbf{C}}\text{H}_3\text{OH}(+\text{OH}) \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3\text{O} (+\text{O})  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{HO} (+\text{OH}) \xrightarrow[\text{R}_{3}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{O}$ which yields the CO product. Obviously the reagents in first step of this path, ${\textbf{C}}\text{H}_3\text{OH}+\text{OH} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} {\textbf{C}}\text{H}_3\text{O} + \text{H}_2\text{O}$, could have equally well yielded the chemically distinct products ${\textbf{C}}\text{H}_2\text{OH} + \text{H}_2\text{O}$, which must be described by a separate
-reaction $R_1^{\prime}$. Likewise, the distinct reaction ${\textbf{C}}\text{H}_3\text{OH}+\text{H} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} {\textbf{C}}\text{H}_3\text{O} + \text{H}_2$ is a different reaction route that connects the followed species CH$_3$OH and CH$_3$O.
+molecule, $\textcolor{red}{\textbf{C}}$H$_3$OH, a hypothetical three-step chemical pathway is $\textcolor{red}{\textbf{C}}\text{H}_3\text{OH}(+\text{OH}) \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3\text{O} (+\text{O})  \xrightarrow[\text{R}_{2}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{HO} (+\text{OH}) \xrightarrow[\text{R}_{3}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{O}$ which yields the $\textcolor{red}{\textbf{C}}\text{O}$ product. Obviously the reagents in first step of this path, $\textcolor{red}{\textbf{C}}\text{H}_3\text{OH}+\text{OH} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3\text{O} + \text{H}_2\text{O}$, could have equally well yielded the chemically distinct products $\textcolor{red}{\textbf{C}}\text{H}_2\text{OH} + \text{H}_2\text{O}$, which must be described by a separate
+reaction $R_1^{\prime}$. Likewise, the distinct reaction $\textcolor{red}{\textbf{C}}\text{H}_3\text{OH}+\text{H} \xrightarrow[\text{R}_{1}]{\makebox[0.6cm]{}} \textcolor{red}{\textbf{C}}\text{H}_3\text{O} + \text{H}_2$ is a different reaction route that connects the followed species $\textcolor{red}{\textbf{C}}\text{H}_3\text{OH}$ and $\textcolor{red}{\textbf{C}}\text{H}_3\text{O}$.
 \newline
 \paragraph{}
 In most numerical applications of the SOHR methodology, we adopt a followed-atom
 approach for the definition of the chemical pathways. Thus, an atom in a reagent
 species is ‘tagged’ at the beginning of the simulation, $t_0$, and it is followed as it hops
 between species due to reaction until the final time $t_f$. For example, the carbon atom in
-the above pathway has a history $(t_0 \vert S_0R_1S_1R_2S_2R_3S_3|t_f)$ where the C-containing species
-are $S_0 = \text{CH}_3\text{OH}$, $S_1 =\text{ CH}_3\text{O}$, $S_2 = \text{CHO}$, and $S_3 = \text{CO}$, and the reactions are
-$R_1 = \text{CH}_3\text{OH} + \text{OH} \rightarrow \text{CH}_3\text{O} + \text{H}_2\text{O}$, etc. These histories represent pathways through
-species space which deliver the chemical moiety (in this case a C-atom) from the
-reagents to the products. A general pathway that delivers a C-atom from CH$_3$OH to CO
+the above pathway has a history $(t_0 \vert S_0R_1S_1R_2S_2R_3S_3|t_f)$ where the $\textcolor{red}{\textbf{C}}$-containing species
+are $S_0 = \textcolor{red}{\textbf{C}}\text{H}_3\text{OH}$, $S_1 =\textcolor{red}{\textbf{C}}\text{H}_3\text{O}$, $S_2 = \textcolor{red}{\textbf{C}}\text{HO}$, and $S_3 = \textcolor{red}{\textbf{C}}\text{O}$, and the reactions are
+$R_1 = \textcolor{red}{\textbf{C}}\text{H}_3\text{OH} + \text{OH} \rightarrow \textcolor{red}{\textbf{C}}\text{H}_3\text{O} + \text{H}_2\text{O}$, etc. These histories represent pathways through
+species space which deliver the chemical moiety (in this case a $\textcolor{red}{\textbf{C}}$-atom) from the
+reagents to the products. A general pathway that delivers a $\textcolor{red}{\textbf{C}}$-atom from $\textcolor{red}{\textbf{C}}$H$_3$OH to $\textcolor{red}{\textbf{C}}$O
 may be arbitrarily long and thus may consist of an arbitrarily long sequence of reactions.
 The numerical utility of the SOHR method requires that only a finite and manageable
 number of the pathways are actually required to converge meaningful results.
